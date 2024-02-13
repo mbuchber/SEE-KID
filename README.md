@@ -13,4 +13,4 @@ Additionally, the system is used for education and training purposes, because by
 
 The software project SEE++ is the realization of a biomechanical model of the human eye and is partly based on ideas and concepts originally invented and implemented in the software system Orbit™ 1.8 by Joel Miller (Eidactics). This mainly mathematical description of the oculomotor system forms the basis for the proper predictions on simulation and treatment of pathological cases.
 
-The SEE-KID project and the application of the software systems SEE++ were supported by grants of the Upper Austrian Local Government, the Hospital of the Barmherzigen Brüder Linz and the Hospital AKH Linz.
+The SEE-KID project and the application of the software system SEE++ were supported by grants of the Upper Austrian Local Government, the Hospital of the Barmherzigen Brüder Linz and the Hospital AKH Linz.
