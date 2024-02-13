@@ -1,6 +1,6 @@
 # SEE-KID (Software-Engineering Environment for Knowledge-based Eye-Motility Diagnostics)
 
-The research project SEE-KID was carried over almost 21 years within different organizations.
+The research project SEE-KID was carried out over almost 21 years within different organizations.
 * University of Applied Sciences, Department of Software-Engineering for Medicine, Hagenberg Upper Austria (1998 - 2002)
 * Upper Austrian Research GmbH (2003 - 2007)
 * RISC Software GmbH, Research Unit Medical-Informatics (2008 - 2019)
