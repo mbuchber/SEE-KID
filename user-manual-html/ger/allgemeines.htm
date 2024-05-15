@@ -1,0 +1,164 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Allgemeines</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Allgemeines,Sprache,OpenGL,Server-Modus,SEE++ Calculation Server,Alle Einstellungen zurücksetzen,Liniendicke,Diagramme,3D-Modell,3D-Ansicht,Schriftgröße,Klickgenauigkeit,Iterationsmaximum,Terminationskriterium,Cache-Größe,Cache,Zwischenspeicher,Rechengenauigkeit,Hintergrund (3D-Modell),Hintergrundfarbe,Werteverlauf-Tooltips,Szenarien,Bulbusdaten,Muskeldaten,Innervationsverteilung,Änderungen bei Rückgängig/Wiederholen,Szenario,Allgemeine Optionen,Medizinische Stammdaten,Motorische Fusionsbreite,Zugeordnete Ansicht">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "allgemeines.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <p><span style="font-size: 14pt; font-weight: bold;">Allgemeines</span></p>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="optionen.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="diagramme.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:365px; padding:0; border:none"><p style="text-align: justify;"><img width="363" height="627" style="margin:0;width:363px;height:627px;border:none" src="general_options.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Die Allgemeinen Optionen von SEE++ sind in einem Dialog einstellbar, den sie in der <a href="ueberblick.htm" class="topiclink">Treeview</a> unter &quot;Optionen-&gt;Allgemein&quot; oder im <a href="ueberblick.htm" class="topiclink">Hauptmenü</a> unter &quot;Optionen-&gt;Allgemeines...&quot; abrufen können.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-weight: bold;">Sprache</span></p>
+<p style="text-align: justify;">In der Auswahlliste &quot;Sprache&quot; kann die aktuelle Sprache des Programms eingestellt werden. Derzeit werden Deutsch und Englisch unterstützt. Wählen sie die entsprechende Sprache aus und bestätigen sie den Dialog durch Klicken auf &quot;OK&quot;. Sie müssen dann SEE++ neu starten, damit diese Änderung gültig wird.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-weight: bold;">OpenGL Beschleunigung</span></p>
+<p style="text-align: justify;">Gibt es Probleme mit der 3D-Ansicht oder ist die Darstellung zu langsam, so können sie unter &quot;OpenGL Beschleunigung&quot; eine Verbesserung der Darstellung erreichen. Auch hier muss SEE++ wieder neu gestartet werden, damit diese Änderung wirksam wird.</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-weight: bold;">Server-Modus</span></p>
+<p style="text-align: justify;">Wenn sie diese Option aktivieren, dann versucht SEE++ sämtliche Berechnungen über den SEE++ Calculation Server (als eigenes Produkt auf <a href="http://www.see-kid.at" target="_blank" class="weblink">www.see-kid.at</a> verfügbar) durchzuführen. In dem Eingabefeld können sie die Adresse des Servers eingeben. Der Server-Modus ist primär für die Verwendung in größeren Netzwerken vorgesehen, in dem die Berechnungen dann auf einem leistungsstarken Server ausgelagert werden können und somit die Hardwareanforderungen für die Clients geringer werden.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-weight: bold;">Alle Einstellungen zurücksetzen</span></p>
+<p style="text-align: justify;">SEE++ speichert sämtliche Einstellungen, die sie im Programm verändern können, automatisch beim Beenden des Programms und stellt sie beim Starten wieder her. Sollte das Programm einmal nicht mehr so reagieren wie gewünscht oder sie möchten nur alle Einstellungen auf ihre Standardwerte zurücksetzen, dann können sie den Ausgangszustand aller Optionen mit einem Klick auf diesen Button wiederherstellen. Nachdem sie auf den Button geklickt haben muss SEE++ neu gestartet werden, damit der Vorgang erfolgreich abgeschlossen werden kann.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-weight: bold;">Liniendicke (Diagramme)</span></p>
+<p style="text-align: justify;">Diese Option gibt die Dicke aller Linien an, die in den verschiedenen <a href="diagramme.htm" class="topiclink">Diagrammen</a> eingezeichnet werden.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-weight: bold;">Liniendicke (3D-Modell)</span></p>
+<p style="text-align: justify;">Diese Option gibt die Dicke aller Linien an, die in der <a href="_3d_ansicht.htm" class="topiclink">3D-Ansicht</a> eingezeichnet werden.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-weight: bold;">Schriftgröße (Diagramme)</span></p>
+<p style="text-align: justify;">Mit dieser Option können sie die Größe der Schriften in den verschiedenen Diagrammen verändern. Sie haben die Wahl zwischen kleinen, mittleren und großen Schriften.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-weight: bold;">Klickgenauigkeit</span></p>
+<p style="text-align: justify;">Die Klickgenauigkeit wirkt sich überall dort aus, wo sie in SEE++ auf Punkte klicken. In der 3D-Ansicht betrifft dies beispielsweise die Insertionspunkte, in den Diagrammen das Positionskreuz. Wählen sie einen Wert im Bereich &quot;Niedrig&quot;, um eine große Toleranz bei der Positionierung des Mauszeigers über anklickbaren Punkten zu erreichen (Mauszeiger ändert z.B. schon in größerer Entfernung eines Insertionspunktes seine Form). Bestätigen sie den Dialog mit &quot;OK&quot;, wird die Änderung umgehend wirksam.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-weight: bold;">Iterationsmaximum</span></p>
+<p style="text-align: justify;">Das Iterationsmaximum ist eine Einstellung, die für das Verfahren zur nicht-linearen Optimierung verwendet wird. Erhöhen sie diesen Wert, wenn SEE++ Simulationsergebnisse liefert, die offensichtlich einem zu frühen Abbrechen bei der Suche nach einer Augenposition entsprechen. Verringern sie diesen Wert, wenn SEE++ sehr lange an dem Simulationsergebnis rechnen muss. Die Werte sollten in einem Intervall von 100 bis 2000 liegen!</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:60px; padding:0; border:none"><p style="text-align: justify;"><img width="54" height="54" style="margin:0;width:54px;height:54px;border:none" src="attention.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Ändern sie diesen Wert nur, wenn sie absolut sicher sind. Ein Änderung dieses Wertes kann sämtliche Simulationsergebnisse ungültig machen.</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-weight: bold;">Terminationskriterium</span></p>
+<p style="text-align: justify;">Diese Option lässt die Genauigkeit einstellen, mit der SEE++ Simulationsergebnisse errechnet. Die Standardeinstellung bedeutet, dass SEE++ mit drei Nachkommastellen rechnet. Wertänderungen sollten in einem Intervall von 1e-03 bis 1e-15 liegen.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:60px; padding:0; border:none"><p style="text-align: justify;"><img width="54" height="54" style="margin:0;width:54px;height:54px;border:none" src="attention.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Ändern sie diesen Wert nur, wenn sie absolut sicher sind. Ein Änderung dieses Wertes kann sämtliche Simulationsergebnisse ungültig machen.</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-weight: bold;">Aktuelle Cache-Größe (MB)</span></p>
+<p style="text-align: justify;">Gibt die momentane Größe des Caches für Berechnungen in Megabytes an. Dieser Wert kann nicht geändert werden.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-weight: bold;">Maximale Cache-Größe (MB)</span></p>
+<p style="text-align: justify;">SEE++ verwendet intern einen Cache (Zwischenspeicher) um bereits berechnete Simulationen nicht immer neu berechnen zu müssen. Mit dieser Option können sie die maximale Grenze des Caches in Megabytes festlegen. Wenn sie die maximale Größe auf 0 setzen, dann wird der Cache deaktiviert (nicht empfohlen!). Erhöhen sie die maximale Cache-Größe nur, wenn ihr Computer über sehr viel Hauptspeicher (&gt;2GB) verfügt, da das Programm sonst unter Umständen langsamer wird.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-weight: bold;">Rechengenauigkeit</span></p>
+<p style="text-align: justify;">Die Rechengenauigkeit ist eine Einstellung, die für das Verfahren zur nicht-linearen Optimierung verwendet wird. Dieser Wert bestimmt, wie oft SEE++ bei der Berechnung eines Wertes die Startwerte für die Berechnung verändert, um ein lokales Minimum ausschließen zu können. Verändern sie diese Einstellung wenn sie der Meinung sind, dass SEE++ lokale Minima als Simulationsergebnisse anzeigt. Üblicherweise braucht die Standardeinstellung nicht verändert werden.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:60px; padding:0; border:none"><p style="text-align: justify;"><img width="54" height="54" style="margin:0;width:54px;height:54px;border:none" src="attention.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Ändern sie diesen Wert nur, wenn sie absolut sicher sind. Ein Änderung dieses Wertes kann sämtliche Simulationsergebnisse ungültig machen.</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-weight: bold;">Hintergrund (3D-Modell)</span></p>
+<p style="text-align: justify;">Hier können sie die Hintergrundfarbe der 3D-Ansicht ändern. Standardmäßig ist hier die Farbe mit den Werten &quot;Rot: 114 Grün: 179 Blau: 255&quot; eingestellt. Klicken sie auf &quot;Ändern...&quot; um eine neue Hintergrundfarbe zu wählen. Mit einem Klick auf &quot;Zurücksetzen&quot; können sie die Standardfarbe wiederherstellen.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-weight: bold;">Werteverlauf-Tooltips in Dialogen anzeigen</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:309px; padding:0; border:none"><p style="text-align: justify;"><img width="307" height="198" style="margin:0;width:307px;height:198px;border:none" src="history_tooltips.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Mit dieser Option können sie festlegen, ob Tooltips mit einer Liste der vorhergehenden Werte (auf Basis der verschiedenen <a href="szenarien.htm" class="topiclink">Szenarien</a>) eines bestimmten Parameters in den Dialogen zur Veränderung der medizinischen Stammdaten (<a href="bulbusdaten.htm" class="topiclink">Bulbusdaten</a>, <a href="muskeldaten.htm" class="topiclink">Muskeldaten</a>, <a href="innervationsverteilung.htm" class="topiclink">Innervationsverteilung</a>, <a href="motorische_fusionsbreite.htm" class="topiclink">motorische Fusionsbreite</a>) angezeigt werden sollen.</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;">In den Tooltips können sie einen der früheren Werte anklicken, um ihn in das entsprechende Eingabefeld zu kopieren. Außerdem wird in den Tooltips noch das aktuelle Modell angezeigt. Wenn sich ein Wert im Vergleich zum aktuell gewählten Szenario oder dem Szenario, unter dem sich das aktuelle Szenario befindet, geändert hat, dann wird das Eingabefeld zusätzlich mit einem roten Strich auf der linken Seite markiert.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><a id="aenderungen_anzeigen" class="hmanchor"></a><span style="font-weight: bold;">Änderungen bei Rückgängig/Wiederholen anzeigen</span></p>
+<p style="text-align: justify;"><img width="443" height="203" style="margin:0;width:443px;height:203px;border:none" src="undo_change_history.jpg"/></p>
+<p style="text-align: justify;">Wenn sie über die Symbolleiste für &quot;Allgemeine Funktionen&quot; oder über das Hauptmenü unter &quot;Stammdaten&quot; eine Änderung rückgängig machen oder wiederherstellen, dann wird standardmäßig ein Dialog angezeigt, in dem sie eine kurze Übersicht über die Änderungen bekommen. Mit dieser Option können sie die Anzeige dieses Dialogs ausschalten, wodurch das Rückgängig-machen oder Wiederherstellen einer Änderung direkt durchgeführt wird.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-weight: bold;">Zugeordnete Ansicht immer automatisch mit Szenario laden</span></p>
+<p style="text-align: justify;">Sollte einem <a href="szenarien.htm" class="topiclink">Szenario</a> eine <a href="szenarienansichten.htm" class="topiclink">Ansicht zugeordnet</a> sein, dann wird standardmäßig beim Laden eines Szenarios automatisch die zugeordnete Ansicht mitgeladen (die aktuelle Ansicht wird dabei überschrieben). Wenn sie nicht möchten, dass zugeordnete Ansichten automatisch mit einem Szenario geladen werden, dann können sie dieses Verhalten mit dieser Option abschalten.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-weight: bold;">Fixationsposition bei Fixationswechsel auf anderes Auge übernehmen</span></p>
+<p style="text-align: justify;">Wird das aktuell fixierende Auge mit Hilfe der <a href="_3d_ansichtsoptionen.htm" class="topiclink">&quot;Symbolleiste für die 3D-Ansicht&quot;</a> oder durch Drücken der Tabulatortaste gewechselt, dann wird nach dem Wechsel die Blickposition des neuen fixierenden Auges auf die Position des alten fixierenden Auges gesetzt. Wenn sie das nicht möchten, dann können sie dieses Verhalten mit dieser Option abschalten. Bei der Simulation des <a href="cover_test.htm" class="topiclink">Cover Tests</a> wird die Blickposition des neuen fixierenden Auges nach einem Fixationswechsel immer auf die Position des alten fixierenden Auges gesetzt, unabhängig von der Einstellung dieser Option.</p>
+
+</DIV>
+
+
+</body>
+</html>

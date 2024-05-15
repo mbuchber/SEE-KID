@@ -1,0 +1,266 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Blickschema</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Blickschema,Simulation,Simulationsbeschreibung,Hess-Diagramm,Fixationsposition,Schielwinkel,Parese,Links-Fixation,Rechts-Fixation,Stammdaten-&gt;Blickschema,Med. Stammdaten-&gt;Blickschema,Szenario,Fixationspunkte,Blickschema-Datei,Laden und Speichern von Blickschema-Dateien,Kopfneigungswinkel,Orbit,Hauptblickrichtungen,Horizontalabweichung,Vertikalabweichung,Torsionsabweichung,X-Achse spiegeln,Diagramme vertauschen,Orbit-Datei importieren,Prismendioptrien,Drucken,Seitenansicht,Als Bild speichern,Gemessenes Blickschema,Hess-Lancaster Test,Textuell Eingeben">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "blickschema.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <p><span style="font-size: 14pt; font-weight: bold;">Blickschema</span></p>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="motorische_fusionsbreite.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="szenarien.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<p style="text-align: justify;">Ein Blickschema bildet die Basis für die Simulation des Hess-Lancaster Tests. Bei der Durchführung der Simulation wird für jeden im Blickschema eingezeichneten Punkt eine Fixation des jeweiligen fixierenden Auges durchgeführt. Das andere Auge wird dann, gemäß der Simulationsbeschreibung, als folgendes Auge betrachtet und entsprechend der pathologischen Situation vom fixierenden Auge abweichen. Im Hess-Lancaster Diagramm können den vom Blickschema angegebenen Fixationspositionen die blauen Punkte zugeordnet werden. Die roten Punkte beschreiben die beim Test resultierenden Abweichungspunkte des folgenden Auges.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:247px; padding:0; border:none"><p style="text-align: justify;"><img width="247" height="320" style="margin:0;width:247px;height:320px;border:none" src="gaze_pattern_hess_diagram.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Als Beispiel sei hier eine Links-Fixation angegeben. Dies bedeutet, dass das linke Auge nacheinander die blau dargestellten Blickpositionen einnimmt und dann das SEE++ System die Position des hier rechten folgenden Auges bei gegebener Pathologie (hier eine Parese des rechten m. rectus medialis) ermittelt. Der Schielwinkel lässt sich durch den Vergleich der benachbarten blauen und roten Punkte ablesen. Das vorgegebene blaue Blickschema kann im Blickschema-Dialog verändert werden. Dabei gibt es ein komplettes Blickschema für Rechts- und Links-Fixation, da der Hess-Test für beide Augen (einmal links fixierend, dann rechts fixierend) durchgeführt wird. Das Editieren eines Blickschemas ist dann notwendig, wenn ein fixierendes Auge pathologisch reagiert und möglicherweise gewisse Fixationspunkte (blau) nicht mehr erreichen kann. Dann kann man diese Punkte entweder löschen, oder das Blickschema so verändern, dass eine Fixation wieder möglich wird.</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;">Der Dialog zum Ändern eines Blickschemas wird über das Hauptmenü &quot;Stammdaten-&gt;Blickschema&quot; oder über die Treeview unter &quot;Med. Stammdaten-&gt;Blickschema&quot; aufgerufen. Über diesen Dialog wird jeweils das Blickschema des aktuellen Szenarios bearbeitet. Wenn sie das Blickschema eines anderen Szenarios bearbeiten möchten, dann müssen sie vorher das gewünschte Szenario als aktives Szenario setzen (siehe <a href="szenarien.htm" class="topiclink">Szenarien</a>).</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="597" height="536" style="margin:0;width:597px;height:536px;border:none" src="gaze_pattern_dialog.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Dieser Dialog zeigt das aktuelle, in blau dargestellte Blickschema für jeweils eine Fixationsrichtung an. Sie können zwischen dem Blickschema für Links- und Rechts-Fixation mit dem Kasten &quot;Schielwinkel&quot; umschalten.</p>
+<p style="text-align: justify;"><img width="289" height="52" style="margin:0;width:289px;height:52px;border:none" src="gaze_pattern_fixation.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Die Punktliste zeigt alle eingetragenen Fixationspunkte in textueller Form an:</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:144px; padding:0; border:none"><p style="text-align: justify;"><img width="142" height="185" style="margin:0;width:142px;height:185px;border:none" src="gaze_pattern_point_list.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Sie können mit einem Klick auf den jeweiligen Eintrag einen Punkt auswählen. Die Koordinaten dieses Fixationspunktes werden dann in den textuellen Feldern zum Ändern bzw. Löschen angezeigt. Außerdem wird der Punkt im Blickschema rot markiert.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:284px; padding:0; border:none"><p style="text-align: justify;"><img width="284" height="88" style="margin:0;width:284px;height:88px;border:none" src="gaze_pattern_enter_point_manual.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Um die einzelnen Fixationspunkte zu editieren, gibt es die Möglichkeit der textuellen Eingabe in den freien Feldern für Elevation/Depression und Adduktion/Abduktion.</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;">Bestätigen sie einen eingegebenen Punkt mit &quot;Übernehmen&quot; bzw. löschen sie den aktuell in der Liste markierten Punkt mit &quot;Löschen&quot;.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Wenn sie die Maus für das Editieren der Punkte verwenden möchten, so müssen sie die einzelnen Symbol-Buttons verwenden:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:36px; padding:0; border:none"><p style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_translate_button.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Drücken sie diesen Button, um die einzelnen Punkte im Blickschema mit der Maus verschieben zu können. Bewegen sie zum Verschieben die Maus anschließend über den gewünschten Punkt, drücken sie die linke Maustaste und ziehen sie den Punkt, bei gedrückter linker Maustaste, an die gewünschte Position.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:36px; padding:0; border:none"><p style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_pencil_button.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Drücken sie diesen Button, um einzelne Punkte in das Blickschema einzufügen. Bewegen sie dann die Maus auf die gewünschte Position im Diagramm und fügen sie einen neuen Punkt durch einmaliges Klicken mit der linken Maustaste ein.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:68px; padding:0; border:none"><p style="text-align: justify;"><img width="68" height="71" style="margin:0;width:68px;height:71px;border:none" src="gaze_pattern_dialog_connect_points.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Weiters bietet diese Funktion die Möglichkeit, zwei Punkte miteinander zu verbinden, indem sie auf einen bereits existierenden Punkt mit der linken Maustaste klicken, und, bei gedrückter Maustaste, eine Linie zu einem anderen Punkt ziehen. Die Linie wird dann gezeichnet, wenn sie die linke Maustaste über dem Zielpunkt loslassen.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:126px; padding:0; border:none"><p style="text-align: justify;"><img width="126" height="51" style="margin:0;width:126px;height:51px;border:none" src="gaze_pattern_snap.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Der Fang bestimmt die Schrittweite in der Punkte im Blickschema mit der Maus verschoben oder gesetzt werden können. Ein Fang von 5 entspricht also einer Schrittweite von 5°. Verringern sie den Fang, um Punkte mit der Maus genauer platzieren zu können.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_delete_point_button.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Drücken sie diesen Button, um einzelne Punkte im Blickschema zu löschen. Bewegen sie dann die Maus über den zu löschenden Punkt im Diagramm und löschen sie ihn durch einmaliges Klicken mit der linken Maustaste.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_copy_button.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Mit diesem Button können sie die (blauen oder grünen) Punkte aus einer Fixation in die jeweils andere Fixation kopieren. Sollten dabei existierende Punkte überschrieben werden, dann gibt SEE++ eine Warnung aus.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_default_pattern_button.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Mit diesem Button löschen sie alle Punkte aus dem aktuellen Blickschema und ersetzen diese durch das Einheitsblickschema (9 Punkte in die einzelnen Hauptblickrichtungen mit einem Ausdehnungswinkel von jeweils 30°).</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_delete_all_button.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Dieser Button löscht alle Fixationspunkte in dem aktuellen Blickschema.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_load_button.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Mit dieser Funktion können sie ein Blickschema aus einer Datei laden. Beim Laden einer Blickschema-Datei wird das aktuelle Blickschema durch jenes aus der Datei ersetzt.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;"><img width="561" height="417" style="margin:0;width:561px;height:417px;border:none" src="gaze_pattern_load_dialog.jpg"/></p>
+<p style="text-align: justify;">Nach Klicken des Buttons für das Laden eines Blickschemas öffnet sich der Dialog zur Auswahl einer Blickschema-Datei. Diese Dateien haben die Endung &quot;.pat&quot;. Navigieren sie in das jeweilige Verzeichnis und klicken sie auf die .pat-Datei, die sie laden wollen. Danach klicken sie auf &quot;Open&quot; bzw. &quot;Öffnen&quot;, um die Datei zu laden. Wenn sie auf den Button &quot;Cancel&quot; bzw. &quot;Abbrechen&quot; drücken, wird keine Datei geladen und das aktuelle Blickschema bleibt erhalten.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:59px; padding:0; border:none"><p style="text-align: justify;"><img width="54" height="54" style="margin:0;width:54px;height:54px;border:none" src="attention.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Beachten sie bitte, dass sich das Laden und Speichern von Blickschema-Dateien nur auf das aktuelle Blickschema und die aktuell gewählten Punkte bezieht, das heißt es werden entweder nur die blauen oder grünen Punkte für die Links- oder Rechts-Fixation gespeichert bzw. ersetzt. Wenn sie das Blickschema für beide Fixationen ersetzen möchten, müssen sie auf z.B. Links-Fixation umschalten und wieder eine Blickschema-Datei laden oder durch Klicken auf den Button für das Kopieren eines Blickschemas das jeweilige Blickschema in die andere Fixation kopieren.</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_save_button.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Verwenden sie diese Funktion, um ein vorhandenes Blickschema in eine Datei zu speichern. Dateien, die Blickschemata speichern, haben die Endung &quot;.pat&quot; und können jederzeit im Blickschema-Dialog mit der Öffnen-Funktion (siehe oben) wieder geladen werden.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;"><img width="561" height="417" style="margin:0;width:561px;height:417px;border:none" src="gaze_pattern_save_dialog.jpg"/></p>
+<p style="text-align: justify;">Nach Klicken des Buttons für das Speichern eines Blickschemas öffnet sich der Dialog zur Auswahl des Speicherortes bzw. Dateinamens. Gehen sie hier wie beim Öffnen von Blickschema-Dateien vor, indem sie in das jeweilige Verzeichnis navigieren und nach Benennung der Datei diese durch klicken auf &quot;Save&quot; bzw. &quot;Speichern&quot; ablegen.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Neben dem Fixations-Blickschema für die Simulation des Hess-Lancaster Tests bietet SEE++ zusätzlich die Möglichkeit ein &quot;reales&quot; am Patienten in der Klinik gemessenes Blickschema für Vergleichszwecke einzuzeichnen.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_switch_points_button.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Dieser Button schaltet von blauen auf grüne Punkte um, wobei die grünen Punkte reale Patientenwerte repräsentieren. Das Einzeichnen des grünen Blickschemas für Rechts- als auch Links-Fixation funktioniert gleich wie bei den Fixationspunkten für das blaue Blickschema (siehe oben). Auch das Laden und Speichern von grünen Blickschemata ist analog anzuwenden.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:181px; padding:0; border:none"><p style="text-align: justify;"><img width="181" height="41" style="margin:0;width:181px;height:41px;border:none" src="gaze_pattern_head_tilt.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Bei einem gemessenen grünen Blickschema haben sie zusätzlich noch die Möglichkeit anzugeben, in welcher Kopfneigung das Blickschema gemessen wurde. Der eingegebene Kopfneigungswinkel wird bei den Zusatzinformationen im Hess-Diagramm angezeigt, er hat jedoch keinen Einfluss auf die Simulation.</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:215px; padding:0; border:none"><p style="text-align: justify;"><img width="215" height="244" style="margin:0;width:215px;height:244px;border:none" src="gaze_pattern_hess_diagram_green.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Wird der Hess-Lancaster Test von SEE++ simuliert und das Ergebnis angezeigt, dann wird das grüne &quot;gemessene&quot; Blickschema, falls eingezeichnet, zusätzlich eingeblendet um einen Vergleich mit klinischen Messdaten zu ermöglichen.</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Im Computersystem <span style="color: #0000ff; text-decoration: underline;"><a href="http://www.eidactics.com" target="_blank" class="weblink">Orbit™</a></span> werden Blickschemata auch in den einzelnen &quot;Simulationsdateien&quot; gespeichert. SEE++ bietet die Möglichkeit, ein Blickschema aus einer Orbit-Datei zu importieren. Verwenden sie hier den Button &quot;Importieren...&quot;, um diese Funktion auszuführen. Die Vorgehensweise ist gleich wie beim Laden von SEE++ Blickschema Dateien (.pat-Dateien).</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><a id="textuell" class="hmanchor"></a>Der Button &quot;Textuell eingeben...&quot; bietet die Möglichkeit, ein Blickschema per Standardvorlage für neun Hauptblickrichtungen zu erfassen.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="686" height="424" style="margin:0;width:686px;height:424px;border:none" src="gaze_pattern_squint_angle_dialog.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Die textuelle Eingabe bietet neben der Eingabe von Horizontalabweichung (HD), Vertikalabweichung (VD) und Torsionsabweichung (siehe <a href="simulation.htm" class="topiclink">Simulation</a>) die Möglichkeit, das entstehende Diagramm in allen horizontalen Achsen zu vertauschen, da die klinische Verwendung nicht immer einheitlich definiert ist.</p>
+<p style="text-align: justify;">Verwenden sie &quot;X-Achse spiegeln&quot;, um die entstehenden Punkte in dem jeweiligen Diagramm zu spiegeln. Verwenden sie &quot;Diagramme vertauschen&quot;, um Links- und Rechts-Fixation zu vertauschen. Hier gilt standardmäßig die Konvention der Sicht des Patienten, d.h. das <span style="font-weight: bold;">rechte Auge</span> ist aus Sicht des <span style="font-weight: bold;">Untersuchers links</span>. Der maximale Ausdehnungswinkel für die neun Hauptblickrichtungen kann im Feld &quot;Winkel&quot; eingestellt werden. Weiters können die Abweichungen entweder in Grad oder in Prismendioptrien eingegeben werden. Wenn sie einen Punkt auslassen möchten (weil er z.B. vom Patienten nicht fixiert werden konnte), dann löschen sie einfach den kompletten Inhalt (auch 0.0 muss gelöscht werden!) der drei Abweichungsfelder (HD, VD und Torsion) des entsprechenden Punktes bzw. lassen sie alle drei Felder leer. Wurde bei einem Patienten in einer Blickposition keine Torsion gemessen, dann löschen sie den Inhalt des Feldes für die Torsion bzw. lassen sie das Feld leer (0.0 würde eine gemessene Torsion von 0 Grad bedeuten).</p>
+<p style="text-align: justify;">Ein textuell eingegebenes Blickschema kann <a href="bilderspeichern.htm" class="topiclink">als Bild gespeichert</a>, in die Zwischenablage kopiert oder <a href="drucken.htm" class="topiclink">ausgedruckt</a> werden. Außerdem können sie in der <a href="seitenansicht.htm" class="topiclink">Seitenansicht</a> das zu druckende Blickschema vorab kontrollieren.<br />
+&nbsp;</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:60px; padding:0; border:none"><p style="text-align: justify;"><img width="54" height="54" style="margin:0;width:54px;height:54px;border:none" src="attention.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Beachten sie dabei die <a href="simulation.htm" class="topiclink">unterschiedlichen Vorzeichen für Rechts- und Links-Fixation</a>, die <span style="font-weight: bold;">nur</span> hier bei der textuellen Eingabe mit Standardvorlage einzuhalten sind.</p>
+</td>
+</tr>
+</table>
+</div>
+
+</DIV>
+
+
+</body>
+</html>

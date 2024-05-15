@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Supranukleäre Augenbewegungsstörung</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Supranukleäre Augenbewegungsstörung,Simulation der Pathologie,Blicklähmung,Nervenschädigung,Augenbewegungsstörung,Neuer Patient,Innervationsverteilung,M. rectus lateralis,M. rectus medialis,Operative Korrektur,Kestenbaum'sche Operation,Rechtsblicklähmung,Textuell Operieren">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "supranukleaererectusmedialis.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <p><span style="font-size: 14pt; font-weight: bold;">Supranukleäre Augenbewegungsstörung</span></p>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="trochlearisparese.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="seeppreferenz.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<p style="text-align: justify;">Das dritte Beispiel beschreibt eine rechtsseitige Blicklähmung. Die Schädigung soll kortikal an der Großhirnrinde oberhalb der Augenmuskelkerne liegen. Häufig sind Schlaganfälle Ursache für Blicklähmungen. Durch lokale Minderdurchblutung einer Großhirnhemisphäre, linksseitig bei Blicklähmung nach rechts, werden die Blickwendungsimpulse auf die Gegenseite (in dieser Simulation nach rechts) gelähmt.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Simulation der Pathologie</span></p>
+<p style="text-align: justify;">Im Gegensatz zur peripheren Nervenschädigung ist bei der supranukleären Augenbewegungsstörung der zentrale Nervenimpuls auf beide Augen gestört. Die Simulation einer supranukleären Augenbewegungsstörung muss man daher mit Hilfe der Funktion Innervationsverteilung von beiden Augen in SEE++ durchführen.</p>
+<p style="text-align: justify;">Als erster Schritt der Simulation wird ein neuer Patient angelegt. Dazu dient der Menüpunkt &quot;<span style="font-style: italic;">Patient</span>&quot; - &quot;<span style="font-style: italic;">Neuer Patient</span>&quot;, welcher folgenden Dialog anzeigt:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="471" height="373" style="margin:0;width:471px;height:373px;border:none" src="bsp3_patient.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">In diesem Dialog können Daten über den Patienten eingegeben werden. Nach dem Klicken auf den &quot;OK&quot; Button ist der neue Patient angelegt und es kann mit der Simulation begonnen werden.</p>
+<p style="text-align: justify;">Da eine Rechtsblicklähmung simuliert werden soll, muss die Innervation für den m. rectus lateralis des rechten Auges um 40 % reduziert werden und gleichzeitig die Innervation des m. rectus medialis des linken Auges ebenfalls um 40 % herabgesetzt werden. Diese Veränderung der Innervation kann in SEE++ im Innervationsverteilungsdialog durchgeführt werden, welcher entweder durch den Menüpunkt &quot;<span style="font-style: italic;">Stammdaten</span>&quot; - &quot;<span style="font-style: italic;">Rechtes Auge</span>&quot; bzw. &quot;<span style="font-style: italic;">Linkes Auge</span>&quot; - &quot;<span style="font-style: italic;">Innervationsverteilung</span>&quot;, oder durch den Baum im linken Teil des Programmfensters über den Punkt &quot;Innervationsverteilung&quot; in der Sektion für das rechte bzw. linke Auge aufgerufen wird.</p>
+<p style="text-align: justify;">Als erstes wird die Innervation für den m. rectus lateralis (<span style="color: #ff0000;">Abducens</span>) des rechten Auges geändert, indem man den Innervationsverteilungsdialog, wie gerade beschrieben, aufruft. Im Dialog ändert man dann die Innervation für den m. rectus lateralis von 100 % auf <span style="font-weight: bold;">40 %</span>, so wie dieses Bild zeigt:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="570" height="255" style="margin:0;width:570px;height:255px;border:none" src="bsp3_innv1.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Nachdem der Innervationsverteilungsdialog für das rechte Auge mit einem Klick auf den &quot;OK&quot; Button geschlossen wurde, muss noch die Innervation für den m. rectus medialis des linken Auges reduziert werden. Dazu wird wieder der Innervationsverteilungsdialog (diesmal jedoch der für das linke Auge) verwendet, in dem dann die Änderung der Innervation für den m. rectus medialis (<span style="color: #ff0000;">Oculo/RM</span>) von 100 % auf <span style="font-weight: bold;">40 %</span> entsprechend dem folgenden Bild durchgeführt wird:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="570" height="255" style="margin:0;width:570px;height:255px;border:none" src="bsp3_innv2.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Nach einem Klick auf den &quot;OK&quot; Button kann man sich nun das Hess-Diagramm berechnen lassen, welches die Änderung im Innervationsverteilungsdialog sofort berücksichtigt. Standardmäßig wird das Hess-Diagramm für das linke Auge bei Rechts-Fixation im Diagramm-Fenster 1 angezeigt. Nachdem die Berechnung des Hess-Diagramms erfolgreich abgeschlossen wurde sieht man folgendes:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="768" height="692" style="margin:0;width:768px;height:692px;border:none" src="bsp3_scr1.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Um das zweite Hess-Diagramm für das rechte Auge bei Links-Fixation anzuzeigen, genügt ein Klick auf das Menü &quot;<span style="font-style: italic;">Ansicht</span>&quot; - &quot;<span style="font-style: italic;">Diagramm-Fenster 2</span>&quot;. Im nun eingeblendeten &nbsp;Diagramm-Fenster 2 wird standardmäßig das Hess-Diagramm für das rechte Auge bei Links-Fixation angezeigt. Sollte dies nicht der Fall sein, dann klicken sie mit der rechten Maustaste in eines der Diagramm-Fenster und wählen sie in dem Menü das gewünschte Diagramm aus, indem sie es mit der linken Maustaste anklicken. Wenn man nun die Größe der beiden Diagramme entsprechend anpasst, indem man mit der Maus auf die Trennlinie zwischen den Diagrammen klickt und sie mit der gedrückten linken Maustaste verschiebt, so erhält man folgendes Bild:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="768" height="692" style="margin:0;width:768px;height:692px;border:none" src="bsp3_scr2.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Aus den Hess-Diagrammen bei Rechts- und Links-Fixation ist das nicht mehr vorhandene rechte Blickfeld deutlich erkennbar (fehlende konjugierte Blickbewegung nach rechts). Anhand der Ergebnisse der Simulation, die in den Hess-Diagrammen dargestellt werden, kann die Simulation der supranukleären Augenbewegungsstörung als abgeschlossen angesehen werden.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Operative Korrektur</span></p>
+<p style="text-align: justify;">Um das nach links verlagerte Blickfeld beider Augen besser nützen zu können und wenn eine Kopfzwangshaltung (Rechts-Drehung) eingenommen wird, soll der Versuch einer (unvollständigen) Kestenbaum'schen Operation gemacht werden. Das auf Grund der Rechtsblicklähmung nach links verlagerte Blickfeld beider Augen soll in die Primärposition verlagert werden. Dazu müssen beide Augen nach rechts &quot;operiert&quot; werden, das heißt am rechten Auge muss der m. rectus lateralis gestärkt werden, umgekehrt am linken Auge muss der m. rectus medialis gestärkt werden.</p>
+<p style="text-align: justify;">Als erstes soll der m. rectus lateralis des rechten Auges gefaltet werden. Um in SEE++ einen Muskel zu falten wird der Dialog &quot;Textuell Operieren&quot; verwendet, der mit dem Menüpunkt &quot;<span style="font-style: italic;">Operationen</span>&quot; - &quot;<span style="font-style: italic;">Textuell Operieren</span>&quot; aufgerufen wird. Nachdem der Dialog geöffnet wurde, werden zunächst das gewünschte Auge und der gewünschte Muskel ausgewählt, in diesem Fall das rechte Auge und der m. rectus lateralis. Nun wird eine Faltung des gewählten Muskels von 5 mm durchgeführt indem im Feld &quot;<span style="color: #ff0000;">Faltung (mm)</span>&quot; der entsprechende Wert eingetragen wird. Das folgende Bild zeigt den Dialog mit der eingetragenen Faltung:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="507" height="294" style="margin:0;width:507px;height:294px;border:none" src="bsp3_muskeldaten.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Mit einem Klick auf &quot;Aktualisieren&quot; wird die eingetragene Faltung übernommen ohne den Dialog zu schließen. Als nächstes wird nun der m. rectus medialis des linken Auges ebenfalls gefaltet. Dazu wird das linke Auge sowie der m. rectus medialis im Dialog ausgewählt und die Faltung von 5 mm im Feld &quot;<span style="color: #ff0000;">Faltung (mm)</span>&quot; eingetragen. Das nachfolgende Bild zeigt den Dialog:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="507" height="294" style="margin:0;width:507px;height:294px;border:none" src="bsp3_muskeldaten2.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Nach dem Klicken des &quot;OK&quot; Buttons sind somit beide Muskeln um 5 mm gefaltet und der Dialog wird geschlossen. Nun führt das Programm eine Berechnung der beiden Hess-Diagramme durch und wenn die Berechnung fertig gestellt ist ergibt sich folgendes Bild:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="768" height="692" style="margin:0;width:768px;height:692px;border:none" src="bsp3_scr3.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Wenn man sich nun die beiden Hess-Diagramme ansieht, so kann man erkennen, dass das Ziel der operativen Korrektur im Sinne der angenommenen Pathologie erreicht wurde.</p>
+
+</DIV>
+
+
+</body>
+</html>

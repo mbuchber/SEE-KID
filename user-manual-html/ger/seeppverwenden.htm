@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>SEE++ verwenden...</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Prozess,Parametrierung,Patientendaten,Simulationsabfolge,Simulation,Pathologie,Vergleich mit Patienten-Messdaten,Hess-Lancaster,Simulationsergebnis,Simulation eines operativen Eingriffs,3D-Modell,Modellparameter,Beurteilung der Ergebnisse,Patientenspezifische Situation">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "seeppverwenden.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <p><span style="font-size: 14pt; font-weight: bold;">SEE++ verwenden...</span></p>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="grundlagenderanatomie.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="overview.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<p style="text-align: justify;">SEE++ wird in einem durchgängigen Prozess verwendet:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify; margin: 0 0 0 27px;"><img width="591" height="324" style="margin:0;width:591px;height:324px;border:none" src="seepp_prozesse.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">1. Parametrierung mit Patientendaten</span></p>
+<p style="text-align: justify;">Ziel von SEE++ ist es, eine möglichst realitätsnahe Darstellung einer patientenspezifischen Situation zu ermöglichen. In diesem ersten Schritt einer Simulationsabfolge wird daher das Modell mit Werten, die direkt am Patienten gemessen werden, parametriert. Dabei können Parameter wie Bulbusradius, Cornea, Muskellängen, Insertionen, Sehnen u.ä. modifiziert werden. Gleichzeitig werden allgemeine Daten wie Name oder Beschreibung eingegeben.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">2. Simulation einer Pathologie</span></p>
+<p style="text-align: justify;">Bei der Simulation einer Pathologie werden Modellparameter so verändert, dass die resultierende Modellprognose möglichst den gemessenen Werten des Patienten entspricht. Die Modellprognose wird in SEE++ durch die Simulation eines klinischen Hess-Lancaster Tests erreicht, wobei hier die Darstellungen für Rechts- bzw. Links-Fixation verwendet wird. Durch Bestimmung der Hess-Lancaster Daten des Patienten können anschließend diese Werte mit den simulierten Daten verglichen werden, um so abzuschätzen, ob die Simulation der Pathologie des Patienten entspricht. Auch die 3D-Darstellung des Patienten bietet hinsichtlich der Beurteilung einer Simulation eine zusätzliche Unterstützung.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">3. Vergleich der Ergebnisse mit den Patienten-Messdaten</span></p>
+<p style="text-align: justify;">Der Vergleich bezieht sich auf die vorher schon erwähnte Hess-Lancaster Untersuchung, wobei durch den Prozess des Vergleichens auch einen Verifikation der gestellten Diagnose unterstützt werden kann. In diesem Schritt wird also abgeschätzt, ob das Simulationsergebnis mit den gemessenen Patientendaten ausreichend übereinstimmt. Dies bietet gleichzeitig eine Basis für eine spätere simulierte Behandlung durch interaktives virtuelles Operieren der modellierten Pathologie.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">4. Simulation eines operativen Eingriffs</span></p>
+<p style="text-align: justify;">Hier wird nun die eigentliche Operation simuliert. Dabei werden im 3D-Modell interaktiv mit der Maus verschiedene Modellparameter geändert. Bezugspunkte unterstützen orientierend die Dosierung des Eingriffs. Weiters stehen verschiedene Operationstechniken wie Vor/Rücklagern und tangentiales Verlagern von Muskelinsertionen zur Verfügung. Muskelkraft- bzw. innervationsbezogene Parameter werden über entsprechende Eingabemasken im Programm manuell so verändert, dass sie einem vergleichbaren Eingriff entsprechen. Es kann beispielsweise eine Muskelresektion durch die Veränderung von Sehnen- und Muskellänge durchgeführt werden. Das 3D-Modell visualisiert diese Veränderungen umgehend nach Bestätigung der eingegebenen Werte.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">5. Beurteilung der Ergebnisse</span></p>
+<p style="text-align: justify;">Wie schon in Schritt 3 wird wieder ein Vergleich der Simulationsergebnisse durchgeführt. Anhand des binokularen Hess-Lancaster Tests kann nun beurteilt werden, wie erfolgreich ein operativer Eingriff hinsichtlich der Korrektur einer pathologischen Situation ist, und ob ggf. noch zusätzliche Änderungen (Simulationsversuche) notwendig sind.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">6. Simulationsergebnis</span></p>
+<p style="text-align: justify;">Das Simulationsergebnis stellt den letzten Zustand aller Modellparameter in Abfolge der Simulation einer Pathologie und Operation mit SEE++ dar. Das System ermöglicht es, diese Ergebnisse in Form von so genannten Szenarien einem Patienten zuzuordnen und zu archivieren. Es können damit die Ergebnisse verschiedener Simulationen miteinander verglichen und z.B. Simulationsstrategien entwickelt werden. Jedes Szenario speichert einen beliebigen Schritt einer Behandlung eines Patienten und kann nachträglich in textueller oder grafischer Form wieder abgerufen werden.</p>
+
+</DIV>
+
+
+</body>
+</html>

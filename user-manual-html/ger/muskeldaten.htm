@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Muskeldaten</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Muskeldaten,Kräftemodell,Kraftentwicklung,Muskelparesen,Überfunktionen,Fibrosen,Stammdaten-&gt;Linkes Auge-&gt;Muskeln,Med. Stammdaten-&gt;Linkes Auge-&gt;Muskeldaten,Karteikarten,Muskelkurven,Kamerarotation,Zoomfunktion,Kamera-Reset,Ausgangsstellung,Darstellungsoptionen,Punkte,Drahtgitter,Schattiert,Punktdarstellung,Drahtgittermodell,Vierecksdarstellung,Koordinatenachsen,Drucken,Seitenansicht,Pulleyposition,Muskelradius,Pulleyradius,Abrollstrecke,Rollstrecke,Als Bild speichern,Geometrische Eigenschaften,Linke Maustaste,Maus-Rad,Muskelspezifische Parameter,Rechte Maustaste,Virtuelle Halbkugel">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "muskeldaten.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <p><span style="font-size: 14pt; font-weight: bold;">Muskeldaten</span></p>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="bulbusdaten.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="innervationsverteilung.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<p style="text-align: justify;">Der Muskeldaten-Dialog ist eines der zentralsten Elemente des SEE++ Systems. Hier kann das Kräftemodell pathologischen Gegebenheiten hinsichtlich einzelner Augenmuskeln angepasst werden. Alle Daten dieses Dialogs verändern die Kraftentwicklung aller oder nur bestimmter Muskeln. Somit können Muskelparesen, Überfunktionen oder Fibrosen simuliert werden.</p>
+<p style="text-align: justify;">Die Muskeldaten sind wiederum für alle von <a href="kraeftemodell.htm" class="topiclink">SEE++ simulierten Augen</a> (linkes Auge, rechtes Auge und Referenzauge) vorhanden. In dieser Erklärung wird exemplarisch wieder auf das linke Auge Bezug genommen.</p>
+<p style="text-align: justify;">Diesen Dialog erreichen sie über das Hauptmenü unter &quot;Stammdaten-&gt;Linkes Auge-&gt;Muskeln&quot; oder über die Treeview unter &quot;Med. Stammdaten-&gt;Linkes Auge-&gt;Muskeldaten&quot;. Der Dialog besteht aus verschiedenen &quot;Karteikarten&quot;, wobei jeweils eine Karteikarte einen der sechs Augenmuskeln repräsentiert. Zusätzlich gibt es für das gesamte Modell angewandte Einstellungen, die in der Karteikarte &quot;Allgemein&quot; zusammengefasst sind. Wählen sie die gewünschte Karteikarte einfach durch einen Klick mit der linken Maustaste auf die entsprechende Überschrift. Eine andere Möglichkeit, direkt auf die Karteikarte eines Muskels zu gelangen, ist in der <a href="_3d_ansicht.htm" class="topiclink">3D-Ansicht</a> einen Insertionspunkt mit der linken Maustaste kurz doppelzuklicken.</p>
+<p style="text-align: justify;">Standardmäßig wird dieser Dialog mit der aktiven Karteikarte &quot;Allgemein&quot; angezeigt. Hier werden die drei <a href="kraeftemodell.htm#kraeftemodell_allgemeine_parameter" class="topiclink">allgemeinen Parameter für das gesamte Kräftemodell</a> verändert. Bestätigen sie ihre Änderungen mit dem Button &quot;OK&quot; bzw. verwerfen sie ihre Änderungen durch Klicken auf &quot;Abbrechen&quot;. Der Button &quot;Aktualisieren&quot; ermöglicht eine sofortige Übernahme der Änderungen, ohne den Dialog schließen zu müssen, d.h. es wird im Hintergrund sofort von SEE++ die Berechnung des Hess-Lancaster Tests mit den geänderten Werten gestartet. Diese Option ist nützlich, wenn sie zusätzlich zu den allgemeinen Parametern auch noch <a href="kraeftemodell.htm#muskelspezifischeparameter" class="topiclink">muskelspezifische Parameter</a> in einem Durchgang ändern möchten.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="750" height="593" style="margin:0;width:750px;height:593px;border:none" src="muscle_data_general_params.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Wenn sie nun eine andere Karteikarte anwählen, so sieht diese für alle Muskeln gleich aus:</p>
+<p style="text-align: justify;"><img width="750" height="593" style="margin:0;width:750px;height:593px;border:none" src="muscle_data_page.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Zunächst bietet dieser Dialog die Möglichkeit, einige geometrische Eigenschaften (Ursprung, Pulley und Insertion) des Muskels manuell zu verändern. Alle Koordinaten sind entsprechend dem verwendeten Auge im definierten kopffixen <a href="grundlagenderanatomie.htm#koordinatensystem" class="topiclink">Koordinatensystem</a> anzugeben. Diese Parameter wirken sich in einer Veränderung des Muskelpfads aus, und somit auch auf das Simulationsergebnis. Alle Werte sind in Primärposition definiert, d.h. auch wenn die <a href="_3d_ansicht.htm" class="topiclink">3D-Ansicht</a> eine andere Augenposition darstellt, bezieht sich der Muskeldialog in seinen geometrischen Werten immer auf die <a href="grundlagenderanatomie.htm#augenpositionen" class="topiclink">Primärposition</a>. Wenn sie die geometrischen Werte in einer bestimmten Blickposition wissen möchten, so können sie dafür den <a href="stateviewer.htm" class="topiclink">Stateviewer</a> verwenden.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Die Darstellung der drei <a href="kinematischemodelle.htm" class="topiclink">Muskelkurven</a> in der rechten Hälfte des Fensters ist der <a href="_3d_ansicht.htm" class="topiclink">3D-Ansicht</a> nachempfunden. Jedes Diagramm ist eine eigenständige Ansicht und kann beliebig rotiert, skaliert, gedruckt und als Bild gespeichert werden. Das Kontrollkästchen &quot;Verbunden&quot; wird dazu verwendet, um die Ansicht der einzelnen Kurven miteinander gleichzusetzen. Dies bedeutet, wenn sie bei angehaktem Kontrollkästchen &quot;Verbunden&quot; die Ansicht einer 3D-Kurve mit der Maus verändern, dann folgen alle anderen Kurven automatisch nach.</p>
+<p style="text-align: justify;">Der Button &quot;Aktualisieren&quot; ermöglicht das sofortige Übernehmen ihrer Änderungen ohne den Dialog mit &quot;OK&quot; schließen zu müssen, genau so wie bei der Karteikarte &quot;Allgemein&quot;. SEE++ beginnt nach Klicken auf &quot;Aktualisieren&quot; umgehend im Hintergrund mit der Neuberechnung des Simulationsergebnisses.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Für das Verändern der Anzeige der 3D-Muskelkurven gibt es folgende Möglichkeiten:</p>
+<p style="text-align: justify;">Beim Navigieren mit der Maus wird immer zuerst mit einer Maustaste in die Muskelkurve geklickt, die Taste wird gedrückt gehalten und dann wird bei gedrückter Taste die Maus bewegt. Zum Beenden wird die Maustaste einfach wieder losgelassen.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:30%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;"><span style="font-weight: bold;">Maustaste/Taste</span></p>
+</td>
+<td style="vertical-align:top; width:70%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;"><span style="font-weight: bold;">Aktion</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:30%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;">linke Maustaste</p>
+</td>
+<td style="vertical-align:top; width:70%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;">Rotation der gesamten Muskelkurve (Kamerarotation) mit Hilfe einer &quot;virtuellen Halbkugel&quot;. Innerhalb dieser Kugel wird um die x- und z-Achse rotiert und außerhalb um die y-Achse.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:30%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;">Drehen des Maus-Wheels (Maus-Rad) <span style="font-style: italic;">oder</span></p>
+<p style="text-align: justify;"><img width="82" height="64" style="margin:0;width:82px;height:64px;border:none" src="key_ctrl.jpg"/> + linke Maustaste</p>
+</td>
+<td style="vertical-align:top; width:70%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;">Vergrößern bzw. Verkleinern der gesamten Ansicht (Zoomfunktion).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:30%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;">Klicken mit dem Maus-Wheel (Maus-Rad) <span style="font-style: italic;">oder</span></p>
+<p style="text-align: justify;">mittlere Maustaste</p>
+</td>
+<td style="vertical-align:top; width:70%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;">Zurücksetzen der 3D-Ansicht in die Ausgangsstellung (Kamera-Reset).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:30%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;"><img width="65" height="45" style="margin:0;width:65px;height:45px;border:none" src="key_f5.jpg"/></p>
+</td>
+<td style="vertical-align:top; width:70%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;">Zurücksetzen der Anzeige aller drei 3D-Muskelkurven in die Ausgangsstellung (Kamera-Reset).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:30%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;">rechte Maustaste</p>
+</td>
+<td style="vertical-align:top; width:70%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;">Öffnen des Menüs für die Darstellungsoptionen.</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Das Menü für die Darstellungsoptionen wird in einer 3D-Kurve mit einem Klick auf die rechte Maustaste geöffnet.</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:178px; padding:0; border:none"><p style="text-align: justify;"><img width="179" height="196" style="margin:0;width:179px;height:196px;border:none" src="muscle_data_curve_menu.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Die Kurvendarstellung kann in drei verschiedenen Arten angezeigt werden:</p>
+<p style="text-align: justify; text-indent: 0; padding-left: 13px; margin: 0 0 0 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Punkte - zeigt die Muskelkurve in Punktdarstellung</p>
+<p style="text-align: justify; text-indent: 0; padding-left: 13px; margin: 0 0 0 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Drahtgitter - zeigt ein Drahtgittermodell an</p>
+<p style="text-align: justify; text-indent: 0; padding-left: 13px; margin: 0 0 0 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Schattiert - wählt zwischen einer Streifen- oder Vierecksdarstellung</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Die Option &quot;Koordinatenachsen&quot; blendet die gesamte Beschriftung des Diagramms ein oder aus. Mit der Funktion &quot;Hintergrundfarbe&quot; lässt sich der Diagrammhintergrund farblich verändern.</p>
+<p style="text-align: justify;">Wenn sie &quot;Als Bild speichern&quot; wählen erscheint der Dialog zum <a href="bilderspeichern.htm" class="topiclink">Speichern einer Bilddatei</a>. Die Funktion <a href="drucken.htm" class="topiclink">&quot;Drucken...&quot;</a> und <a href="seitenansicht.htm" class="topiclink">&quot;Seitenansicht...&quot;</a> öffnen die jeweiligen Windows® Standard Dialoge.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Verändern der Pulleyposition</span></p>
+<p style="text-align: justify;">Grundsätzlich kann der Pulley eines Muskels im 3D-Raum beliebig versetzt werden. Dies ist aber manuell nur schwer zu bewältigen, daher ermöglicht das Kontrollkästchen &quot;Pulleyradius&quot; ein Ausdehnen bzw. Verringern des Abstandes vom Rotationszentrum des Bulbus (Koordinatensystem Nullpunkt). Wenn sie dieses Kontrollkästchen mit einem Klick auf die linke Maustaste anhaken und anschließend den Pulleyradius entsprechend verändern, so werden die Koordinaten des Pulleys in X, Y und Z-Richtung automatisch über die Abstandsformel des Vektors zum <a href="grundlagenderanatomie.htm#koordinatensystem" class="topiclink">Nullpunkt des Koordinatensystems</a> berechnet.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Verändern der Insertion</span></p>
+<p style="text-align: justify;">Der Insertionspunkt eines Muskels weist die Eigenschaft auf, direkt am Bulbus anzuliegen. Deshalb ist eine &quot;freie&quot; Positionierung im 3D-Raum nur schwer abschätzbar. Das Kontrollkästchen &quot;Gesperrt&quot; ermöglicht die automatische Bestimmung der Z-Koordinate über Einsetzen in die Kugelgleichung des Bulbus, so dass nur noch X und Y-Koordinate frei wählbar bleiben. Bei geeigneter Wahl von X und Y-Koordinate bleiben aber immer noch zwei Möglichkeiten, den Insertionspunkt auf dem Bulbus zu positionieren (vordere bzw. hintere Halbkugel). Dies wird mit dem An- bzw. Abhaken des Kontrollkästchens &quot;Positiv&quot; entschieden. Wenn das Kontrollkästchen &quot;Positiv&quot; angehakt ist, dann wird jene Z-Koordinate des berechneten Insertionspunktes verwendet, die in die positive Richtung der Z-Achse des <a href="grundlagenderanatomie.htm#koordinatensystem" class="topiclink">verwendeten Koordinatensystems</a> zeigt.</p>
+<p style="text-align: justify;">Eine andere Möglichkeit, den Insertionspunkt eines Muskels zu definieren, ist die Verwendung des Kontrollkästchens &quot;Muskelradius&quot;. Hier greift dasselbe Prinzip wie bei der Bestimmung der Pulleyposition über den &quot;Pulleyradius&quot;. Der Insertionspunkt wird, gemäß des &quot;Muskelradius&quot;, entlang des Vektors zum Ursprung des verwendeten Koordinatensystems verschoben.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:59px; padding:0; border:none"><p style="text-align: justify;"><img width="45" height="45" style="margin:0;width:45px;height:45px;border:none" src="tipp_icon.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Da die geometrische Abstraktion des Bulbus auf eine Kugel reduziert ist, ein realer Bulbus aber sehr unwahrscheinlich einer perfekten Kugel nachempfunden ist, ergibt sich die Möglichkeit, dass in der 3D-Ansicht einige Muskeln nicht unmittelbar im Bereich der Insertion den Bulbus auch berühren. Da die Insertionen vollständig im 3D-Raum vermessen wurden, und in Anlehnung an einen ellipsoid geformten Bulbus definiert wurden, wird jedem Muskel ein eigener &quot;virtueller&quot; Bulbusradius zugeordnet.</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Verändern von muskelspezifischen Parametern</span></p>
+<p style="text-align: justify;">Die muskelspezifischen Parameter bilden den Kern des parametrierbaren Muskelmodells. Hier kann direkt auf die einzelnen Kraftkurven (aktive, passive und resultierende Kraft) Einfluss genommen werden. Eine Ausnahme ist der Wert &quot;Abrollstrecke&quot;, der nicht veränderbar ist. Dieser Wert zeigt die aus den geometrischen Eigenschaften resultierende <a href="grundlagenderanatomie.htm#augenpositionen" class="topiclink">Rollstrecke</a> eines Muskels in Primärposition als sphärischen Abstand zwischen <a href="grundlagenderanatomie.htm#augenpositionen" class="topiclink">Insertion und Tangentialpunkt</a> an. Die Werte sind entsprechend den beim <a href="kraeftemodell.htm#muskelspezifischeparameter" class="topiclink">&quot;Kräftemodell&quot;</a> angegebenen Ausführungen anzupassen.</p>
+
+</DIV>
+
+
+</body>
+</html>

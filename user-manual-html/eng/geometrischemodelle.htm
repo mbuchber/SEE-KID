@@ -1,0 +1,333 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Geometrical Models</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="SEE-KID model,SEE-KID active pulley model,Orbit model,String model,Tape model,Ophthalmotrope,Ruete,Donders,Helmholtz,Torsion,Eye position,Pseudotorsion,Meridians,Coordinate system,Listing,Polar coordinate system,Primary position,Listing's plane,Listing's law,Description of eye positions,Commutativity,3D space,Component angle,Sequence of rotations,Fick,Gimbal mounting,Rotation sequence,Duction,Elevation,Globe translation,Fat pad,Duane syndrome,Muscle action,Directions of pull,Muscle path,Lateral rectus muscle,Muscle origin,Point of tangency,Insertion,Orbita,Zinn's ring,Muscle force distribution,Level of depression,Level of elevation,Force distribution,Geometrical measurement of the eye,Volkmann,Data according to Volkmann,Standard eye,Data according to Miller and Demer,Muscle insertions,Lever arm,Force behavior,Rotation directions,Gaze position,Active-Pulley,Muscle insertion line,Insertion lines,Coordinate axes,Globe-fixed coordinate system,Color-coded 3D visualization,Functional topography,Geometrical models,Kinematic model,Muscle-based globe radius,Pulleys,Pulley position,Rotation,Tertiary position,Rotational components">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "geometrischemodelle.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <p><span style="font-size: 14pt; font-weight: bold;">Geometrical Models</span></p>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="overview.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="fadenmodell.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<p style="text-align: justify;">SEE++ implements purely geometrical models (string model and tape model) as well as kinematic models with geometrical components (SEE-KID model, SEE-KID active pulley model and Orbit model). For the coordinate systems and the descriptions of eye positions and rotations, common guidelines known from eye research history are used.</p>
+<p style="text-align: justify;">One of the first attempts to get a better understanding of eye motility were the so-called ophthalmotropes. In 1845, Ruete designed a mechanical model of the human eye usually built out of wood and strings, in order to make it easier to study the basic principles of eye movements. In 1848, F. C. Donders introduced Donders' law: If the eye fixates an object somewhere in space, the position of this object also determines the gaze position of the eye. But the position of the object in space does not specify the amount of torsional rotation, nor is this amount of torsion arbitrary. In fact, the amount of torsion is clearly specified through the gaze position of the eye itself.</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: center;"><img width="546" height="341" style="margin:0 auto 0 auto;width:546px;height:341px;border:none" src="ophthalmotrope.jpg"/></p>
+<p style="text-align: center;"><span style="font-weight: bold;">Halle's and Ruete's Ophthalmotrope [Simonsz and Tonkelaar, 1990]</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;">When the German edition of Donders' work was published, it attracted the attention of H. Helmholtz, who found an explanation for the discovery of Donders. He termed the torsional rotation of the globe found by Donders as &quot;Pseudotorsion&quot;, which results from a measurement error but actually does not really exist. Pseudotorsion is caused by the fact that, in tertiary gaze positions, the vertical meridian through the eye does not coincide with a vertical line in space, nor does the horizontal meridian coincide with a horizontal line in space. The reason for this discrepancy is that the meridians (cross on the cornea in SEE++) are defined in a globe-fixed coordinate system.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: center;"><img width="276" height="276" style="margin:0 auto 0 auto;width:276px;height:276px;border:none" src="meridian.jpg"/></p>
+<p style="text-align: center;"><span style="font-weight: bold;">Pseudotorsion in Tertiary Gaze Position</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;"><a id="listingschesgesetz" class="hmanchor"></a>Since pseudotorsion is caused by an unsuitably defined coordinate system, in 1853 J. B. Listing had the idea to use a polar coordinate system to overcome this problem. Thereby, he also discovered that all tertiary positions of gaze can be reached by a single rotation around one particular axis out of the primary position and moreover that all these rotation axes are part of the same plane (Listing's plane) with a constant torsional angle. This discovery was termed as Listing's law. Listing's law always describes the same torsional angle in a certain eye position, regardless of how this gaze position has been reached.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: center;"><img width="305" height="376" style="margin:0 auto 0 auto;width:305px;height:376px;border:none" src="listings_plane_healthy_eye.jpg"/></p>
+<p style="text-align: center;"><span style="font-weight: bold;">Listing's Plane of a Healthy Left Eye</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;">As mentioned before, Listing's plane can be characterized by a visualization of the end points of the rotation axes which describe a 3D eye position starting from the primary position going into any other eye position. For a healthy eye, this plane lies parallel to the X-Z plane of the coordinate system (see figure). For a pathological eye, the plane is tilted according to the torsional effects of the particular pathology. Listing's plane <a href="_3d_ansichtsoptionen.htm#listingscheebene" class="topiclink">can be visualized</a> in the 3D-view of SEE++ according to the currently simulated pathology.</p>
+<p style="text-align: justify;">When Donders' law and Listing's law were published, there was a great demand for a standard definition for describing eye positions regarding the sequence of rotations around the different coordinate axes.</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Geometrical Description of Eye Positions</span></p>
+<p style="text-align: justify;">Due to the non-commutativity of rotations in 3D space, it is necessary to use a standardized sequence of rotations in order to describe eye positions. For any eye position described by three component angles, also the applied sequence of rotations has to be specified. In 1854, A. Fick defined the so-called Fick sequence of rotations, where the first rotation has to be carried out around the vertical axis, then around the horizontal and finally around the torsional axis. In contrast, Helmholtz defined the sequence of rotations first around the horizontal, then around the vertical and finally around the torsional axis. Both rotation sequences describe a gimbal-mounted globe considering the particular sequence of rotations. From the illustration of the two systems (see following figure) it is easy to see that some specified angles of an eye position lead to different positions of the globe and thus to different eye positions when comparing both systems.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: center;"><img width="527" height="289" style="margin:0 auto 0 auto;width:527px;height:289px;border:none" src="gimbals.jpg"/></p>
+<p style="text-align: center;"><span style="font-weight: bold;">Gimbal Mounting According to Fick (Left) and Helmholtz (Right)</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;">The SEE++ system generally uses the rotation sequence of Fick, which divides an eye position into three rotation angles, first around the vertical axis, then around the horizontal axis and finally around the torsional axis.</p>
+<p style="text-align: justify;"><a id="koordinatensystemdef" class="hmanchor"></a>For a complete definition of eye positions, the used coordinate system is also of importance. The following figure visualizes the coordinate axes together with their algebraic signs and directions for both eyes.</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: center;"><img width="588" height="326" style="margin:0 auto 0 auto;width:588px;height:326px;border:none" src="coordinates.jpg"/></p>
+<p style="text-align: center;"><span style="font-weight: bold;">The Six Possible Rotation Directions of the Eyes</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;">The coordinate system used for the extorsion is different for both eyes in terms of the ab-/adduction axis and the in-/extorsion axis. Directions of rotation around the respective axes can be described as follows (in the figure above the nose is assumed between the two eyes):</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify; text-indent: -27px; margin: 0 0 0 80px;"><span style="font-weight: bold;">1. Rotation around z-axis (duction, blue)</span></p>
+<p style="text-align: justify; margin: 0 0 0 53px;"><span style="width:80px;display:inline-block">&nbsp;</span>positive angle = adduction (towards the nose)</p>
+<p style="text-align: justify; margin: 0 0 0 53px;"><span style="width:80px;display:inline-block">&nbsp;</span>negative angle = abduction (away from the nose)</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify; margin: 0 0 0 53px;"><span style="font-weight: bold;">2. Rotation around x-axis (elevation, red)</span></p>
+<p style="text-align: justify; margin: 0 0 0 53px;"><span style="width:80px;display:inline-block">&nbsp;</span>positive angle = elevation (upward)</p>
+<p style="text-align: justify; margin: 0 0 0 53px;"><span style="width:80px;display:inline-block">&nbsp;</span>negative angle = depression (downward)</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify; margin: 0 0 0 53px;"><span style="font-weight: bold;">3. Rotation around y-axis (torsion, green)</span></p>
+<p style="text-align: justify; margin: 0 0 0 53px;"><span style="width:80px;display:inline-block">&nbsp;</span>positive angle = intorsion (inward rolling)</p>
+<p style="text-align: justify; margin: 0 0 0 53px;"><span style="width:80px;display:inline-block">&nbsp;</span>negative angle = extorsion (outward rolling)</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;">As shown in the figure above, the coordinate axes for ab-/adduction and in-/extorsion point in different directions for both eyes. This allows a standardized definition of the angle direction with consistent descriptions (e.g.: abduction = away from the nose). In both eyes, positive torsion is defined to rotate the eye inward around the line of sight. If the two axes did not have different signs, an intorsion of both eyes would mean that one eye rolls outward and the other one rolls inward. The axes for elevation and depression remain the same in both eyes, since up and down rotations specify the same directions for both eyes.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Additionally, in case of binocular eye movement, abduction of one eye results in adduction of the other eye, thus eye positions have to be mirrored for ab-/adduction and in-/extorsion movements.</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;"><a id="bulbustranslation" class="hmanchor"></a><span style="font-size: 14pt; font-weight: bold;">Globe Translation</span></p>
+<p style="text-align: justify;">Within the orbita, the eye is surrounded by flexible fat pads, which, besides rotation, permit globe translation up to a certain degree. Usually, this translation is negligibly small, however in some pathological situations involving co-contraction of muscles (e.g. Duane syndrome), additional information about globe translation becomes an important indication for the estimation and correction of a motility disorder. The SEE++ system calculates globe translation on demand and visualizes it in the 3D-view, whereby a forward movement of the globe along the y-axis is denoted as protrusion (globe translation with positive sign) and a backward movement is defined as retraction (globe translation with negative sign). The respective values for protrusion and retraction are shown in a textual form in the system for each eye position. In the 3D-view the user can choose whether to include <a href="_3d_ansicht.htm" class="topiclink">globe translation in the visualization</a>.</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Geometrical Description of Muscle Action</span></p>
+<p style="text-align: justify;">In order to complete the definition of extraocular geometry, one also needs to consider the geometrical properties of muscles and their directions of pull. The geometrical description of a muscle is based on the definition of important designated points, whereas a muscle's force direction is specified by the definition of a rotation axis, around which a single muscle would rotate the globe. The geometrical description of a muscle is defined by a muscle path from the origin to the insertion. Attention should be paid to how this muscle path changes with different gaze positions and how it adapts to the position of the globe respectively.</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: center;"><img width="430" height="289" style="margin:0 auto 0 auto;width:430px;height:289px;border:none" src="definition_muscle_path.jpg"/></p>
+<p style="text-align: center;"><span style="font-weight: bold;">Definition of Muscle Path</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;">The figure shows the path of the outer straight muscle (lateral rectus muscle), defined by origin, pulley, point of tangency and insertion. The muscle origin lies in the area of the posterior end of the orbita in the annulus of Zinn (Zinn's ring). The pulley stabilizes the muscle path in the rear area of the orbita. This point is not used in the string or tape model, since these two models assume a definition of the muscle path without pulleys. The point of tangency marks the area, where the muscle path first touches the globe. The distance between insertion and point of tangency is called arc of contact.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Reactions of the muscle path to changes in gaze position are differently represented by different models. Thus substantial differences exist in the definition of the muscle path between string model, tape model, Orbit model and SEE-KID model. String model and tape model exclusively use the anatomical origin of the muscle, the point of tangency and the insertion for the definition of the muscle path. However, SEE-KID model and Orbit model additionally consider pulleys. In the SEE-KID active pulley model, the pulley is finally even moved together with the globe.</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: center;"><img width="621" height="135" style="margin:0 auto 0 auto;width:621px;height:135px;border:none" src="string_tape_pulleymodel_path.jpg"/></p>
+<p style="text-align: center;"><span style="font-weight: bold;">Comparison of (a) String Model, (b) Tape Model and (c) SEE-KID Model</span></p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;">In comparing the muscle path representation of these models (see figure), noticeable differences in representing the movement of the point of tangency occur. In the string model (a) as well as in the tape model (b), the point of tangency and hence the whole posterior muscle path moves downwards together with the globe. This also affects the direction of pull significantly in other gaze positions. Here the SEE-KID model (c) provides a much better prognosis. The introduction of pulleys results in a stabilization of a muscle's direction of pull and therefore a substantially more realistic prognosis can be made.</p>
+<p class="p_Normal">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;">The description of the rotation axis of a muscle and therefore also the rotational effect of a muscle onto the globe are derived from the muscle path. The rotation axis of the string model and the tape model is perpendicular to the plane defined by insertion, point of tangency and origin. In the Orbit, SEE-KID and SEE-KID active pulley model the pulley point is additionally considered. The direction of pull of a muscle (rotation axis) can be represented in all three components (x, y, z) in a diagram, in order to get a better estimation of the rotational effect. The x-component of the rotation axis represents the portion of the elevation/depression that a muscle exerts on the globe, the y-component gives information on intorsion/extorsion and the z-component describes abduction/adduction.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;"><img width="613" height="221" style="margin:0 auto 0 auto;width:613px;height:221px;border:none" src="muscel_force_distribution_string_model.jpg"/></p>
+<p class="p_Normal" style="text-align: center;"><img width="613" height="221" style="margin:0 auto 0 auto;width:613px;height:221px;border:none" src="muscel_force_distribution_tape_model.jpg"/></p>
+<p class="p_Normal" style="text-align: center;"><img width="613" height="221" style="margin:0 auto 0 auto;width:613px;height:221px;border:none" src="muscel_force_distribution_seekid_model.jpg"/></p>
+<p class="p_Normal" style="text-align: center;"><img width="613" height="221" style="margin:0 auto 0 auto;width:613px;height:221px;border:none" src="muscel_force_distribution_seekidap_model.jpg"/></p>
+<p style="text-align: center;"><span style="font-weight: bold;">Muscle Force Distribution of the Lateral Rectus Muscle in the String, Tape, SEE-KID and SEE-KID Active Pulley Model</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><a id="modellemuskelwirkungsverteilung" class="hmanchor"></a>The muscle force distribution shows the relative rotational components for selected eye muscles along a horizontal view range (see figure) in a certain level of elevation or depression. The rotational components are indicated in standardized values between -1 and +1 for ab-/adduction, elevation/depression and in-/extorsion. The figure shows the force distributions of the lateral rectus muscle in the string, tape, SEE-KID and SEE-KID active pulley model with an elevation of 10 degrees along the horizontal view range (0.00-line in the figure) with up to 60 degrees abduction and adduction of a left eye.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Here, the physiologically incorrect prediction of the string model becomes clearly evident at approximately 36 degrees of adduction, where the lateral rectus muscle drastically changes its abducting effect into an adducting effect. In comparison with the tape model, a significantly better physiological muscle force distribution for the exact same scenario is shown by keeping up the main direction of pull of the lateral rectus muscle. These differences result from the differentiated mathematical modeling of the anatomical structures. In the string model, the muscle path in the contact area of the globe is defined by the shortest path between insertion and origin. In contrast, the tape model contains an angle-reducing component, which describes the muscle path by the relative movement of the point of tangency as a function of gaze position. This allows the simulation of stabilizing connective tissues and supporting ligaments in order to limit the movement of muscles in extreme gaze positions. Graphically, this simulation results in a bent muscle path between insertion and point of tangency, which substantially better, but not optimally, corresponds to anatomical conditions.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p class="p_Normal" style="text-align: justify;">Only by the introduction of a model that considers pulleys, more detailed simulations and pathological case studies can be accomplished. The mathematical basis for such a model is the introduction of an additional functional origin (pulley) directly behind the anatomical equator of the globe. This results in a stabilization of the muscle path in the rear area of the orbita and the functional origin is now used for the definition of the muscle force distribution. The anatomical origin is mathematically not so important for defining the direction of pull depending on the gaze position. The simulation of pulleys in the SEE-KID model (as well as in the Orbit model) shows a significantly better stabilization of a muscle's main direction of pull in the muscle force distribution. However, at about 55 degrees there is still a slight change of the muscle's main direction of pull. With the introduction of &quot;active pulleys&quot;, which are pulleys that change their position according to the current gaze position (SEE-KID active pulley model), the muscle force distribution shows a complete stabilization of a muscle's main direction of pull over the entire physiological range of vision from -60 to +60 degrees. Therefore, the SEE-KID active pulley model is the currently most suitable (geometrical) model.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><a id="funktionelletopographie" class="hmanchor"></a><span style="font-size: 14pt; font-weight: bold;">Functional Topography</span></p>
+<p class="p_Normal" style="text-align: justify;">The functional topography makes it possible to project the muscle force distribution onto the surface of the globe as a color-coded 3D visualization for all possible insertions of a muscle. Therefore, the insertion of a selected muscle is &quot;virtually&quot; moved to different locations on the globe and at each possible insertion the different rotational components (ab-/adduction, elevation/depression, in-/extorsion) are drawn onto the globe as color-coded brightness values (darker brightness values correspond to a high rotational component if the insertion of the selected muscle is moved to the respective location). The mapping of the different brightness value colors to the corresponding rotational components is the same as in the muscle force distribution diagram, which means that blue represents duction, red represents elevation/depression and green represents torsion. If more than one rotational component is shown at the same time, the colors of the selected rotational components are combined resulting in mixed colors.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;">By using this color-coding, it is now possible to find an &quot;ideal&quot; muscle insertion line for a certain muscle, where a certain rotational component should either be minimal (white or bright area on the globe) or maximal (dark area in the appropriate color on the globe). If the visualization of several rotational components is combined, intersection points can be found, where several components are minimal or maximal at the same time. These &quot;ideal&quot; insertion lines and intersection points in combination with the poles of the globe and the coordinate axes offer a useful support for planning surgeries.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;">The following figure shows the distribution of the horizontal rotational components (blue) of the left superior oblique muscle in primary position. Dark blue areas represent possible insertion positions, where the muscle would strongly rotate the eye into ab-/adduction, light blue or white regions represent areas, where the muscle would only little or not at all rotate the eye into ab-/adduction. Compared to the muscle force distribution diagram (MFDD - see <a href="geometrischemodelle.htm#modellemuskelwirkungsverteilung" class="topiclink">definition of muscle force distribution</a>) the direction a muscle would rotate the eye cannot be seen when using the functional topography (thus if a muscle with its insertion moved into an e.g. blue area would rotate the eye into adduction or abduction). The functional topography can be enabled in SEE++ by using the <a href="_3d_ansichtsoptionen.htm#funktionelle_topographie" class="topiclink">3D-view options toolbar</a>.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: center;"><img width="331" height="261" style="margin:0 auto 0 auto;width:331px;height:261px;border:none" src="functional_topography.jpg"/></p>
+<p class="p_Normal" style="text-align: center;"><span style="font-weight: bold;">Functional Topography of Superior Oblique Muscle (Ab-/Adduction Component, Horizontal)</span></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><a id="geometrischevermessungdesau" class="hmanchor"></a><span style="font-size: 14pt; font-weight: bold;">Geometrical Measurement of the Eye</span></p>
+<p style="text-align: justify;">Around 1989 a statistical analysis of several patients was carried out by A.W. Volkmann. The results of this study were published as data for a so-called &quot;standard eye&quot;, which represents an average human eye. Based on Volkmann's data, the string model and the tape model were formulated. Later these basic geometrical data were extended, modified and the geometrical data of pulleys were added by Robinson and Miller.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">These geometrical data have to be used according to the already defined coordinate system (see <a href="geometrischemodelle.htm#koordinatensystemdef" class="topiclink">geometrical description of eye positions</a>). SEE++ also offers a standard scenario containing the geometrical data by Volkmann.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<div style="text-align: center; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="margin:0 auto; border:none; border-spacing:1px;">
+<tr>
+<td style="vertical-align:top; width:140px; padding:0; border:none"><p><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">Globe Radius:</span></p>
+</td>
+<td style="vertical-align:top; width:203px; padding:0; border:none"><p style="text-align: right;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">12.43 mm</span></p>
+</td>
+<td style="vertical-align:top; width:208px; padding:0; border:none"><p><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:140px; padding:0; border:none"><p><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">Cornea Radius:</span></p>
+</td>
+<td style="vertical-align:top; width:203px; padding:0; border:none"><p style="text-align: right;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">5.50 mm</span></p>
+</td>
+<td style="vertical-align:top; width:208px; padding:0; border:none"><p><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:140px; padding:0; border:none"><p><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:203px; padding:0; border:none"><p><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">Origin (x / y / z) in mm</span></p>
+</td>
+<td style="vertical-align:top; width:208px; padding:0; border:none"><p><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">Insertion (x / y / z) in mm</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:140px; padding:0; border:none"><p><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">medial rectus m.</span></p>
+</td>
+<td style="vertical-align:top; width:203px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">-17.00 / -30.00 / &nbsp; 0.60</span></p>
+</td>
+<td style="vertical-align:top; width:208px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">-9.15 / &nbsp; 8.42 / &nbsp;0.00</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:140px; padding:0; border:none"><p><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">lateral rectus m.</span></p>
+</td>
+<td style="vertical-align:top; width:203px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">-13.00 / -34.00 / &nbsp; 0.60</span></p>
+</td>
+<td style="vertical-align:top; width:208px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">10.44 / &nbsp; 6.75 / &nbsp;0.00</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:140px; padding:0; border:none"><p><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">superior rectus m.</span></p>
+</td>
+<td style="vertical-align:top; width:203px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">-16.00 / -31.78 / &nbsp; 3.80</span></p>
+</td>
+<td style="vertical-align:top; width:208px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> 0.00 / &nbsp; 7.33 / 10.05</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:140px; padding:0; border:none"><p><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">inferior rectus m.</span></p>
+</td>
+<td style="vertical-align:top; width:203px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">-16.00 / -31.70 / &nbsp;-2.40</span></p>
+</td>
+<td style="vertical-align:top; width:208px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> 0.00 / &nbsp; 7.65 / -9.80</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:140px; padding:0; border:none"><p><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">superior oblique m.</span></p>
+</td>
+<td style="vertical-align:top; width:203px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">-15.27 / &nbsp; 8.24 / &nbsp;12.25</span></p>
+</td>
+<td style="vertical-align:top; width:208px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">-0.07 / &nbsp;-8.05 / &nbsp;9.48</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:140px; padding:0; border:none"><p><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">inferior oblique m.</span></p>
+</td>
+<td style="vertical-align:top; width:203px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">-11.10 / &nbsp;11.34 / -15.46</span></p>
+</td>
+<td style="vertical-align:top; width:208px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> 6.73 / -10.46 / &nbsp;0.00</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: center;"><span style="font-weight: bold;">Geometrical Data According to Volkmann</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">The discovery of pulleys as functional elements in 1989 (Miller and Demer) revised these data:</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<div style="text-align: center; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="margin:0 auto; border:none; border-spacing:1px;">
+<tr>
+<td style="vertical-align:top; width:140px; padding:0; border:none"><p><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">Globe Radius:</span></p>
+</td>
+<td style="vertical-align:top; width:152px; padding:0; border:none"><p style="text-align: right;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">11.99 mm</span></p>
+</td>
+<td style="vertical-align:top; width:146px; padding:0; border:none"><p><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:156px; padding:0; border:none"><p><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:140px; padding:0; border:none"><p><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">Cornea Radius:</span></p>
+</td>
+<td style="vertical-align:top; width:152px; padding:0; border:none"><p style="text-align: right;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">5.50 mm</span></p>
+</td>
+<td style="vertical-align:top; width:146px; padding:0; border:none"><p><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:156px; padding:0; border:none"><p><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:140px; padding:0; border:none"><p><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; width:152px; padding:0; border:none"><p><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">Origin (x/y/z) mm</span></p>
+</td>
+<td style="vertical-align:top; width:146px; padding:0; border:none"><p><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">Insertion (x/y/z) mm</span></p>
+</td>
+<td style="vertical-align:top; width:156px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">Pulley (x/y/z) mm</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:140px; padding:0; border:none"><p><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">medial rectus m.</span></p>
+</td>
+<td style="vertical-align:top; width:152px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">-17.00/-30.00/1.00</span></p>
+</td>
+<td style="vertical-align:top; width:146px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> -9.65/8.84/0.00</span></p>
+</td>
+<td style="vertical-align:top; width:156px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">-14.00/-5.00/0.14</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:140px; padding:0; border:none"><p><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">lateral rectus m.</span></p>
+</td>
+<td style="vertical-align:top; width:152px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> -13.00/-34.00/-1.00</span></p>
+</td>
+<td style="vertical-align:top; width:146px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> 10.08/6.50/0.00</span></p>
+</td>
+<td style="vertical-align:top; width:156px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> 12.00/-8.00/0.33</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:140px; padding:0; border:none"><p><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">superior rectus m.</span></p>
+</td>
+<td style="vertical-align:top; width:152px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">-15.00/-31.76/3.60</span></p>
+</td>
+<td style="vertical-align:top; width:146px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> &nbsp; 2.76/6.46/10.25</span></p>
+</td>
+<td style="vertical-align:top; width:156px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> -5.16/-10.78/10.00</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:140px; padding:0; border:none"><p><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">inferior rectus m.</span></p>
+</td>
+<td style="vertical-align:top; width:152px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> -17.00/-31.76/-2.40</span></p>
+</td>
+<td style="vertical-align:top; width:146px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> &nbsp; &nbsp;1.76/6.85/-10.22</span></p>
+</td>
+<td style="vertical-align:top; width:156px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> &nbsp; -5.16/-8.78/-12.00</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:140px; padding:0; border:none"><p><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">superior oblique m.</span></p>
+</td>
+<td style="vertical-align:top; width:152px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;">-18.00/-31.50/5.00</span></p>
+</td>
+<td style="vertical-align:top; width:146px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> 2.90/-8.00/8.82</span></p>
+</td>
+<td style="vertical-align:top; width:156px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> -15.27/11.00/11.75</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:140px; padding:0; border:none"><p><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace; font-weight: bold;">inferior oblique m.</span></p>
+</td>
+<td style="vertical-align:top; width:152px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> -13.00/10.00/-15.46</span></p>
+</td>
+<td style="vertical-align:top; width:146px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> 8.00/-9.18/0.00</span></p>
+</td>
+<td style="vertical-align:top; width:156px; padding:0; border:none"><p style="text-align: center;"><span style="font-size: 9pt; font-family: 'Courier New',Courier,monospace;"> &nbsp;-13.00/10.00/-15.46</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: center;"><span style="font-weight: bold;">Geometrical Data According to Miller and Demer</span></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">Here the muscle insertions as well as the pulley positions were measured in three dimensions. This means that, with the geometrical abstraction to assume the globe as a spherical object, each muscle's insertion does not lie exactly on the globe, due to the fact that in reality the globe is shaped like an ellipsoid. This leads to a compromise in choosing the globe radius as the smallest distance between coordinate system origin and muscle insertion of all six muscles. The so-called &quot;muscle-based globe radius&quot;, as well as the &quot;actual&quot; globe radius, can be easily changed by modifying the corresponding parameters in SEE++. The significant mathematical difference of these data is caused by the fact that now each muscle rotates its own &quot;virtual globe&quot;, in turn affecting lever arm and force behavior.</p>
+
+</DIV>
+
+
+</body>
+</html>

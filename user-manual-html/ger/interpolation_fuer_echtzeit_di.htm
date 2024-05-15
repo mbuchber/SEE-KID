@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Interpolation für Echtzeit-Diagnose</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Interpolation für Echtzeit-Diagnose,3D-Ansicht,Diagramme,Motilitätsdiagnose,Blickschema,Hess-Diagramm,Szenario,Allgemeine Funktionen,Blickposition,Fixierendes Auge,Folgendes Auge,Medizinische Stammdaten">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "interpolation_fuer_echtzeit_di.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Interpolation für Echtzeit-Diagnose</span></h1>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="methoden_zur_motilitaetsdiagno.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="cover_test.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<p class="p_Normal" style="text-align: justify;">Die Interpolation für Echtzeit-Diagnose kann über die <a href="allgemeinefunktionen.htm" class="topiclink">Symbolleiste für &quot;Allgemeine Funktionen&quot;</a> aufgerufen werden. Nach einem Klick auf den entsprechenden Button &nbsp;öffnet sich ein Dialog, der den aktuellen Berechnungsfortschritt anzeigt. Sie können die Berechnung jederzeit mit einem Klick auf &quot;Abbrechen&quot; anhalten, die Interpolation für Echtzeit-Diagnose wird dann jedoch nicht aktiviert.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;"><img width="201" height="143" style="margin:0;width:201px;height:143px;border:none" src="interpolation_progress.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;">Normalerweise wird in SEE++ die Position des folgenden Auges nur berechnet, wenn die Option <a href="allgemeinefunktionen.htm#folgendesauge" class="topiclink">&quot;Folgendes Auge&quot;</a> aktiviert ist. Selbst wenn diese Option aktiviert ist, wird die Position des folgenden Auges bei einer Veränderung der Position des fixierenden Auges erst angezeigt, wenn die Maustaste wieder losgelassen wurde (bei Veränderung der Fixationsposition in der <a href="_3d_ansicht.htm" class="topiclink">3D-Ansicht</a> oder in einem der <a href="diagramme.htm" class="topiclink">Diagramme</a>). Dadurch ist eine interaktive Motilitätsdiagnose nur sehr schwer möglich. Wird nun die Interpolation für Echtzeit-Diagnose aktiviert, dann werden auf Basis eines vollständig berechneten Hess-Diagramms für Rechts- und Links-Fixation Augenpositionen innerhalb des durch die Fixationspositionen bestimmten Bereichs in Echtzeit interpoliert, was eine sofortige Anzeige der Position des folgenden Auges ermöglicht. Somit kann bei interaktiver Veränderung der Fixationsposition in der 3D-Ansicht oder in einem Diagramm die Bewegung des folgenden Auges in Echtzeit beobachtet werden. Dieses Verhalten entspricht dem aus der Klinik bekannten Verfahren zur Motilitätsdiagnose, bei dem der Arzt dem Patienten eine Fixationsposition für ein Auge vorgibt und beobachtet, wie sich das andere (folgende) Auge verhält.</p>
+<p class="p_Normal" style="text-align: justify;">So lange die Interpolation aktiviert ist können nur Positionen fixiert werden, die innerhalb des durch die Punkte der jeweiligen Fixation bestimmten Bereiches liegen. Möchten sie Punkte außerhalb diese Bereiches fixieren, so müssen sie das entsprechende <a href="blickschema.htm" class="topiclink">Blickschema</a> vergrößern (bevor das Blickschema bearbeitet werden kann muss die Interpolation für Echtzeit-Diagnose abgeschaltet werden!). Damit die Interpolation aktiviert werden kann, müssen in beiden Fixationen mindestens 3 fixierbare Blickpositionen vorhanden sein. Desto mehr Punkte das Blickschema der jeweiligen Fixation enthält, desto besser und genauer ist die Interpolation.</p>
+<p class="p_Normal" style="text-align: justify;">Da für die Interpolation ein vollständig berechnetes Hess-Diagramm benötigt wird, können sie, so lange die Interpolation für die Echtzeit-Diagnose aktiviert ist, in SEE++ keine Änderungen mehr durchführen, die zu einer Neuberechnung des Simulationsergbnisses führen würden (z.B. eine Änderung an den <a href="medizinischestammdaten.htm" class="topiclink">medizinischen Stammdaten</a> oder das Laden eines anderen <a href="szenarien.htm" class="topiclink">Szenarios</a>).</p>
+
+</DIV>
+
+
+</body>
+</html>

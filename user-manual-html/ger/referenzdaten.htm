@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Referenzdaten</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Referenzdaten,Referenzauge,Referenzdaten-&gt;Exportieren,Referenzdaten-&gt;Importieren,Exportieren,Importieren,Medizinische Stammdaten">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "referenzdaten.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <p><span style="font-size: 14pt; font-weight: bold;">Referenzdaten</span></p>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="aenderungsbericht.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="referenzdatenexportieren.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<p style="text-align: justify;">Das <a href="simulation.htm" class="topiclink">SEE++ Simulationsmodell</a> bildet das okulomotorische System mit Hilfe eines biomechanischen Modells bestehend aus zwei Augen und einem &quot;virtuellen&quot; Referenzauge nach. Dieses virtuelle Referenzauge gibt der gesamten Simulation vor, wie ein &quot;normales&quot; bzw. gesundes Auge funktioniert. Dies betrifft die Definition der Geometrie, das Kraftentwicklungsverhalten der Augenmuskulatur und die Innervationen vom Hirnstamm. Alle diese Parameter zusammen bilden die abstrakte Einheit eines simulierten Auges. Nun wird beim Durchlauf einer Simulation immer der Unterschied in den Parametern bezogen auf das Referenzauge berechnet, um eine pathologische Reaktion des fixierenden oder folgenden Auges ermitteln zu können. Ein absolut gesundes okulomotorisches System funktioniert in SEE++ nur dann, wenn alle drei Augen, also auch das &quot;virtuelle&quot; Referenzauge dieselben Werte für alle Parameter eingestellt haben. Dies ist sozusagen immer die Ausgangsposition für die <a href="seeppverwenden.htm" class="topiclink">Durchführung einer Simulation mit SEE++</a>.</p>
+<p style="text-align: justify;">In manchen Fällen kann es notwendig sein, diese Standardkonfiguration ändern zu wollen. Dazu ist es möglich, sämtliche <a href="medizinischestammdaten.htm" class="topiclink">medizinischen Stammdaten</a> eines Auges als Referenzdaten in eine Datei zu speichern. Hier werden nur die für eine Simulation wichtigen Werte gespeichert, nicht aber patientenspezifische Daten. In einem zweiten Schritt können nun existierende Parameter aus einer zuvor gespeicherten Referenzdaten-Datei in eines oder gleich alle drei abstrakten Augen geladen werden. Erhält man beispielsweise andere Messwerte für Geometrie oder Muskelfunktion, so kann man diese Werte mit Hilfe eines eigenen Referenzdatenmodells ablegen und bei Bedarf für einen simulierten Patienten überlagern.</p>
+<p style="text-align: justify;">Sämtliche Funktionen für das Exportieren (Speichern) und Importieren (Laden) von Referenzdaten sind über das Hauptmenü unter <a href="referenzdatenexportieren.htm" class="topiclink">&quot;Referenzdaten-&gt;Exportieren&quot;</a> bzw. <a href="referenzdatenimportieren.htm" class="topiclink">&quot;Referenzdaten-&gt;Importieren&quot;</a> erreichbar.</p>
+
+</DIV>
+
+
+</body>
+</html>

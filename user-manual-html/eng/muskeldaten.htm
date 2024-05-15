@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Muscle Data</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Muscle data,Force model,Force development,Muscle paresis,Hyperfunctions,Fibrosis,Data-&gt;Left Eye-&gt;Muscles,Medical Data-&gt;Left Eye-&gt;Muscle Data,Tab sheets,Muscle curves,Camera rotation,Zoom function,Camera reset,Initial position,Display options,Points,Wireframe,Shaded,Display as points,Wireframe model,Quadrangle view,Coordinate axes,Print,Print preview,Pulley position,Muscle radius,Pulley radius,Save as image,Geometrical properties,Left mouse button,Mouse wheel,Muscle-specific parameters,Right mouse button,Virtual hemisphere,Arc of contact">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "muskeldaten.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <p><span style="font-size: 14pt; font-weight: bold;">Muscle Data</span></p>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="bulbusdaten.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="innervationsverteilung.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<p style="text-align: justify;">The muscle data dialog is one of the most central elements in the SEE++ system. It can be used to adjust the force model to pathological conditions regarding to single eye muscles. All data contained in this dialog changes the force development of all or some particular muscles. Therefore, muscle paresis, hyperfunctions and fibrosis can be simulated.</p>
+<p style="text-align: justify;">The muscle data exists for each <a href="kraeftemodell.htm" class="topiclink">eye simulated by SEE++</a> (left eye, right eye and reference eye). In this explanation the left eye is used exemplary again.</p>
+<p style="text-align: justify;">You can access this dialog via the main menu under &quot;Data-&gt;Left Eye-&gt;Muscles&quot; or via the Treeview under &quot;Medical Data-&gt;Left Eye-&gt;Muscle Data&quot;. The dialog consists of various &quot;tab sheets&quot;, whereas each tab sheet represents one of the six eye muscles. Additionally, the tab sheet &quot;General&quot; summarizes the settings that are applied on the whole model. Simply choose your desired tab sheet by clicking on the corresponding heading with the left mouse button. Another possibility to directly access the tab sheet of a muscle is to perform a short double-click with the left mouse button on an insertion point in the <a href="_3d_ansicht.htm" class="topiclink">3D-view</a>. </p>
+<p style="text-align: justify;">By default this dialog is displayed with the active tab sheet &quot;General&quot;. It can be used to change the three <a href="kraeftemodell.htm#kraeftemodell_allgemeine_parameter" class="topiclink">general parameters of the force model</a>. Confirm your changes by hitting the &quot;OK&quot; button or discard them by clicking on &quot;Cancel&quot;. The button &quot;Update&quot; allows an immediate update of all changes without the need to close the dialog. That means that SEE++ instantly performs the calculation of the Hess-Lancaster-Test with the changed values. This option is useful if, additionally to the general settings, changes to <a href="kraeftemodell.htm#muskelspezifischeparameter" class="topiclink">muscle-specific parameters</a> will be made before closing the dialog.</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;"><img width="750" height="220" style="margin:0;width:750px;height:220px;border:none" src="muscle_data_general_params.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;">If you now choose one of the tab sheets, you will recognize that the different sheets are (nearly) identical for all muscles:</p>
+<p style="text-align: justify;"><img width="750" height="593" style="margin:0;width:750px;height:593px;border:none" src="muscle_data_page.jpg"/></p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;">First of all this dialog provides the possibility to manually change some geometric properties (origin, pulley and insertion) of a muscle. All coordinates have to be specified according to the chosen eye in the defined head fixed <a href="grundlagenderanatomie.htm#koordinatensystem" class="topiclink">coordinate system</a>. These parameters cause a change of the muscle path and therefore influence the simulation result. All values are defined in primary position. That means that even when the <a href="_3d_ansicht.htm" class="topiclink">3D-view</a> displays another eye position, the geometric values of the muscle dialogs always refer to the <a href="grundlagenderanatomie.htm#augenpositionen" class="topiclink">primary position</a>. If you want to know the geometric values of a certain gaze direction, you can use the <a href="stateviewer.htm" class="topiclink">Stateviewer</a> to get that information.</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;">The visualization of the three <a href="kinematischemodelle.htm" class="topiclink">muscle curves</a> on the right hand side of the dialog is based on the <a href="_3d_ansicht.htm" class="topiclink">3D-view</a>. Each diagram is an independent view and can be arbitrarily rotated, scaled, printed and saved as an image. The checkbox &quot;Connected&quot; is used to equate the view of the single curves among each other. That means that if you change the view of one 3D-curve with your mouse and the &quot;Connected&quot; checkbox is checked, all other curves follow automatically.</p>
+<p style="text-align: justify;">The &quot;Update&quot; button allows an immediate update of all changes without the need to close the dialog with &quot;OK&quot; in the same manner as already described for the &quot;General&quot; tab sheet. SEE++ immediately starts with the recalculation of the simulation results in the background after clicking on &quot;Update&quot;.</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;">The following possibilities exist to modify the visualization of the 3D-muscle-curves:</p>
+<p style="text-align: justify;">While navigating with the mouse, first always click into the muscle curve with one mouse button, keep the button pressed and then move the mouse while still pressing the mouse button. Simply release the mouse button to stop.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:30%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;"><span style="font-weight: bold;">Mouse Button/Button</span></p>
+</td>
+<td style="vertical-align:top; width:70%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;"><span style="font-weight: bold;">Action</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:30%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;">Left mouse button</p>
+</td>
+<td style="vertical-align:top; width:70%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;">Rotate the whole muscle curve (camera rotation) with the help of a &quot;virtual hemisphere&quot;. Within this sphere the rotation is done around the x- and z-axes and outside around the y-axis.</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:30%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;">Rotate the mouse wheel <span style="font-style: italic;">or</span></p>
+<p style="text-align: justify;"><img width="82" height="64" style="margin:0;width:82px;height:64px;border:none" src="key_ctrl.jpg"/> + left mouse button</p>
+</td>
+<td style="vertical-align:top; width:70%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;">Zoom in or zoom out the whole view (zoom function).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:30%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;">Click the mouse wheel <span style="font-style: italic;">or</span></p>
+<p style="text-align: justify;">middle mouse button</p>
+</td>
+<td style="vertical-align:top; width:70%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;">Reset the 3D-view to the initial position (camera reset).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:30%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;"><img width="65" height="45" style="margin:0;width:65px;height:45px;border:none" src="key_f5.jpg"/></p>
+</td>
+<td style="vertical-align:top; width:70%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;">Reset the view of all three 3D-muscle-curves to the initial position (camera reset).</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:30%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;">Right mouse button</p>
+</td>
+<td style="vertical-align:top; width:70%; padding:2px; border:solid thin #000000;"><p style="text-align: justify;">Open the menu for the display options.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;">In a 3D-curve the menu for the display options is opened by clicking the right mouse button.</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:178px; padding:0; border:none"><p style="text-align: justify;"><img width="160" height="177" style="margin:0;width:160px;height:177px;border:none" src="muscle_data_curve_menu.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">The curve view can be displayed in three different ways:</p>
+<p style="text-align: justify; text-indent: 0; padding-left: 13px; margin: 0 0 0 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Points - the muscle curve is displayed as points</p>
+<p style="text-align: justify; text-indent: 0; padding-left: 13px; margin: 0 0 0 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Wireframe - displays a wireframe model of the curve</p>
+<p style="text-align: justify; text-indent: 0; padding-left: 13px; margin: 0 0 0 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Shaded - choose between a stripes or quadrangle view</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;">The option &quot;Coordinate Axes&quot; shows or hides the whole diagram marking. The function &quot;Background Color...&quot; allows to change the background color of the diagram.</p>
+<p style="text-align: justify;">If you choose &quot;Save as Image...&quot;, the dialog to <a href="bilderspeichern.htm" class="topiclink">save an image</a> is displayed. The functions <a href="drucken.htm" class="topiclink">&quot;Print...&quot;</a> and <a href="seitenansicht.htm" class="topiclink">&quot;Print Preview...&quot;</a> open the appropriate Windows® default dialogs.</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Change the Pulley Position</span></p>
+<p style="text-align: justify;">Basically, the pulley of a muscle can be moved arbitrarily in the 3D space. This task is hard to achieve manually. Therefore, the checkbox &quot;Pulley Radius&quot; allows you to enlarge or decrease the distance to the rotation center of the globe (coordinate system zero point). If you click on the checkbox with the left mouse button so that it is ticked and adapt the pulley radius, the coordinates of the pulley in x-, y- and z-direction are automatically calculated via the distance formula of the vector to the <a href="grundlagenderanatomie.htm#koordinatensystem" class="topiclink">zero point of the coordinate system</a>.</p>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Change the Insertion</span></p>
+<p style="text-align: justify;">The insertion point of a muscle usually is directly coupled to the globe. Therefore, a &quot;free&quot; positioning in the 3D space is hard to estimate. The checkbox &quot;Locked&quot; allows to automatically define the z-coordinate via insertion into the spherical equation of the globe, so that only the x- and y-coordinate are arbitrary. Choosing the x- and y-coordinates in an adequate way still permits two possibilities to position the insertion point on the globe (front or back hemisphere). This is achieved by ticking off the checkbox &quot;Positive&quot;. If the checkbox &quot;Positive&quot; is ticked, the z-coordinate of the calculated insertion point is used, that points along the positive z-axis direction of the <a href="grundlagenderanatomie.htm#koordinatensystem" class="topiclink">used coordinate system</a>.</p>
+<p style="text-align: justify;">Another possibility to define an insertion point of a muscle is to use the checkbox &quot;Muscle Rad.&quot;. The same principle such as the one used by the determination of the pulley position via the &quot;Pulley Radius&quot; is applied here. The insertion point is displaced according to the &quot;Muscle Radius&quot; along the vector pointing to the origin of the used coordinate system.</p>
+<p class="p_Normal">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:59px; padding:0; border:none"><p style="text-align: justify;"><img width="45" height="45" style="margin:0;width:45px;height:45px;border:none" src="tipp_icon.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">The geometric abstraction of the globe is reduced to a sphere. However, a real globe is unlikely to be based on a perfect sphere. Therefore, it is possible, that in the 3D-view some muscles do not directly touch the globe in the area of the insertion. Since the insertion points used in SEE++ were measured as complete 3D points and were defined according to an ellipsoid shaped globe, a separate &quot;virtual&quot; globe radius is assigned to each muscle.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal">&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Change the Muscle-Specific Parameters</span></p>
+<p style="text-align: justify;">The muscle-specific parameters form the core of the configurable muscle model. The specific force data (contractile, elastic and total force) can be directly influenced here. The value &quot;Contact Arc&quot; is not changeable and therefore forms an exception. This value displays the <a href="grundlagenderanatomie.htm#augenpositionen" class="topiclink">contact arc</a> of a muscle in primary position, resulting of the geometrical properties as a spherical distance between <a href="grundlagenderanatomie.htm#augenpositionen" class="topiclink">the insertion point and the point of tangency</a>. The values have to be adopted according to the explanations denoted in the chapter describing the <a href="kraeftemodell.htm#muskelspezifischeparameter" class="topiclink">&quot;force model&quot;</a>.</p>
+
+</DIV>
+
+
+</body>
+</html>

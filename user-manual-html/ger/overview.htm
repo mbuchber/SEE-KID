@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Überblick</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Krewson,Robinson,Miller,Überblick,Kinematik,Muskelkräfte,SQUINT,Kusel,Haase,Prognoseergebnisse,Orbit,Porrill,Warren,Dean,Eyelab,Bändermodell,Parametrierung,Simulation,Operation,Funktionen des Systems,Modelltypen,Fadenmodell,Orbitmodell,Active-Pulley,SEE-KID Modell,SEE-KID Active Pulley Modell,Biomechanisches Modell,Mathematische Modelle">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "overview.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <p><span style="font-size: 14pt; font-weight: bold;">Überblick</span></p>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="seeppverwenden.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="geometrischemodelle.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<p style="text-align: justify;">Ein erster &quot;Versuch&quot; für die Entwicklung eines mathematischen Modells des menschlichen Auges wurde von Krewson 1950 formuliert. Dieses Modell definierte ausschließlich geometrische Beziehungen und wurde um 1975 von Robinson verfeinert. Einige Jahre später wurde von Miller und Robinson 1984 ein erstes vollständiges biomechanisches Modell vorgestellt, das auch Muskelkräfte und Kinematik unterstützt. Dieses Modell trug den Namen SQUINT und wurde später noch in einer zweiten, sehr ähnlichen Version verfeinert. Basierend auf diesen bisher beschriebenen Modellen wurde von Günther 1986 ein neues biomechanisches Modell implementiert, wobei dieses Modell allerdings geometrische Formulierungen von Kusel und Haase (1977) verwendete. Dieses Modell wurde auch als Computersystem umgesetzt, die Prognoseergebnisse waren aber nicht mit klinischen Erfahrungen korrelierbar.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Miller und Demer stellten 1995 ein neues biomechanisches Modell und Computersystem Orbit™ vor (weitere Informationen unter <a href="http://www.eidactics.com" target="_blank" class="weblink">www.eidactics.com</a>). Dieses System war die erste Computersimulation, die auch anatomische Elemente wie Pulleys berücksichtigte und so wesentlich bessere, klinisch vergleichbare Prognosewerte lieferte. Orbit™ war auch gleichzeitig das erste Computersystem mit grafischer Benutzeroberfläche in diesem Bereich.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Im Jahr 2000 wurde von Porrill, Warren und Dean das biomechanische Modell &quot;Eyelab&quot; vorgestellt. Die Implementierung diente ausschließlich für Forschungszwecke und wurde mit Matlab umgesetzt. Dieses Modell stellt keinen klinischen Test zur Verfügung und kann somit nicht für die Modellierung von pathologischen Situationen verwendet werden.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Das von SEE++ primär verwendete Modell SEE-KID basiert teilweise auf Formulierungen von &quot;Eyelab&quot; und &quot;Orbit&quot;, wobei das Orbit Modell zusätzlich in unveränderter Form im SEE++ System implementiert wurde, um Vergleiche durchführen zu können. Das SEE-KID Modell wurde mit modernsten Methoden des Software-Engineering unter Verwendung von objekt- und komponentenorientierten Technologien entwickelt. Dieses Modell zeichnet sich gegenüber anderen im Speziellen dadurch aus, dass es eine abstrakte Definition eines biomechanischen Augenmodells realisiert, und somit mehrere Modelle (SEE-KID Modell, SEE-KID Active Pulley Modell, Orbit-, Faden- und Bändermodell) realisieren und miteinander vergleichen kann. Das im Rahmen des Forschungsprojektes SEE-KID formulierte biomechanische Augenmodell ist aber trotzdem eine vollständige, mathematische Lösung für das gestellte Problem und verwendet nicht-lineare Optimierungsstrategien für die Lösung des kinematischen Systems. Außerdem definiert es auch noch ein eigenständiges geometrisches Modell.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Das SEE-KID Active Pulley Modell ist ebenfalls ein eigenständiges Modell im SEE++ System, welches auf dem SEE-KID Modell basiert. Zusätzlich implementiert dieses Modell noch die von Demer et. al. formulierte &quot;Active-Pulley-Hypothese&quot;, welche die aktive Bewegung der Pulleys der geraden Augenmuskeln in sekundären und tertiären Blickpositionen beschreibt.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Im Unterschied zu anderen Simulationssystemen bietet SEE++ eine intuitive grafische Benutzeroberfläche, die es ermöglicht, nahezu alle Funktionen des Systems (Parametrierung, Simulation, Operation) interaktiv anhand eines 3D-Modells durchzuführen.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Wie bereits erwähnt umfasst das SEE++ System verschiedene mathematische Modelle der Forschungsgeschichte und ermöglicht so eine interaktive Vergleichbarkeit von Simulationsergebnissen unter Anwendung verschiedener Berechnungen. SEE++ implementiert insgesamt fünf verschiedene Modelle, von denen zwei Modelle nur rein geometrische Eigenschaften des Augapparates simulieren.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: center; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="margin:0 auto; border:none; border-spacing:0; border-collapse:collapse;">
+<tr>
+<td style="vertical-align:top; width:210px; padding:0; border:solid thin #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Modelltyp</span></p>
+</td>
+<td style="vertical-align:top; width:105px; padding:0; border:solid thin #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Geometrie</span></p>
+</td>
+<td style="vertical-align:top; width:105px; padding:0; border:solid thin #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Muskelkräfte</span></p>
+</td>
+<td style="vertical-align:top; width:105px; padding:0; border:solid thin #000000;"><p style="text-align: center;"><span style="font-weight: bold;">Kinematik</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; height:20px; padding:0; border:solid thin #000000;"><p>Fadenmodell</p>
+</td>
+<td style="vertical-align:top; width:105px; height:20px; padding:0; border:solid thin #000000;"><p style="text-align: center;"><img width="20" height="18" style="margin:0 auto 0 auto;width:20px;height:18px;border:none" src="icon_yes.jpg"/></p>
+</td>
+<td style="vertical-align:top; width:105px; height:20px; padding:0; border:solid thin #000000;"><p style="text-align: center;"><img width="20" height="18" style="margin:0 auto 0 auto;width:20px;height:18px;border:none" src="icon_no.jpg"/></p>
+</td>
+<td style="vertical-align:top; width:105px; height:20px; padding:0; border:solid thin #000000;"><p style="text-align: center;"><img width="20" height="18" style="margin:0 auto 0 auto;width:20px;height:18px;border:none" src="icon_no.jpg"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; height:20px; padding:0; border:solid thin #000000;"><p>Bändermodell</p>
+</td>
+<td style="vertical-align:top; width:105px; height:20px; padding:0; border:solid thin #000000;"><p style="text-align: center;"><img width="20" height="18" style="margin:0 auto 0 auto;width:20px;height:18px;border:none" src="icon_yes.jpg"/></p>
+</td>
+<td style="vertical-align:top; width:105px; height:20px; padding:0; border:solid thin #000000;"><p style="text-align: center;"><img width="20" height="18" style="margin:0 auto 0 auto;width:20px;height:18px;border:none" src="icon_no.jpg"/></p>
+</td>
+<td style="vertical-align:top; width:105px; height:20px; padding:0; border:solid thin #000000;"><p style="text-align: center;"><img width="20" height="18" style="margin:0 auto 0 auto;width:20px;height:18px;border:none" src="icon_no.jpg"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; height:20px; padding:0; border:solid thin #000000;"><p>Orbitmodell</p>
+</td>
+<td style="vertical-align:top; width:105px; height:20px; padding:0; border:solid thin #000000;"><p style="text-align: center;"><img width="20" height="18" style="margin:0 auto 0 auto;width:20px;height:18px;border:none" src="icon_yes.jpg"/></p>
+</td>
+<td style="vertical-align:top; width:105px; height:20px; padding:0; border:solid thin #000000;"><p style="text-align: center;"><img width="20" height="18" style="margin:0 auto 0 auto;width:20px;height:18px;border:none" src="icon_yes.jpg"/></p>
+</td>
+<td style="vertical-align:top; width:105px; height:20px; padding:0; border:solid thin #000000;"><p style="text-align: center;"><img width="20" height="18" style="margin:0 auto 0 auto;width:20px;height:18px;border:none" src="icon_yes.jpg"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; height:20px; padding:0; border:solid thin #000000;"><p>SEE-KID Modell</p>
+</td>
+<td style="vertical-align:top; width:105px; height:20px; padding:0; border:solid thin #000000;"><p style="text-align: center;"><img width="20" height="18" style="margin:0 auto 0 auto;width:20px;height:18px;border:none" src="icon_yes.jpg"/></p>
+</td>
+<td style="vertical-align:top; width:105px; height:20px; padding:0; border:solid thin #000000;"><p style="text-align: center;"><img width="20" height="18" style="margin:0 auto 0 auto;width:20px;height:18px;border:none" src="icon_yes.jpg"/></p>
+</td>
+<td style="vertical-align:top; width:105px; height:20px; padding:0; border:solid thin #000000;"><p style="text-align: center;"><img width="20" height="18" style="margin:0 auto 0 auto;width:20px;height:18px;border:none" src="icon_yes.jpg"/></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:210px; height:20px; padding:0; border:solid thin #000000;"><p>SEE-KID Active Pulley Modell</p>
+</td>
+<td style="vertical-align:top; width:105px; height:20px; padding:0; border:solid thin #000000;"><p style="text-align: center;"><img width="20" height="18" style="margin:0 auto 0 auto;width:20px;height:18px;border:none" src="icon_yes.jpg"/></p>
+</td>
+<td style="vertical-align:top; width:105px; height:20px; padding:0; border:solid thin #000000;"><p style="text-align: center;"><img width="20" height="18" style="margin:0 auto 0 auto;width:20px;height:18px;border:none" src="icon_yes.jpg"/></p>
+</td>
+<td style="vertical-align:top; width:105px; height:20px; padding:0; border:solid thin #000000;"><p style="text-align: center;"><img width="20" height="18" style="margin:0 auto 0 auto;width:20px;height:18px;border:none" src="icon_yes.jpg"/></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: center;"><span style="font-weight: bold;">Verschiedene Modelltypen von SEE++</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Dies bedeutet, dass diese rein geometrischen Modelle keine Kraftsimulation und Kinematik beinhalten, und somit nicht für die Durchführung eines Schielwinkeltests herangezogen werden können. Trotzdem bieten Faden- und Bändermodell eine ideale Einführung, um ein besseres Verständnis der dem Augapparat zugrunde liegenden geometrischen Eigenschaften zu erhalten.</p>
+
+</DIV>
+
+
+</body>
+</html>

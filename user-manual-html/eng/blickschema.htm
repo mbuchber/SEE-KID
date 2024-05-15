@@ -1,0 +1,267 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Gaze Pattern</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Gaze pattern,Simulation,Description of the simulation,Hess-diagram,Fixation position,Squint angle,Paresis,Left eye fixing,Right eye fixing,Data-&gt;Gaze Pattern,Medical Data-&gt;Gaze Pattern,Scenario,Fixation points,Gaze pattern file,Loading and saving gaze pattern files,Head-tilt angle,Orbit,Main gaze directions,Horizontal deviation,Vertical deviation,Torsional angle,Mirror x-axis,Swap diagrams,Prism diopters,Print,Print preview,Save as image,Measured gaze pattern,Hess-Lancaster test,Textual input,Import Orbit files">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "blickschema.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <p><span style="font-size: 14pt; font-weight: bold;">Gaze Pattern</span></p>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="motorische_fusionsbreite.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="szenarien.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<p class="p_Normal" style="text-align: justify;">A gaze pattern forms the basis for the simulation of the Hess-Lancester-Test. When executing the simulation for each point drawn into the gaze pattern, a fixation of the particular fixing eye is accomplished. According to the description of the simulation, the other eye is considered as the following eye and diverges, depending on the pathological situation, from the fixing eye. Within the Hess-Lancester-Diagram the blue points represent the fixation positions denoted by the gaze pattern and the red points describe the resulting deviation points of the following eye.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:247px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="244" height="327" style="margin:0;width:244px;height:327px;border:none" src="gaze_pattern_hess_diagram.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">A left eye fixing is denoted here as an example. This means that the left eye consecutively fixates gaze positions shown in blue and then the SEE++ system calculates the position of the in this case right following eye with a given pathology (in this case a paresis of the right medial rectus muscle). The squint angle can be determined through the comparison of the neighboring blue and red points. The given blue gaze pattern can be modified in the gaze pattern dialog. There exists a complete gaze pattern for the right eye fixing and the left eye fixing, because the Hess-Test is executed for both eyes (first left eye fixing, then right eye fixing or the other way round). The modification of a gaze pattern is necessary when the fixing eye reacts pathological and therefore cannot reach certain fixation points (blue) any more. Then you can either delete these points or change the gaze pattern in such a way that a fixation is possible again.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-align: justify;">You can access the dialog to change a gaze pattern via the main menu under &quot;Data-&gt;Gaze Pattern&quot; or via the Treeview under &quot;Medical Data-&gt;Gaze Pattern&quot;.</p>
+<p class="p_Normal" style="text-align: justify;"><img width="597" height="536" style="margin:0;width:597px;height:536px;border:none" src="gaze_pattern_dialog.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;">This dialog allows the modification of the gaze pattern of the current scenario. If you want to edit the gaze pattern of another scenario, you first have to set the desired scenario active (see <a href="szenarien.htm" class="topiclink">scenarios</a>).</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;">The gaze pattern dialog shows the current gaze pattern, displayed in blue, for one fixation direction. You can switch between the gaze pattern for left eye fixing and right eye fixing via the &quot;Type&quot; box.</p>
+<p class="p_Normal" style="text-align: justify;"><img width="295" height="58" style="margin:0;width:295px;height:58px;border:none" src="gaze_pattern_fixation.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;">The point list shows all entered fixation points in textual form:</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:144px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="147" height="185" style="margin:0;width:147px;height:185px;border:none" src="gaze_pattern_point_list.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;">You can select a point with a single click on a particular entry. Then the coordinates of the chosen fixation point are shown in the text fields for changing and deletion. Furthermore, the point is marked red in the gaze pattern.</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:284px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="286" height="90" style="margin:0;width:286px;height:90px;border:none" src="gaze_pattern_enter_point_manual.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">Single fixation points can be edited by textually entering the data into the free fields for elevation/depression and adduction/abduction.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-align: justify;">Confirm an entered point with &quot;Apply&quot; or delete the actually marked point in the list with &quot;Delete&quot;.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;">If you want to use the mouse to edit the points, you have to use the provided buttons:</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:36px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_translate_button.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">Push this button, if you want to move the points within the gaze pattern with the mouse. To move a point, navigate the mouse over the desired point, press down the left mouse button and then, while still pressing the mouse button, pull the point to the desired position.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:36px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_pencil_button.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">Push this button to insert new points into the gaze pattern. Then move the mouse to the desired position in the diagram and insert a new point by clicking the left mouse button once.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:68px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="68" height="71" style="margin:0;width:68px;height:71px;border:none" src="gaze_pattern_dialog_connect_points.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">Moreover, this function offers the possibility to connect two points with each other. You can achieve this by left-clicking on an existing point and then, while still pressing the mouse button, pulling a line to another point. The line is drawn, when you release the left mouse button over the target point.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:126px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="125" height="49" style="margin:0;width:125px;height:49px;border:none" src="gaze_pattern_snap.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">The snap defines the step size that the points can be moved or set within the gaze pattern with the mouse. A snap of 5 is equivalent to a step size of 5°. Reduce the snap to place points more precisely with the mouse.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_delete_point_button.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">Push this button to delete single points within the gaze pattern. Move the mouse over the point to delete in the diagram and delete it by clicking the left mouse button once.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_copy_button.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">This button allows you to copy (blue or green) points of one fixation into another fixation. SEE++ displays a warning, if existing points are going to be overwritten.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_default_pattern_button.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">Pushing this button deletes all points of the current gaze pattern and replaces them with the default gaze pattern (9 points in the main gaze directions with an maximum gaze angle of 30° each).</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_delete_all_button.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">This button deletes all fixation points within the current gaze pattern.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_load_button.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">With this function you can load a gaze pattern from a file. When loading a gaze pattern file, the current gaze pattern is replaced by the one from the file.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-align: justify;"><img width="561" height="417" style="margin:0;width:561px;height:417px;border:none" src="gaze_pattern_load_dialog.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">After clicking the button to load a gaze pattern, the dialog to choose a gaze pattern file is displayed. These files have the extension &quot;.pat&quot;. Navigate to the desired directory and select the .pat-file you want to load. Then hit the &quot;Open&quot; or &quot;Öffnen&quot; button to load the file. If you push the &quot;Cancel&quot; or &quot;Abbrechen&quot; button, no file is loaded and the current gaze pattern is retained unchanged.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:59px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="54" height="54" style="margin:0;width:54px;height:54px;border:none" src="attention.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">Remind that loading and saving gaze pattern files only affects the gaze pattern of the currently selected fixation and the currently selected points. That means that either only the blue or the green points for the left eye fixing or the right eye fixing are stored or replaced. If you want to replace the gaze pattern for both fixations, you have to switch the fixation to e.g. left eye fixing and again load a gaze pattern file. Another possibility is to copy a gaze pattern into the other fixation by clicking the button to copy a gaze pattern.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_save_button.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">Use this function to save an existing gaze pattern to a file. Files which save gaze patterns have the extension &quot;.pat&quot; and can be loaded anytime in the gaze pattern dialog via the open function (see above).</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-align: justify;"><img width="561" height="417" style="margin:0;width:561px;height:417px;border:none" src="gaze_pattern_save_dialog.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">After clicking the button to save the gaze pattern, the dialog to choose a location and a filename is displayed. Go ahead like you have done when opening a gaze pattern. Navigate to the desired directory and after naming the file, store it by clicking the &quot;Save&quot; or &quot;Speichern&quot; button.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;">Besides the fixation gaze pattern for the Hess-Lancester-Test simulation, SEE++ offers an additional alternative to draw a &quot;real&quot; gaze pattern clinically measured on a patient for comparing reasons.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_switch_points_button.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">This button switches between blue and green points. The green points represent real patient data. The drawing of the green gaze pattern for right eye fixing as well as for left eye fixing works in the same way as was explained for the fixation points for the blue gaze pattern (see above). Loading and saving of green gaze patterns can as well be applied analogously.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:187px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="186" height="46" style="margin:0;width:186px;height:46px;border:none" src="gaze_pattern_head_tilt.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">When using a measured green gaze pattern, there exists the additional possibility to specify in which head-tilt the gaze pattern was measured. The entered head-tilt angle is displayed in the additional information box of the Hess-diagram. However, it has no influence on the simulation.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:215px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="215" height="244" style="margin:0;width:215px;height:244px;border:none" src="gaze_pattern_hess_diagram_green.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">If the Hess-Lancester-Test was simulated with SEE++ and the results are displayed, the green &quot;measured&quot; gaze pattern, if it was defined in the gaze pattern dialog, is additionally displayed. This allows an easy direct comparison between the simulation and the clinically measured data.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;">In the computer system <a href="http://www.eidactics.com" target="_blank" class="weblink">Orbit™</a> the gaze patterns are saved to the single &quot;simulation file&quot; as well. SEE++ offers the possibility to import a gaze pattern from an Orbit-File. To achieve this, use the &quot;Import...&quot; button. The procedure is handled in the same way as when loading a SEE++ gaze pattern file (.pat file).</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;"><a id="textuell" class="hmanchor"></a>The &quot;Enter Squint-Angles...&quot; button enables you to enter a gaze pattern via a template for the nine main gaze directions.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;"><img width="686" height="424" style="margin:0;width:686px;height:424px;border:none" src="gaze_pattern_squint_angle_dialog.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;">Besides the input of the horizontal deviation (HD), the vertical deviation (VD) and the torsional angle (see <a href="simulation.htm" class="topiclink">simulation</a>) the textual input offers the possibility to swap the diagrams in all horizontal axes. That is because the clinical usage is not always standardized. </p>
+<p class="p_Normal" style="text-align: justify;">Use &quot;Mirror X-Axis&quot; to mirror the entered points in the particular diagram. Use &quot;Swap Diagrams&quot; to swap the left eye fixing and the right eye fixing. By default the convention of the sight of the patient is used, which means that in the examiners view the <span style="font-weight: bold;">patient's right eye</span> is <span style="font-weight: bold;">left</span>. The maximum gaze angle for the nine main gaze directions can be adjusted with the &quot;Angle&quot; field. Furthermore, the deviations can be entered in degrees and prism diopters. If you want to skip one point (because for example it couldn't be fixed by the patient), you can simply delete the complete content (0.0 has to be deleted too!) of the three deviation fields (HD, VD and torsion) of the appropriate point or leave all three fields empty. In case no torsion has been measured in a specific gaze direction, simply delete the content of the corresponding torsion field or leave it empty (0.0 would mean a measured torsion of 0 degrees).</p>
+<p class="p_Normal" style="text-align: justify;">A textually entered gaze pattern can be <a href="bilderspeichern.htm" class="topiclink">saved as an image</a>, copied to the clipboard or <a href="drucken.htm" class="topiclink">printed</a>. Furthermore you can check the gaze pattern you want to print via the <a href="seitenansicht.htm" class="topiclink">print preview</a>.<br />
+&nbsp;</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:60px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="54" height="54" style="margin:0;width:54px;height:54px;border:none" src="attention.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">Remind the <a href="simulation.htm" class="topiclink">different algebraic sign for the right eye fixing and the left eye fixing</a>, which <span style="font-weight: bold;">only</span> applies when using the textual input.</p>
+</td>
+</tr>
+</table>
+</div>
+
+</DIV>
+
+
+</body>
+</html>

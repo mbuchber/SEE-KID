@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Supranuclear Gaze Palsy</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Supranuclear gaze palsy,Simulation of the pathology,Gaze palsy,Damage to the nerve,New patient,Distribution of innervations,Lateral rectus muscle,Medial rectus muscle,Surgical correction,Kestenbaum surgery,Dexter gaze palsy,Non-graphical surgery">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "supranukleaererectusmedialis.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <p><span style="font-size: 14pt; font-weight: bold;">Supranuclear Gaze Palsy</span></p>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="trochlearisparese.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="seeppreferenz.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<p style="text-align: justify;">The third example describes a dexter supranuclear gaze palsy. The lesion for this simulation should be cortical (cerebral cortex) above the nuclei of the eye muscles (brainstem). In most cases, apoplectic strokes are the reason for such gaze palsies. Due to a local ischemia of the cerebral hemisphere, on the left side for a dexter gaze palsy, the impulses for moving the eyes to the opposite side (in this simulation to the right) are disordered.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Simulation of the Pathology</span></p>
+<p style="text-align: justify;">During a supranuclear gaze palsy, the central nerve impulse to both eyes, in contrast to a lesion of the peripheral nerves like described in the previous examples, is affected. Therefore, the simulation of a supranuclear gaze palsy has to be carried out in SEE++ by modifying the distribution of innervations of both eyes.</p>
+<p style="text-align: justify;">First a new patient is created. To do so, the menu item <span style="font-style: italic;">&quot;Patient&quot;</span> - <span style="font-style: italic;">&quot;New Patient&quot;</span> is used, which displays the following dialog:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="471" height="373" style="margin:0;width:471px;height:373px;border:none" src="bsp3_patient.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">In this dialog, information about the patient can be entered. After clicking on the &quot;OK&quot; button, the new patient is created and the program is ready for starting with the simulation.</p>
+<p style="text-align: justify;">Since a dexter gaze palsy is to be simulated, the innervation of the lateral rectus muscle of the right eye has to be reduced to 40 % and at the same time the innervation of the medial rectus muscle of the left eye also has to be reduced to 40 %. In SEE++, each of these modifications can be carried out in the respective &quot;Distribution of Innervations&quot; dialog, which is accessible either by the menu item <span style="font-style: italic;">&quot;Data&quot;</span> - <span style="font-style: italic;">&quot;Right Eye&quot;</span> or <span style="font-style: italic;">&quot;Left Eye&quot;</span> - <span style="font-style: italic;">&quot;Distribution of Innervations&quot;</span> or by the tree in the left part of the program window by using the tree item &quot;Distribution of Innervations&quot; in the section for the right or left eye.</p>
+<p style="text-align: justify;">First, the innervation of the lateral rectus muscle (<span style="color: #ff0000;">Abducens</span>) of the right eye is changed by opening the &quot;Distribution of Innervations&quot; dialog as described above. In the dialog, the innervation of the lateral rectus muscle is changed from 100 % to <span style="font-weight: bold;">40 % </span>as shown in the following picture:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="570" height="255" style="margin:0;width:570px;height:255px;border:none" src="bsp3_innv1.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">After closing the &quot;Distribution of Innervations&quot; dialog for the right eye by clicking on the &quot;OK&quot; button, the next step is to reduce the innervation of the medial rectus muscle of the left eye as well. Therefore, again, the &quot;Distribution of Innervations&quot; dialog is used (however, this time for the left eye) and in the dialog the innervation of the medial rectus muscle (<span style="color: #ff0000;">Oculo/MR</span>) is changed from 100 % to <span style="font-weight: bold;">40 %</span> according to the following picture:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="570" height="255" style="margin:0;width:570px;height:255px;border:none" src="bsp3_innv2.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">When the Hess-diagram is recalculated now, the modifications from the &quot;Distribution of Innervations&quot; dialogs are immediately taken into account. By default, the Hess-diagram for the left eye (right eye fixing) is displayed in the diagram-window with the number 1. After the calculation of the Hess-diagram has been successfully finished, the following is displayed:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="768" height="692" style="margin:0;width:768px;height:692px;border:none" src="bsp3_scr1.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">In order to display the second Hess-diagram for the right eye (left eye fixing), use the menu item <span style="font-style: italic;">&quot;Views&quot;</span> - <span style="font-style: italic;">&quot;Diagram-Window 2&quot;</span>. By default, the now displayed diagram-window with the number 2 displays the Hess-diagram for the right eye (left eye fixing). If this is not the case, you can simply click into one of the diagram-windows with the right mouse button and select the desired diagram in the displayed popup menu by left-clicking on it. If the size of the two diagram-windows is adjusted accordingly by clicking on the dividing line between the diagrams and resizing the diagrams with the left mouse button pressed, the following view is displayed:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="768" height="692" style="margin:0;width:768px;height:692px;border:none" src="bsp3_scr2.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">In the calculated Hess-diagrams for right eye fixing and left eye fixing the no longer existing right visual field can be clearly seen (missing conjugated eye movements to the right side). On the basis of the results of the simulation, which are shown in the Hess-diagrams, the simulation of the supranuclear gaze palsy can be considered as finished.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Surgical Correction</span></p>
+<p style="text-align: justify;">In order to be able to make better use of the visual field, which is shifted to the left for both eyes, and if a head posture (tilt to the right) is present, the attempt to simulate an (incomplete) Kestenbaum surgery will be made. The visual field of both eyes, which is shifted to the left due to the dexter gaze palsy, has to be shifted into the primary position. For that purpose, both eyes have to be &quot;operated&quot; to the right, i.e the lateral rectus muscle of the right eye has to be strengthened and vice versa the medial rectus muscle of the left eye has to be strengthened as well.</p>
+<p style="text-align: justify;">First a plication of the lateral rectus muscle of the right eye is carried out. In order to perform a plication surgery in SEE++, the &quot;Non-Graphical Surgery&quot; dialog is used, which is accessible by the menu item <span style="font-style: italic;">&quot;Surgeries&quot;</span> - <span style="font-style: italic;">&quot;Non-Graphical Surgery&quot;</span>. After the dialog has been opened, the desired eye and the desired muscle are selected, in this case the right eye and the lateral rectus muscle. Now a plication of 5 mm of the selected muscle is carried out by entering the appropriate value in the field &quot;<span style="color: #ff0000;">Plication (mm)</span>&quot;. The following picture shows the dialog with the entered plication value:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="507" height="294" style="margin:0;width:507px;height:294px;border:none" src="bsp3_muskeldaten.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">With a click on &quot;Update&quot; the entered plication value is saved without closing the dialog. Now a plication of the medial rectus muscle of the left eye is carried out. Therefore, the left eye as well as the medial rectus muscle are selected in the dialog and a plication of 5 mm is entered in the field &quot;<span style="color: #ff0000;">Plication (mm)</span>&quot;. The following picture again shows the dialog:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="507" height="294" style="margin:0;width:507px;height:294px;border:none" src="bsp3_muskeldaten2.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">After closing the dialog with a click on the &quot;OK&quot; button, a plication of 5 mm on both muscles has been carried out and the program recalculates the two Hess-diagrams. When the calculation is finished, the following picture is displayed:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="768" height="692" style="margin:0;width:768px;height:692px;border:none" src="bsp3_scr3.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Now the two Hess-diagrams show that the goal of the surgical correction has been achieved in terms of the assumed pathology.</p>
+
+</DIV>
+
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Simulation</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Simulation,Hess-Lancaster,Hess-Diagramm,Rechts-Fixation,Links-Fixation,Schielwinkeldiagramm,Hauptblickrichtungen,Horizontalabweichung,Vertikalabweichung,Inzyklotorsionsabweichung,Exzyklotorsionsabweichung,Protrusion,Retraktion,Simulationsablauf,Simulationsergebnis,Blickschema,Referenzauge,Fixationsposition,3D-Augenposition,Listing'sche Torsion,2D-Augenposition,Innervationsmuster,Arten von Torsion,Torsionsmessung,Search Coils,Video-Okulographie,Tangentenskala,Harms-Wand,Zyklodeviation,Listing'sches Gesetz,Gegenrollung,Folgendes Auge,Objektive Torsionsmessung,Pathologische Situation,Subjektive Torsionsmessung,Vestibulookulärer Reflex,VOR">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "simulation.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <p><span style="font-size: 14pt; font-weight: bold;">Simulation</span></p>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="cover_test_med_hintergrund.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="einfuehrendebeispiele.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<p style="text-align: justify;">SEE++ simuliert mit Hilfe des biomechanischen Modells den binokularen Hess-Lancaster Test. Die Ergebnisse des Tests können in Form von Hess-Diagrammen (Links- und Rechts-Fixation) und in Form einer textuellen Darstellung (Schielwinkeldiagramm) ausgegeben werden.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: center;"><img width="566" height="333" style="margin:0 auto 0 auto;width:566px;height:333px;border:none" src="both-hess-diagrams.jpg"/></p>
+<p style="text-align: center;"><img width="800" height="267" style="margin:0 auto 0 auto;width:800px;height:267px;border:none" src="squint-angle_diagram.jpg"/></p>
+<p style="text-align: center;"><span style="font-weight: bold;">Hess-Diagramme und Schielwinkeldiagramm (Rechts- und Links-Fixation)</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Der Unterschied der beiden Darstellungen liegt in der Angabe der Abweichungswerte. Während das Hess-Diagramm einen visuellen Eindruck der pathologischen Situation vermittelt und für beliebig viele Blickpositionen errechnet werden kann, wird das Schielwinkeldiagramm als textuelle Darstellung der Abweichungswerte in den neun Hauptblickrichtungen angegeben.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Im Schielwinkeldiagramm werden für jede Blickrichtung in der Rechts- und Links-Fixation die jeweiligen Abweichungen eingetragen, wobei hier HD für Horizontalabweichung und VD für Vertikalabweichung steht. In den jeweils weißen Feldern wird die Exzyklo- bzw. Inzyklotorsionsabweichung (EX bzw. IN) und die Protrusion in mm (PR; negative Protrusion = Retraktion) angegeben. Alle Angaben außer der Protrusion sind in Grad, wobei für HD und VD eingestellt werden kann, ob die Werte in Grad oder in Prismendioptrien (PD) angegeben werden sollen.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Die Vorzeichen für die horizontale Abweichung sind wie folgt definiert:</p>
+<p style="text-align: justify; text-indent: 0; padding-left: 13px; margin: 0 0 0 27px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">+</span>HD: Zur Nase hin (Adduktion)</p>
+<p style="text-align: justify; text-indent: 0; padding-left: 13px; margin: 0 0 0 27px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">-</span>HD: Von der Nase weg (Abduktion)</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Die Vorzeichen für die vertikale Abweichung sind für Rechts- und Links-Fixation verschieden definiert:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify; margin: 0 0 0 27px;"><span style="font-weight: bold;">Rechts-Fixation</span></p>
+<p style="text-align: justify; text-indent: 0; padding-left: 13px; margin: 0 0 0 40px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">+</span>VD: Abweichung des linken Auges nach unten (Depression)</p>
+<p style="text-align: justify; text-indent: 0; padding-left: 13px; margin: 0 0 0 40px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">-</span>VD: Abweichung des linken Auges nach oben (Elevation)</p>
+<p style="text-align: justify; margin: 0 0 0 27px;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify; margin: 0 0 0 27px;"><span style="font-weight: bold;">Links-Fixation</span></p>
+<p style="text-align: justify; text-indent: 0; padding-left: 13px; margin: 0 0 0 40px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">+</span>VD: Abweichung des rechten Auges nach oben (Elevation)</p>
+<p style="text-align: justify; text-indent: 0; padding-left: 13px; margin: 0 0 0 40px;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">-</span>VD: Abweichung des rechten Auges nach unten (Depression)</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><a id="torsionsarten" class="hmanchor"></a><span style="font-size: 14pt; font-weight: bold;">Verschiedene Arten von Torsion (Zyklorotation)</span></p>
+<p style="text-align: justify;">Die in den Hess-Diagrammen und im Schielwinkeldiagramm von SEE++ angegebenen Torsionen sind abhängig von der im Programm gewählten Art der Torsionsmessung. Standardmäßig werden die Torsionen so in den Diagrammen eingezeichnet, wie sie bei einer objektiven Messung am Patienten in der Klinik gemessen werden. Objektive Messung bedeutet in diesem Fall, dass die Augenposition inklusive Torsion direkt am Patienten gemessen wird (z.B. mit einem VOG (Video-Okulographie) System oder mit &nbsp;Search Coils) ohne dass der Patient irgendwelche Angaben machen muss. Wird in SEE++ nun auf subjektive Torsionsmessung umgestellt, dann werden die Torsionen so ausgegeben, wie sie der Patient bei einem subjektiven Test (z.B. Tangentenskala, Harms-Wand) angibt. Diese Torsionswerte entsprechen dann der Differenz, die der Patient zwischen dem einen und dem anderen Auge wahrnimmt (Zyklodeviation), da die &quot;normale&quot; Listing'sche Torsion (z.B. 8.2 Grad bei Blick in 30 Grad Adduktion und 30 Grad Elevation), die auch bei einem gesunden Auge vorhanden ist (siehe <a href="geometrischemodelle.htm#listingschesgesetz" class="topiclink">Listing'sches Gesetz</a>), subjektiv vom Patienten nicht wahrgenommen wird. Um in der Klinik gemessene Torsionswerte mit simulierten Torsionen zu vergleichen muss also die entsprechende Torsionsmessung im Programm ausgewählt werden.</p>
+<p style="text-align: justify;">Neben der Listing'schen Torsion berechnet SEE++ auch noch die Gegenrollung, welche bei einer Neigung des Kopfes in Richtung der linken oder rechten Schulter entsteht (VOR - vestibulookulären Reflex). Dazu wird auf Basis der aktuellen Neigung des Kopfes des &quot;virtuellen&quot; Patienten die entsprechende Gegenrollung berechnet und mit der Listing'schen Torsion bzw. mit der Zyklodeviation (abhängig von der gewählten Torsionsmessung) kombiniert. Die so berechnete kombinierte Torsion wird dann in den verschiedenen Diagrammen angezeigt. Im <a href="stateviewer.htm" class="topiclink">Stateviewer</a> haben sie außerdem die Möglichkeit, die Komponenten, aus denen sich die in den Diagrammen angezeigte Torsion zusammensetzt, einzeln abzulesen.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Simulationsablauf</span></p>
+<p style="text-align: justify;">Manchmal ist es von Vorteil, über die internen Abläufe der Simulation von SEE++ Bescheid zu wissen, wenn man ein Simulationsergebnis interpretiert. Die folgende Abbildung zeigt den schematischen Ablauf der Simulation für den Hess-Lancaster Test, den SEE++ für jede Blickposition aus dem zu fixierenden Blickschema durchführt.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: center;"><img width="517" height="626" style="margin:0 auto 0 auto;width:517px;height:626px;border:none" src="hmfile_hash_319d97a2.jpg"/></p>
+<p style="text-align: center;"><span style="font-weight: bold;">Simulationsablauf beim Hess-Lancaster Test (basierend auf Orbit™, siehe [Miller, 1999])</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Ziel ist die Ermittlung der Abweichungen des folgenden Auges von den Fixationspositionen des fixierenden Auges. Dabei können fixierendes und folgendes Auge jeweils vertauscht werden, das heißt entweder ist das rechte Auge fixierend und das linke Auge folgend oder das linke Auge ist fixierend und das rechte Auge folgend. Dies ermöglicht die Berechnung der Rechts- bzw. Links-Fixation.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px"><span style="font-weight: bold;">(A)</span></td><td style="border:none;padding:0">Ausgehend von einem gesunden Referenzauge und einer vorgegebenen Fixationsposition wird eine vollständige 3D-Augenposition ermittelt.</td></tr></table></div>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px"></td><td style="border:none;padding:0">Bei der Vorgabe einer Fixationsposition kann natürlich nur Ab-/Adduktion und Elevation bzw. Depression angegeben werden. Die Spezifikation einer Torsion ist nicht möglich, da ein Patient auch üblicherweise nicht bewusst einen bestimmten Torsionswinkel einstellen kann. Dies erfordert die Bestimmung der vollständigen Position des fixierenden Auges und wird errechnet, indem mit Hilfe eines Referenzauges solange Innervationen für Augenpositionen mit Listing'scher Torsion generiert werden, bis die Position des fixierenden Auges mit diesen Innervationen und der gewünschten 2D-Augenposition korreliert.</td></tr></table></div>
+<p style="text-align: justify; text-indent: -27px; margin: 0 0 0 27px;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px"><span style="font-weight: bold;">(B)</span></td><td style="border:none;padding:0">Aus der ermittelten 3D-Augenposition und dem fixierenden Auge wird das Innervationsmuster für alle sechs Augenmuskeln berechnet, welches notwendig ist, um das fixierende Auge in die gewünschte Position zu bringen.</td></tr></table></div>
+<p style="text-align: justify; text-indent: -27px; margin: 0 0 0 27px;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px"><span style="font-weight: bold;">(C)</span></td><td style="border:none;padding:0">Diese Innervationen werden danach in das Referenzauge gegeben, um dessen Augenposition zu ermitteln. Dies bedeutet, wenn das fixierende Auge pathologisch ist, dass die Ermittlung der Position des Referenzauges eine andere Augenposition ergibt als zuvor. Das Ergebnis dieser Berechnung ist dann die beabsichtigte Fixationsposition des fixierenden Auges.</td></tr></table></div>
+<p style="text-align: justify; text-indent: -27px; margin: 0 0 0 27px;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px"><span style="font-weight: bold;">(D)</span></td><td style="border:none;padding:0">In diesem Schritt wird die beabsichtigte Fixationsposition des fixierenden Auges gespiegelt, um die beabsichtigte Position des folgenden Auges zu erhalten. Da man Innervationen nicht spiegeln kann (der kontralaterale Synergist des rechten m.rectus lateralis ist der linke m. rectus medialis und funktioniert möglicherweise nicht identisch), ist dieser &quot;Umweg&quot; über das Spiegeln der Augenposition notwendig. Dies ist möglich, da Ab-/Adduktion und Torsion zwischen den beiden Augen unterschiedliche Vorzeichen besitzen, um dieselbe Richtung anzugeben.</td></tr></table></div>
+<p style="text-align: justify; text-indent: -27px; margin: 0 0 0 27px;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px"><span style="font-weight: bold;">(E)</span></td><td style="border:none;padding:0">Nun werden aus der gespiegelten Augenposition die Innervationen des Referenzauges ermittelt, um anschließend die Position des folgenden Auges zu berechnen.</td></tr></table></div>
+<p style="text-align: justify; text-indent: -27px; margin: 0 0 0 27px;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none;border-spacing:0;padding:0;line-height: normal;"><tr style="vertical-align:baseline"><td style="border:none;padding:0;width:27px"><span style="font-weight: bold;">(F)</span></td><td style="border:none;padding:0">Die Innervationen des Referenzauges bestimmen nun die Position des folgenden Auges, jene Position, die im Hess-Diagramm als roter Punkt aufscheinen wird.</td></tr></table></div>
+<p style="text-align: justify; text-indent: -27px; margin: 0 0 0 27px;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p><span style="font-size: 14pt; font-weight: bold;">Literatur</span></p>
+<p><span style="font-size: 9pt;">[Brugger, 2000] P.C. Brugger. </span><span style="font-size: 9pt; font-style: italic;">Der 3D Anatomie Atlas</span><span style="font-size: 9pt;">. Weltbild Verlag GmbH, Augsburg, Deutsche Erstausgabe, 2000.</span></p>
+<p><span style="font-size: 9pt;">[Buchberger und Mayr, 2000] M. Buchberger und H. Mayr. SEE-KID: Software Engineering Environment for Knowledge-based Interactive Eye Motility Diagnostics (in Englisch). In </span><span style="font-size: 9pt; font-style: italic;">Proceedings of International Symposium on Telemedicine, Gothenburg, Sweden</span><span style="font-size: 9pt;">, 2000.</span></p>
+<p><span style="font-size: 9pt;">[Clark et. al., 2000] R.A. Clark, Miller J.M. und J.L. Demer. Three-dimensional location of human rectus pulleys by path inflections in secondary gaze positions. </span><span style="font-size: 9pt; font-style: italic;">Investigative Ophthalmology &amp; Visual Science</span><span style="font-size: 9pt;">, 41(12): 3787–3797, November 2000.</span></p>
+<p><span style="font-size: 9pt;">[Demer et. al., 2000] J.L. Demer, S.Y. Oh und V. Poukens. Evidence for Active Control of Rectus Extraocular Muscle Pulleys. </span><span style="font-size: 9pt; font-style: italic;">Investigative Ophthalmology &amp; Visual Science</span><span style="font-size: 9pt;">, 41(6):1280–1290, May 2000.</span></p>
+<p><span style="font-size: 9pt;">[Günther, 1986] S. Günther. </span><span style="font-size: 9pt; font-style: italic;">Die modellmäßige Beschreibung der Augenmuskelwirkung</span><span style="font-size: 9pt;">. Diplomarbeit, Universität Hamburg, Universitätskrankenhaus-Eppendorf, Abteilung für medizinische Optik, 1986.</span></p>
+<p><span style="font-size: 9pt;">[Kaufmann, 1995] H. Kaufmann. </span><span style="font-size: 9pt; font-style: italic;">Strabismus</span><span style="font-size: 9pt;">. Ferdinand Enke Verlag, Stuttgart, 2. Auflage, 1995.</span></p>
+<p><span style="font-size: 9pt;">[Miller 1999] J.M. Miller. Orbit™ 1.8 Gaze Mechanics Simulation Users Manual. Eidactics, Suite 404, 1450 Greenwich Street, San Francisco, CA 94109, USA.</span></p>
+<p><span style="font-size: 9pt;">[Miller und Demer, 1996] J.M. Miller und J.L. Demer. Uses of Biomechanical Modeling (in Englisch). In </span><span style="font-size: 9pt; font-style: italic;">Proceedings of CLADE, Buenos Aires</span><span style="font-size: 9pt;">, 1996.</span></p>
+<p><span style="font-size: 9pt;">[Miller und Demer, 1999] J.M. Miller und J.L. Demer. Clinical Applications of Computer Models for Strabismus. In eds Rosenbaum, A and Santiago, AP, Clinical Strabismus Management. Philadelphia, W. B. Saunders.</span></p>
+<p><span style="font-size: 9pt;">[Pschyrembel, 1994] Pschyrembel. </span><span style="font-size: 9pt; font-style: italic;">Klinisches Wörterbuch</span><span style="font-size: 9pt;">. Nikol VerlagsgmbH, Hamburg, 257. Auflage, 1994.</span></p>
+<p><span style="font-size: 9pt;">[Schäffler und Schmidt, 1998] A. Schäffler und S. Schmidt. </span><span style="font-size: 9pt; font-style: italic;">Biologie, Anatomie und Physiologie</span><span style="font-size: 9pt;">. Urban und Fischer Verlag, München, 3., erweiterte Auflage, 1998.</span></p>
+<p class="p_Normal"><span style="font-size: 9pt;">[Yanoff und Duker, 2003] M. Yanoff und J.S. Duker. </span><span style="font-size: 9pt; font-style: italic;">Ophtalmology</span><span style="font-size: 9pt;">. Mosby, London, 2. Auflage, 2003.</span></p>
+
+</DIV>
+
+
+</body>
+</html>

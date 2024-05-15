@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Kinematic Model</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Kinematic model,Force model,Muscle force simulation,Force-length-innervation relationship,Force function,Forward kinematic,Inverse kinematic,Innervations,Standard gaze positions,Hess-Lancaster,Innervation pattern,Fixation,Hering's law,Sherrington's law,Diplopia,Primary position,Antagonistic innervation,Binocular examination,Mechanical system,Elasic force development,Reciprocal innervation">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "kinematischemodelle.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <p><span style="font-size: 14pt; font-weight: bold;">Kinematic Model</span></p>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="pulleymodell.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="kraeftemodell.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<p style="text-align: justify;">In order to be able to completely simulate a mechanical system, apart from geometrical structures, the simulation of forces is also needed. The force development of extraocular muscles is described by an isolated force model, providing specific behavior patterns for each muscle. The structure of the model orients itself on already existing model types for the skeletal musculature. Here the muscle function is divided into elastic (passive) and contractile (active) force development. Elastic forces are developed due to stretch and compression of the muscle, while contractile forces always presuppose a neurophysiological activation potential. The resulting total force function adds up contractile and elastic force functions and simulates the actual impact of a muscle.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: center;"><img width="660" height="230" style="margin:0 auto 0 auto;width:660px;height:230px;border:none" src="muscleforces_lr.jpg"/></p>
+<p style="text-align: center;"><span style="font-weight: bold;">Muscle Force Simulation of Lateral Rectus Muscle (Based on Orbit™, See [Miller, 1999])</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">The functions shown in this figure describe the static force development of a muscle concerning a well-defined force-length-innervation relationship. While the elastic force development (f in grams) is defined exclusively in dependence of the length variation of a muscle (dl in percent of L0), the contractile force function (f in grams) is additionally dependent on the innervation (iv). The muscle force simulation of all other extraocular muscles is implemented as relative scaling of the data displayed in this figure. The underlying data were defined according to research of Miller and Robinson.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">The geometrical model and the model for the muscle force simulation described so far are now connected by the introduction of a kinematic model. This kinematic model is responsible for the transmission of forces in the geometrical model. To achieve this, each muscle's rotation angle around its geometrical axis is put in relation to the predicted force development. The result is a rotation axis with an associated rotation angle, which describes the current mechanical impact of all six eye muscles in a certain gaze position. If a rotation of the globe into the predicted direction is carried out, again all components of the geometrical model and of the muscle force simulation change. As a result of the change in the geometrical model, the muscle force distribution also changes and due to the passive length change of the muscles the muscle force functions are modified and transitively result in a new force distribution. This process continues until a stable eye position can be achieved. Such a stable eye position is characterized by a force equilibrium of all six muscles.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">With the help of this simulation technique, the problems of the forward and inverse kinematics can be solved. The forward kinematic finds the resulting gaze position with given innervations for all six eye muscles, whereby the inverse kinematic derives the innervations for all six eye muscles from a given gaze position. If these two methods are now combined, a test for the binocular examination of eye movement disorders can be simulated. The SEE++ system simulates the Hess-Lancaster test by displaying the standard gaze positions of one eye next to the pathological deviations of the other eye in different colors.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: center;"><img width="267" height="340" style="margin:0 auto 0 auto;width:267px;height:340px;border:none" src="hessdiagram.jpg"/></p>
+<p style="text-align: center;"><span style="font-weight: bold;">Hess Test with Standard Gaze Positions of a Non-Pathological</span></p>
+<p style="text-align: center;"><span style="font-weight: bold;">(Right) Eye (Dark or Blue) and Gaze Positions of a</span></p>
+<p style="text-align: center;"><span style="font-weight: bold;">Pathological Left Eye (Bright or Red).</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">For each gaze position, the innervation pattern of all eye muscles of the fixing non-pathological eye is determined and subsequently passed to the pathological eye (Hering's law) in order to determine its resulting gaze position. The innervations are only defined for the agonistic muscles, the antagonistic innervations have to be calculated by application of a reciprocal innervation function (Sherrington's law). The result of the test can easily be seen by comparing the standard gaze positions with the pathological gaze positions of the examined eye: Slight diplopia in primary position, hyperfunction of the left eye in depression and abduction of the right eye, etc.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">On basis of these models and their parameters, a pathological situation and/or a surgery is simulated. The changes in geometry directly affect the currently used geometrical model, as for example when transposing an insertion, the new insertion coordinates are directly applied and thus a new direction of pull of the muscle is defined. How the new muscle path will affect the mechanical behavior of the eye is highly dependent on the particular geometrical model that is used. For example, the string model provides a significantly &quot;worse&quot; anatomical representation than the tape model of Robinson.</p>
+
+</DIV>
+
+
+</body>
+</html>

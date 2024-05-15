@@ -1,0 +1,161 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Scenarios</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Scenarios,Treeview,Globe data,Muscle data,Distribution of innervations,Gaze pattern,Pathological model,Default data,Volkmann-data,Orbit-data,Pulley-data,Volkmann,Orbit,Pulleys,Sub-scenario,Duplicate scenario,Save scenario,Preoperative data,Rename scenario,Delete scenario,Lock scenario,Unlock scenario,Parent scenario,Assign view to scenario,Overwrite scenario,Load scenario,General options,Medical data,Motor fusional ability">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "szenarien.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <p><span style="font-size: 14pt; font-weight: bold;">Scenarios</span></p>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="blickschema.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="szenarienansichten.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<p class="p_Normal" style="text-align: justify;">Scenarios can be edited exclusively via the Treeview. In a scenario all three eyes (reference eye, left eye, right eye) with all the corresponding <a href="medizinischestammdaten.htm" class="topiclink">medical data</a> (<a href="bulbusdaten.htm" class="topiclink">globe data</a>, <a href="muskeldaten.htm" class="topiclink">muscle data</a>, <a href="innervationsverteilung.htm" class="topiclink">distribution of innervations</a>, <a href="motorische_fusionsbreite.htm" class="topiclink">motor fusional ability</a>, <a href="blickschema.htm" class="topiclink">gaze pattern</a>) are stored. Furthermore, each scenario can have an ambiguous name that needs to have a minimum length of five characters. All scenarios can be found under the &quot;Scenarios&quot; element in the Treeview. By default there exist four scenarios in SEE++:</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:192px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="179" height="96" style="margin:0;width:179px;height:96px;border:none" src="scenario_default.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify; text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Pathological Model:</span> This scenario contains the original data for all other scenarios (default data). It cannot be deleted, overwritten, renamed, unlocked or duplicated.</p>
+<p class="p_Normal" style="text-align: justify; text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Volkmann-Data:</span> This scenario contains the muscle and globe data based on <a href="geometrischemodelle.htm#geometrischevermessungdesau" class="topiclink">Volkmann</a>. In this data the pulleys are equal to the anatomical origins.</p></td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-align: justify; text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Orbit-Data:</span> This scenario contains the same original data as it is used in the <a href="http://www.eidactics.com" target="_blank" class="weblink">Orbit™</a> computer system (this data can be found in the &quot;Orbit_Norm&quot; file of the <a href="http://www.eidactics.com" target="_blank" class="weblink">Orbit™</a> computer system). This data is similar to the data stored in the pathological model with some minimally different parameters. This scenario is primary used to compare simulations done with the Orbit-Model in SEE++ with the <a href="http://www.eidactics.com" target="_blank" class="weblink">Orbit™</a> computer system.</p>
+<p class="p_Normal" style="text-align: justify; text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span><span style="font-weight: bold;">Pulley-Data:</span> This scenario contains the same data as the &quot;Pathological Model&quot;. By default it is the active scenario and is used as source for new scenarios.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;">Scenarios are in a hierarchical relationship to each other. That means that a sub-scenario always depends on the data of the scenario it was created of. All scenarios are based on the data of the &quot;Pathological Model&quot;. Scenarios in the same tree level as the &quot;Pathological Model&quot; represent so-called preoperative data. Surgeries can be simulated based on this data. The responsibility to define which scenario represents preoperative data lies with the user. One possible approach is to first simulate a pathology based on the pulley data, then one transfers the final result of the simulation to preoperative data and finally the surgery is simulated. At the end of the simulation the result of the surgery can again be transferred to preoperative data, for example to perform another surgery.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;">Only one scenario can be active at the same time in the program. The active scenario is marked with a small grey quadratic frame around the symbol besides the name of the scenario. The user can switch the active scenario by clicking on a scenario (name or symbol) with the left or the right mouse button. The selected scenario thereby is chosen as active scenario and loaded at the same time. If the user performs a left-click on the active scenario, it is reloaded. When loading a scenario, the medical data stored in the scenario is compared with the current data (which can be viewed via the Treeview or the main menu). If differences exist, the following warning is displayed:</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;"><img width="582" height="126" style="margin:0;width:582px;height:126px;border:none" src="scenario_warn1.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;">If the user clicks on &quot;Yes&quot; or &quot;Ja&quot;, all current changes of the medical data are discarded and are overwritten with the data from the chosen scenario. A click on &quot;No&quot; or &quot;Nein&quot; aborts the process and the scenario is not loaded as well as not set active, if it is not already active.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:60px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="54" height="54" style="margin:0;width:54px;height:54px;border:none" src="attention.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">Only discard changes if you are sure that you do not need them any more. This procedure cannot always be completely undone!</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;">If a view is assigned to a scenario, then, when loading a scenario, the assigned view is loaded together with the scenario by default (thereby the current view is overwritten). If you do not want that the assigned views are loaded automatically with a scenario, you can turn of this behaviour using the <a href="allgemeines.htm" class="topiclink">general options</a>.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;"><img width="272" height="320" style="margin:0;width:272px;height:320px;border:none" src="scenario_popup_menu.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">There exists a menu for editing scenarios, which can be displayed by right-clicking on a scenario. This menu always refers to the scenario that was clicked on with the right mouse button. That is also the reason why a scenario is loaded when clicking on it with the right mouse button.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:59px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="45" height="45" style="margin:0;width:45px;height:45px;border:none" src="tipp_icon.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">Changes to the gaze pattern of the current scenario (via the <a href="blickschema.htm" class="topiclink">gaze pattern dialog</a>) are directly saved in the scenario and do not have to (as changes to the medical data) be saved with &quot;Save Scenario&quot;. Furthermore, the gaze pattern of locked scenarios can be changed anytime. You only have to set the scenario active and perform the desired changes via the gaze pattern dialog.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;"><img width="212" height="124" style="margin:0;width:212px;height:124px;border:none" src="scenario_overwrite_menu.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">There exists an exception for this behaviour. This exception occurs when the currently selected scenario contains one or more unlocked sub-scenarios. If you click on one of this unlocked sub-scenarios with the right mouse button, a menu is displayed. This menu allows you to overwrite the sub-scenario with the currently selected scenario data. As an alternative, you can load the clicked scenario via the other menu item.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">New Sub-Scenario</span></p>
+<p class="p_Normal" style="text-align: justify;">This menu item creates a new scenario one level beneath the selected scenario. The data for the new scenario is copied from the selected scenario. Before the new scenario is created, the following dialog is displayed:</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;"><img width="347" height="156" style="margin:0;width:347px;height:156px;border:none" src="scenario_name.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;">In this dialog the name of the scenario has to be entered (at least 5 characters). When clicking the &quot;OK&quot; button, the new scenario is created and shown in the tree. A click on &quot;Cancel&quot; aborts the creation process and no new scenario is created. When creating a new sub-scenario, the scenario beneath which the new scenario is created is automatically locked and the new scenario is set active to assure the traceability of the changes in the scenarios. Sub-scenarios can also be created for locked scenarios.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:59px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="45" height="45" style="margin:0;width:45px;height:45px;border:none" src="tipp_icon.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify;">If you have forgotten to create a new scenario before changing the medical data and you do not want to loose your changes and do not want to overwrite the active scenario, proceed as follows: Create a new sub-scenario based on the active scenario or duplicate it. Ignore the warning concerning unsaved changes by clicking on &quot;No&quot; or &quot;Nein&quot;. After entering a name for the new scenario right-click on the new scenario and afterwards left-click on the menu item &quot;Save Scenario&quot;. Thereby your changes of the new scenario are saved and the parent scenario is not overwritten.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Duplicate Scenario</span></p>
+<p class="p_Normal" style="text-align: justify;">This menu item creates a copy of the selected scenario and inserts it into the level where the selected scenario is located. Before creating a new scenario the user has, just like when creating a new sub-scenario, the possibility to specify a name for the new scenario. The name of the selected scenario is automatically proposed as name for the new scenario. Scenarios on the same level as the &quot;Pathological Model&quot; (scenarios that contain preoperative data) cannot be duplicated. Locked scenarios can be duplicated, whereas the new scenario is not automatically locked. The newly created scenario is automatically set active.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Save Scenario</span></p>
+<p class="p_Normal" style="text-align: justify;">A click on the menu item &quot;Save Scenario&quot; saves the medical data of all three eyes to the selected scenario and overwrites all the data that was stored in this scenario before. If a scenario is locked, it cannot be saved.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Transform Scenario into Preoperative Data</span></p>
+<p class="p_Normal" style="text-align: justify;">If the simulation of a pathology is completed, you can create a new scenario with the help of this menu item which has some special properties. The reason for this special type of scenario is the better differentiation between the simulation of a pathology and the simulation of a surgery. The special properties of scenarios transformed into preoperative data are:</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:212px; padding:0; border:none"><p class="p_Normal" style="text-align: justify;"><img width="206" height="145" style="margin:0;width:206px;height:145px;border:none" src="scenario_links.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p class="p_Normal" style="text-align: justify; text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>The new scenario is always at the same level as the &quot;Pathological Model&quot;. More precisely all scenarios at the level of the &quot;Pathological Model&quot; represent preoperative data. The &quot;Pathological Model&quot; contains preoperative data too. But there exists no scenario it was created off, because it is the global parent scenario.</p></td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-align: justify; text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>When creating a new scenario, the parent scenario is automatically locked to assure the traceability of the changes in the scenarios. </p>
+<p class="p_Normal" style="text-align: justify; text-indent: 0; padding-left: 13px; margin-left: 0;"><span class="f_Normal" style="font-family: Arial,'Lucida Sans Unicode','Lucida Grande','Lucida Sans';display:inline-block;width:13px;margin-left:-13px">&#8226;</span>Between the new scenario and the parent scenario a link is set up which is visualized in form of a small arrow in the upper right corner of the symbol next to the name of both scenarios (see also &quot;Select and Load Linked Scenario&quot;).</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;">For the new scenario (as when creating a sub-scenario) a name has to be specified.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Rename Scenario</span></p>
+<p class="p_Normal" style="text-align: justify;">This menu item allows you to change a scenario's name after its creation.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Delete Scenario</span></p>
+<p class="p_Normal" style="text-align: justify;">This menu item deletes the selected scenario and all its sub-scenarios. If the selected scenario or one of its associated sub-scenarios contains a link to preoperative data, a warning is displayed. That is because after the deletion the links of referenced preoperative scenarios to the appropriate referring scenarios are invalid. If a scenario with preoperative data is deleted, the link in the associated referring scenario is deleted too.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Lock Scenario/Unlock Scenario</span></p>
+<p class="p_Normal" style="text-align: justify;">When creating a sub-scenario and transforming a scenario into preoperative data, the referring scenario is automatically locked and cannot be unlocked as long as the created sub-scenario or the scenario with the preoperative data exists. The reason of this automatic lock is to assure the traceability of the changes in the scenarios. A locked scenario can be recognized by the small yellow lock icon displayed in the lower right part of the symbol next to the name of the scenario. Scenarios that are not locked automatically can be manually locked via the menu item &quot;Lock Scenario&quot;. This is useful to avoid changes that can be done accidentally such as overwriting through saving or through the import of Orbit-Files. The locking of a scenario does not prevent it from being deleted. Via the menu item &quot;Unlock Scenario&quot; a scenario can be unlocked again, if the scenario's hierarchical position allows it.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Select and Load Linked Scenario</span></p>
+<p class="p_Normal" style="text-align: justify;">This menu item can only be selected, if the selected scenario was created via the menu item &quot;Transform Scenario into Preoperative Data&quot; and the referring scenario was not deleted yet. In this case the referring scenario is selected as the active scenario and is loaded.</p>
+
+</DIV>
+
+
+</body>
+</html>

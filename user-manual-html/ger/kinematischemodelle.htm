@@ -1,0 +1,80 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Kinematisches Modell</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Kinematisches Modell,Kräftemodell,Muskelkräftesimulation,Kraft-Längen-Innervationsverhalten,Kraftfunktion,Vorwärtskinematik,Rückwärtskinematik,Innervationen,Normblickpositionen,Hess-Lancaster,Innervationsmuster,Fixation,Hering'sches Gesetz,Sherrington'sches Gesetz,Diplopie,Primärposition,Antagonistische Innervation,Binokulare Prüfung,Mechanisches System,Passive Kraftentwicklung,Reziproke Innervation">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "kinematischemodelle.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <p><span style="font-size: 14pt; font-weight: bold;">Kinematisches Modell</span></p>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="pulleymodell.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="kraeftemodell.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<p style="text-align: justify;">Um ein mechanisches System vollständig simulieren zu können, wird neben geometrischen Strukturen auch die Simulation von Kräften benötigt. Die Kraftentwicklung der extraokulären Muskeln wird durch ein isoliertes Kräftemodell beschrieben, welches für jeden Muskel spezifische Verhaltensmuster vorgibt. Die Struktur des Modells orientiert sich an bereits existierenden Modelltypen für die Skelettmuskulatur. Hierbei wird die Muskelfunktion in passive und aktive Kraftentwicklung eingeteilt. Passive Kräfte entwickeln sich durch Dehnung und Kompression des Muskels, während aktive Kräfte immer ein neurophysiologisches Aktivierungspotential voraussetzen. Die resultierende Funktion aus aktiver und passiver Kraftfunktion simuliert dann die tatsächliche Wirkungsweise des Muskels.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: center;"><img width="660" height="230" style="margin:0 auto 0 auto;width:660px;height:230px;border:none" src="muscleforces_lr.jpg"/></p>
+<p style="text-align: center;"><span style="font-weight: bold;">Muskelkräftesimulation des m. rectus lateralis (basierend auf Orbit™, siehe [Miller, 1999])</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Die in dieser Abbildung dargestellten Funktionen beschreiben die statische Kraftentwicklung eines Muskels bezüglich eines definierten Kraft-Längen-Innervationsverhaltens. Während die passive Kraftentwicklung (f in Gramm) ausschließlich in Abhängigkeit der Längenänderung eines Muskels (dl in Prozent von L0) definiert ist, ist die aktive Kraftfunktion (f in Gramm) zusätzlich von der Innervation (iv) bestimmt. Alle weiteren extraokulären Muskeln sind relativ zu den in dieser Abbildung dargestellten Daten realisiert. Die zugrunde liegenden Daten wurden in Anlehnung an Untersuchungen von Miller und Robinson definiert.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Die bisher beschriebenen Modelle der Geometrie und Kraftsimulation werden nun durch die Einführung eines kinematischen Modells miteinander verknüpft. Das kinematische Modell ist für die Übertragung der Kräfte auf das geometrische Modell zuständig. Hierzu wird für jeden Muskel der Rotationswinkel um die geometrische Achse mit der prognostizierten Kraftentwicklung in Relation gesetzt. Das Ergebnis ist dann eine resultierende Rotationsachse mit zugehörigem Rotationswinkel, der eine aktuelle mechanische Wirkungsweise aller sechs Augenmuskeln in einer bestimmten Blickposition beschreibt. Führt man nun eine Rotation des Bulbus in die prognostizierte Richtung aus, verändern sich wiederum die Komponenten der Geometrie und der Muskelkräfte. Durch die geometrische Änderung ergibt sich dadurch eine Veränderung der Muskelwirkungsverteilung und durch die passive Längenänderung der Muskeln verändern sich die Muskelkraftfunktionen und ergeben transitiv eine neue Kräfteverteilung. Dieser Prozess setzt sich solange fort, bis eine stabile Augenposition erreicht werden kann. Eine solche stabile Augenposition ist durch ein Kräftegleichgewicht aller sechs beteiligten Muskeln charakterisiert.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Mit Hilfe dieser Simulationstechnik lassen sich die Probleme der Vorwärts- und Rückwärtskinematik lösen. Die Vorwärtskinematik findet bei gegebenen Innervationen für alle sechs Augenmuskeln die resultierende Blickrichtung, wobei die Rückwärtskinematik aus einer gegebenen Blickrichtung wiederum die Innervationen für alle sechs Augenmuskeln ableitet. Kombiniert man nun diese beiden Methoden, so lässt sich ein Test für die binokulare Prüfung von Augenbewegungsstörungen simulieren. Das SEE++ System bildet als eine Möglichkeit den Hess-Lancaster Test ab, in dem es, neben den pathologischen Abweichungen eines Auges, die Normblickpositionen des anderen Auges in anderer Farbdarstellung zeigt.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: center;"><img width="267" height="340" style="margin:0 auto 0 auto;width:267px;height:340px;border:none" src="hessdiagram.jpg"/></p>
+<p style="text-align: center;"><span style="font-size: 10pt; font-weight: bold;"> </span><span style="font-weight: bold;">Hess-Test mit Normblickpositionen eines nicht betroffenen</span></p>
+<p style="text-align: center;"><span style="font-weight: bold;">(rechten) Auges (dunkel bzw. blau) und Augenstellungen eines</span></p>
+<p style="text-align: center;"><span style="font-weight: bold;">pathologischen linken Auges (hell bzw. rot).</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Bei jeder Blickposition eines Auges wird das Innervationsmuster aller Augenmuskeln bei der Fixation mit dem nicht betroffenen Auge bestimmt und an das pathologische Auge weitergegeben (Hering'sches Gesetz), um dessen Blickposition zu bestimmen. Die Innervationen sind nur für die agonistischen Muskeln definiert, die antagonistische Innervation wird durch Anwendung einer reziproken Innervationsfunktion berechnet (Sherrington'sches Gesetz). Das Resultat des Tests lässt sich durch den Vergleich der Normblickpositionen und pathologischen Blickpositionen des geprüften Auges leicht ablesen: Leichte Diplopie in Primärposition, Überfunktion des linken Auges in Depression und Abduktion des rechten Auges, etc.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Auf Basis dieser Modelle und deren Parameter wird nun eine pathologische Situation bzw. ein operativer Eingriff simuliert. Die Veränderungen in der Geometrie wirken sich direkt auf das verwendete geometrische Modell aus, indem beispielsweise bei der Versetzung einer Insertion die neuen Insertionskoordinaten direkt übernommen werden und somit eine neue Zugrichtung des Muskels definiert wird. Wie diese Zugrichtung nun im Detail aussieht, ist von der Unterschiedlichkeit der verwendeten Modelle anhängig. So liefert beispielsweise das Fadenmodell eine anatomisch gesehen wesentlich &quot;schlechtere&quot; Darstellung als beispielsweise das Bändermodell von Robinson.</p>
+
+</DIV>
+
+
+</body>
+</html>

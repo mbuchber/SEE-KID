@@ -1,0 +1,81 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Using SEE++</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Task flow,Parameterization,Patient data,Simulation sequence,Simulation,Pathology,Comparison with patient data,Hess-Lancaster,Simulation result,Simulation of surgery,3D-model,Model parameter,Evaluation of results,Patient specific situation">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "seeppverwenden.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <p><span style="font-size: 14pt; font-weight: bold;">Using SEE++</span></p>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="grundlagenderanatomie.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="overview.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<p style="text-align: justify;">SEE++ is used in the following task flow:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify; margin: 0 0 0 27px;"><img width="608" height="328" style="margin:0;width:608px;height:328px;border:none" src="seepp_prozesse.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">1. Parameterization with Patient Data</span></p>
+<p style="text-align: justify;">The goal of SEE++ is to offer an as realistic as possible visualization of a patient specific situation. In this first step of a simulation sequence, the model is parameterized with values measured directly on the patient. In this process, parameters like globe radius, cornea, muscle lengths, insertions, tendons, etc. can be modified. At the same time, general data such as name or description are entered.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">2. Simulation of a Pathology</span></p>
+<p style="text-align: justify;">During the simulation of a pathology, model parameters are changed in a way that the resulting model predictions correspond to patient measured values as close as possible. A model prediction is done in SEE++ by the simulation of a clinical Hess-Lancaster test, whereas the representations of right eye fixing and left eye fixing are used. By comparing the Hess-Lancaster data of the patient with the simulated data, one can determine whether the simulation corresponds to the pathology of the patient. The 3D representation of the patient offers an additional support regarding the evaluation of a simulation.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">3. Comparison of Simulation Results with Patient Data</span></p>
+<p style="text-align: justify;">The comparison is related to the Hess-Lancaster test mentioned before, whereby the process of comparing can also serve as a verification of the diagnosis posed before. Thus, in this step it is to determine whether the simulation result agrees sufficiently with the measured patient data. This, at the same time, offers a basis for a later simulated treatment by interactive virtual surgery of the modeled pathology.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">4. Simulation of a Surgery</span></p>
+<p style="text-align: justify;">In this step, the actual surgery is simulated by interactively modifying different model parameters using the mouse within the 3D representation. Points of reference support orientation and the dosage of the surgery performed. Furthermore, different surgery techniques like anterior/posterior transposition and tangential transposition of muscle insertions are supported. Muscle force or innervation related parameters are modified manually in the program so that they correspond to a comparable surgical procedure. For example, a muscle resection can be accomplished by changing the parameters of a muscle representing the tendon and muscle length. The 3D-model visualizes these modifications immediately after confirming the entered values.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">5. Evaluation of Results</span></p>
+<p style="text-align: justify;">As in step 3, a comparison of the simulation results is carried out again. On the basis of the binocular Hess-Lancaster test, the outcome of a surgery can be evaluated regarding to the correction of a pathological situation and whether it is still necessary to apply additional changes (simulation trials).</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">6. Simulation Result</span></p>
+<p style="text-align: justify;">The simulation result represents the last state of all model parameters in the task flow of the simulation of a pathology and surgery with SEE++. The system offers the possibility to assign and archive these results to a patient in the form of so-called scenarios. That way the results of different simulations can be compared with each other and e.g. simulation strategies can be developed. Each scenario stores an arbitrary step of a patient treatment and can later be accessed again in textual or graphical form.</p>
+
+</DIV>
+
+
+</body>
+</html>

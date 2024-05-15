@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Superior Oblique Palsy</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Superior oblique palsy,Superior oblique muscle,Main functional direction,Vertical deviation,Double images,Simulation of the pathology,Damage to the nerve,New patient,Simulation,Elastic strength,Muscle data,Hess-diagram,Surgical correction,Plication,Contractile strength">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "trochlearisparese.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <p><span style="font-size: 14pt; font-weight: bold;">Superior Oblique Palsy</span></p>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="abducensparese.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="supranukleaererectusmedialis.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<p style="text-align: justify;">In the second example, a superior oblique palsy of the right eye is simulated. This palsy is, similar to the abducens palsy, an incomitant squinting form, i.e. the squint angle increases in the main functional direction of the affected muscle. The vertical deviation increases accordingly towards adduction and depression, similarly the extorsion increases in abduction. The horizontal component is influenced in terms of a more or less convergent deviation (esophoria - esotropia, horizontal incomitance, A-pattern). Again, similar to the abducens palsy, a possible cause for the palsy can be a craniocerebral trauma. The long path of the nervus trochlearis is like the path of the nervus abducens very vulnerable for traumatic injuries. In clinical practice the patient normally adopts a forced posture of the head (head tilt to the left) for balancing the extorsion and for maintaining the binocular vision. Vertically shifted and outward-tilted double images increase in depression and convergence (main functional area of the muscle).</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Simulation of the Pathology</span></p>
+<p style="text-align: justify;">Similar to the simulation of the <a href="abducensparese.htm" class="topiclink">already described abducens palsy</a>, for a successful simulation of this pathology the contractile strength, as a consequence of the damage to the nerve, as well as the elastic strength have to be reduced. This is the basis for the simulation.</p>
+<p style="text-align: justify;">First a new patient is created. To do so, the menu item <span style="font-style: italic;">&quot;Patient&quot;</span> - <span style="font-style: italic;">&quot;New Patient&quot;</span> is used, which displays the following dialog:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="471" height="373" style="margin:0;width:471px;height:373px;border:none" src="bsp2_patient.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">In this dialog, information about the patient can be entered. After clicking on the &quot;OK&quot; button, the new patient is created and the program is ready for starting with the simulation.</p>
+<p style="text-align: justify;">In order to successfully simulate the superior oblique palsy, the strength of the superior oblique muscle of the right eye has to be decreased. In SEE++, this force reduction is carried out in the muscle data dialog, which is accessible either by the menu item <span style="font-style: italic;">&quot;Data&quot;</span> - <span style="font-style: italic;">&quot;Right Eye&quot;</span> - <span style="font-style: italic;">&quot;Muscles&quot;</span> or by the tree in the left part of the program window by using the tree item &quot;Muscle Data&quot; in the section for the right eye. In the upper area of the appearing window there are several &quot;tab sheets&quot;, namely one containing general parameters and one for each muscle. By clicking on the tab sheet &quot;<span style="color: #ff0000;">Superior Oblique</span>&quot;, the dialog now looks like this:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="750" height="593" style="margin:0;width:750px;height:593px;border:none" src="bsp2_muskeldaten.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">In the fields &quot;<span style="color: #ff0000;">Elastic Strength</span>&quot; and &quot;<span style="color: #ff0000;">Contract. Strength</span>&quot; the respective force components of the muscle can be reduced by changing both values from 1 %/100 to <span style="font-weight: bold;">0.1 %/100 </span>and afterwards closing the dialog by clicking on &quot;OK&quot;.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">When the Hess-diagram is recalculated now, the modifications from the muscle data dialog are immediately taken into account. By default, the Hess-diagram for the left eye (right eye fixing) is displayed in the diagram-window with the number 1. After the calculation of the Hess-diagram has been successfully finished, the following is displayed:</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><img width="768" height="692" style="margin:0;width:768px;height:692px;border:none" src="bsp2_scr1.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">In the calculated Hess-diagram the exceeding reaction of the inferior rectus muscle of the <span style="color: #ff0000;">following left eye</span> (<span style="color: #0000ff;">right eye fixing</span>) can be clearly seen. In order to display the second Hess-diagram for the right eye (left eye fixing), use the menu item <span style="font-style: italic;">&quot;Views&quot;</span> - <span style="font-style: italic;">&quot;Diagram-Window 2&quot;</span>. By default, the now displayed diagram-window with the number 2 displays the Hess-diagram for the right eye (left eye fixing). If this is not the case, you can simply click into one of the diagram-windows with the right mouse button and select the desired diagram in the displayed popup menu by left-clicking on it. If the size of the two diagram-windows is adjusted accordingly by clicking on the dividing line between the diagrams and resizing the diagrams with the left mouse button pressed, the following view is displayed:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="768" height="692" style="margin:0;width:768px;height:692px;border:none" src="bsp2_scr2.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">In the Hess-diagram for the <span style="color: #ff0000;">right eye</span> (<span style="color: #0000ff;">left eye fixing</span>) the increasing incomitant restriction of the superior oblique muscle of the <span style="color: #ff0000;">right eye</span> in adduction can be clearly seen. On the basis of the results of the simulation, which are shown in the Hess-diagrams, the simulation of the superior oblique palsy can be considered as finished.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><span style="font-size: 14pt; font-weight: bold;">Surgical Correction</span></p>
+<p style="text-align: justify;">For the surgical correction of the simulated superior oblique palsy, a strengthening of the paretic muscle is necessary. The surgery is carried out by a plication of the affected superior oblique muscle. In order to perform a plication surgery in SEE++, the &quot;Non-Graphical Surgery&quot; dialog is used, which is accessible by the menu item <span style="font-style: italic;">&quot;Surgeries&quot;</span> - <span style="font-style: italic;">&quot;Non-Graphical Surgery&quot;</span>. After the dialog has been opened, the desired eye and the desired muscle are selected, in this case the right eye and the superior oblique muscle. Now a plication of 7 mm of the selected muscle is carried out by entering the appropriate value in the field &quot;<span style="color: #ff0000;">Plication (mm)</span>&quot;. The following picture shows the dialog with the entered plication value:</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><img width="507" height="294" style="margin:0;width:507px;height:294px;border:none" src="bsp2_muskeldaten2.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">After closing the dialog with a click on the &quot;OK&quot; button, the program recalculates the two Hess-diagrams. When the calculation is finished, the following picture is displayed:</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><img width="768" height="692" style="margin:0;width:768px;height:692px;border:none" src="bsp2_scr3.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Now the two Hess-diagrams show that the target of the surgical correction has been achieved, namely to get the double image free zone into the primary position. Furthermore, the increasing incomitant restriction of the upper oblique muscle of the right eye in adduction and depression was slightly reduced by the plication. However, a complete &quot;healing&quot; of the palsy, specifically in extreme adduction and depression, by modifying the innervational component in the model is clinically not possible, since a surgical modification of the innervation is impossible.</p>
+
+</DIV>
+
+
+</body>
+</html>

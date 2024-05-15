@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>AVI-Film erstellen</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="AVI-Film erstellen,Links-Fixation,Rechts-Fixation,Diagramm-Fenster,Patient-&gt;3D-Modell-&gt;Film erstellen,Fixationspunkte des Blickschemas,Animationspfad,Fixationsposition,Pfeil,Animationspfad-Datei,Blickschema,Listing'sche Rotationsachse,Filmgeschwindigkeit,Auflösung,Seitenverhältnis,Aktuelle Größe,3D-Ansicht,Kompression,Codec,XviD,Filmdatei,Fixationspunkte,Fixierendes Auge,Folgendes Auge">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "avi_filmerstellen.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <p><span style="font-size: 14pt; font-weight: bold;">AVI-Film erstellen</span></p>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="blickschema_als_bild_speichern.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="film_fuer_kopfneigetest.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<p style="text-align: justify;">Eine weitere Option, um Daten aus SEE++ zu exportieren, ist die Funktion, aktuelle Simulationsergebnisse zur besseren Darstellung als AVI-Video zu speichern, bei denen der &quot;virtuelle Patient&quot; (in der <a href="_3d_ansicht.htm" class="topiclink">3D-Ansicht</a>) der Reihe nach in verschiedene Blickpositionen blickt. Diese Filme können dann in diversen Abspielprogrammen (Windows® Mediaplayer, etc.) und in Präsentationen (z.B.: PowerPoint®) abgespielt werden.</p>
+<p style="text-align: justify;">Zum Erstellen eines Films ist es notwendig, dass mindestens ein Simulationsergebnis (Rechts- und/oder Links-Fixation) in den Diagramm-Fenstern von SEE++ angezeigt wird. Sonst ist die Funktion im <a href="ueberblick.htm" class="topiclink">Hauptmenü</a> &quot;Patient-&gt;3D-Modell-&gt;Film erstellen&quot; deaktiviert. Dies kommt daher, dass für das Erstellen eines Videos die <a href="blickschema.htm" class="topiclink">Fixationspunkte des Blickschemas</a> für Rechts- oder Links-Fixation als Vorlage dienen. Wenn beide Fixationen vor Öffnen des Dialogs in den Diagramm-Fenstern von SEE++ angezeigt werden, kann man zwischen Rechts- und Links-Fixation im Kasten &quot;Verwendetes Hess-Schema&quot; wählen.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;"><img width="786" height="568" style="margin:0;width:786px;height:568px;border:none" src="movie_export_dialog.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Um einen Film zu erstellen muss zuerst definiert werden, welche Fixationspositionen in welcher Reihenfolge vom &quot;virtuellen Patienten&quot; eingenommen werden sollen (&quot;Animationspfad&quot;). Wählen sie dazu eine beliebige Fixationsposition des verwendeten Hess-Schemas (blauer Punkt) indem sie mit der linken Maustaste auf den entsprechenden Punkt klicken. Fahren sie dann mit gedrückter linker Maustaste zu einer beliebigen anderen Fixationsposition und lassen sie die Maustaste los sobald sich der Zielpunkt hellblau gefärbt hat. Es wird nun ein Pfeil mit der Nummer &quot;1&quot; zwischen den beiden Fixationspositionen eingezeichnet. Sie können nun immer wieder vom zuletzt gewählten Punkt ausgehend einen neuen Pfeil zu einer anderen Fixationsposition ziehen. Die Pfeile werden dabei aufsteigend nummeriert und die eingezeichneten Verbindungen werden zusätzlich in der Liste auf der rechten Seite des Dialogs angezeigt. Wenn sie in der Liste mit der linken Maustaste auf eine der Verbindungen klicken, dann wird der entsprechende Pfeil rot markiert. Die Pfeile bestimmen nun die Reihenfolge und die Auswahl der Fixationspositionen, die zur Erstellung eines Films in chronologischer Reihenfolge vom &quot;virtuellen Patienten&quot; abgefahren werden. Dabei wird für jede Blickposition die Position des folgenden Auges bestimmt. Eine eventuell pathologische Situation kann so dynamisch in ihrer Ausprägung sehr anschaulich dargestellt werden.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Um die Erstellung eines Animationspfades zu erleichtern, stehen ihnen die folgenden Funktionen zur Verfügung:</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_delete_point_button.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Mit einem Klick auf diesen Button wird der jeweils zuletzt eingezeichnete Pfeil (der Pfeil mit der höchsten Nummer) wieder gelöscht. Wenn keine Pfeile vorhanden sind, dann hat dieser Button keine Funktion.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_delete_all_button.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Dieser Button löscht alle momentan eingezeichneten Pfeile.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_load_button.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Mit dieser Funktion können sie einen Animationspfad aus einer Datei laden. Beim Laden einer Animationspfad-Datei wird der aktuelle Animationspfad durch jenen aus der Datei ersetzt.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;"><img width="561" height="417" style="margin:0;width:561px;height:417px;border:none" src="movie_export_open_path.jpg"/></p>
+<p style="text-align: justify;">Nach Klicken des Buttons für das Laden eines Animationspfades öffnet sich der Dialog zur Auswahl einer Animationspfad-Datei. Diese Dateien haben die Endung &quot;.sap&quot;. Navigieren sie in das jeweilige Verzeichnis und klicken sie auf die .sap-Datei, die sie laden wollen. Danach klicken sie auf &quot;Open&quot; bzw. &quot;Öffnen&quot;, um die Datei zu laden. Wenn sie auf den Button &quot;Cancel&quot; bzw. &quot;Abbrechen&quot; drücken, wird keine Datei geladen, und der aktuelle Animationspfad bleibt erhalten.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_save_button.jpg"/></p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Wenn sie einen Animationspfad eingezeichnet haben, dann können sie ihn mit dieser Funktion in eine eigene Datei speichern. Dateien, die Animationspfade speichern, haben die Endung &quot;.sap&quot; und können jederzeit mit der Öffnen-Funktion (siehe oben) wieder geladen werden.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;"><img width="561" height="417" style="margin:0;width:561px;height:417px;border:none" src="movie_export_save_path.jpg"/></p>
+<p style="text-align: justify;">Nach Klicken des Buttons für das Speichern eines Animationspfades öffnet sich der Dialog zur Auswahl des Speicherortes bzw. Dateinamens. Gehen sie hier wie beim Öffnen von Animationspfad-Dateien vor, indem sie in das jeweilige Verzeichnis navigieren und nach Benennung der Datei diese durch klicken auf &quot;Save&quot; bzw. &quot;Speichern&quot; ablegen.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:59px; padding:0; border:none"><p style="text-align: justify;"><img width="45" height="45" style="margin:0;width:45px;height:45px;border:none" src="tipp_icon.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Ein gespeicherter Animationspfad ist unabhängig vom gewählten Blickschema (Rechts- und Links-Fixation).</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Im Kasten &quot;Verwendetes Hess-Schema&quot; können sie auswählen, ob die <a href="geometrischemodelle.htm#listingschesgesetz" class="topiclink">Listing'sche Rotationsachse</a> für das fixierende und/oder folgende Auge im Film angezeigt werden soll. Wählen sie zusätzlich eine Filmgeschwindigkeit (Langsam, Mittel, Schnell), die angibt, wie schnell die Augenbewegungen im Film durchgeführt werden. Die Auflösung bestimmt die Größe des Filmausschnitts und somit die Qualität der Einzelbilder des Films (höhere Auflösung = bessere Qualität, aber auch größere Datei). In der Liste der verfügbaren Auflösungen steht jeweils der Name der Auflösung (z.B. &quot;VGA&quot;), die horizontale und vertikale Größe der Auflösung in Pixel (z.B. 640x480), sowie das Seitenverhältnis (Verhältnis zwischen Breite und Höhe, z.B. 4:3). Mit der Auswahl der Auflösung &quot;Aktuelle Größe&quot; können sie erreichen, dass die momentane Größe der <a href="_3d_ansicht.htm" class="topiclink">3D-Ansicht</a> für die Auflösung des Films verwendet wird.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Sie können auch noch die Kompression des Films (mit dem Button &quot;Auswählen...&quot; unter &quot;Kompression&quot;) konfigurieren, indem sie einen bestimmten Codec wählen. Die Auswahl eines Codecs bestimmt das Verfahren, in dem der Film kodiert bzw. komprimiert wird. Dieser Codec muss dann auf dem Rechner, auf dem der Film wieder abgespielt werden soll, auch installiert sein. Standardmäßig sind in Windows® einige Codecs zur Filmerstellung vorhanden, diese liefern aber nur beschränkte Qualität. Deshalb wird zusammen mit SEE++ der &quot;XviD&quot;-Codec <a href="http://www.xvid.org" target="_blank" class="weblink">(www.xvid.org)</a> mitinstalliert. Dieser Codec ist frei verfügbar und liefert eine gute Video-Qualität bei hohem Kompressionsgrad. Außerdem wird durch die automatische Installation des Codecs zusammen mit SEE++ sichergestellt, dass auf jedem Computer, auf dem SEE++ installiert ist, alle mit SEE++ erstellten Videos auch abgespielt werden können (sofern nicht manuell ein anderer Codec beim Erstellen eines Videos ausgewählt wird).</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:59px; padding:0; border:none"><p style="text-align: justify;"><img width="45" height="45" style="margin:0;width:45px;height:45px;border:none" src="tipp_icon.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Ändern sie den standardmäßig ausgewählten Codec (XviD) nur, wenn sie absolut sicher sind. Ihre Videos haben sonst unter Umständen eine schlechte Qualität oder sind auf anderen Rechnern nicht abspielbar.</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Bevor sie den Film nun erstellen können, müssen sie noch einen Dateinamen und ein Verzeichnis angeben. Mit dem Button &quot;Durchsuchen...&quot; öffnet sich der Standarddialog zum Speichern einer AVI-Datei. Navigieren sie in diesem Dialog in das Verzeichnis, wo die Filmdatei gespeichert werden soll und geben sie der Filmdatei einen entsprechenden Namen. Die Dateiendung eines Films ist mit &quot;.avi&quot; fixiert. Das gewählte Verzeichnis sowie der gewählte Name werden dann im Dialog unter &quot;Dateiname&quot; angezeigt.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">Sind alle Optionen gewählt, bestätigen sie den Dialog mit &quot;OK&quot; und der Film wird erstellt. Mit einem Klick auf &quot;Abbrechen&quot; wird der Dialog geschlossen und es wird kein Film erstellt. Der aktuelle Animationspfad bleibt bis zum Beenden von SEE++ erhalten, unabhängig davon, ob sie den Dialog mit &quot;OK&quot; oder &quot;Abbrechen&quot; geschlossen haben.</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:60px; padding:0; border:none"><p style="text-align: justify;"><img width="45" height="45" style="margin:0;width:45px;height:45px;border:none" src="tipp_icon.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Wenn sie die Erstellung eines Films hinsichtlich der verfügbaren Fixationspunkte beeinflussen wollen, müssen sie jenes <a href="blickschema.htm" class="topiclink">Blickschema</a> ändern, für das sie den Film erstellen. Sollten sie die Erstellung eines Films abbrechen möchten, drücken sie während des Ablaufs die &quot;ESC&quot;-Taste. Der Vorgang des Abbrechens kann einige Sekunden dauern! Nach dem Abbrechen befindet sich der bis zum Abbruch bereits erstellte Teil des Films in der erzeugten AVI-Datei.</p>
+</td>
+</tr>
+</table>
+</div>
+
+</DIV>
+
+
+</body>
+</html>

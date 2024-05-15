@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Interpolation for Real-Time Assessment</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Interpolation&nbsp;for&nbsp;real-time&nbsp;assessment,3D-view,Diagrams,Motility diagnosis,Gaze pattern,Hess-diagram,Scenario,General functions,Gaze position,Fixing eye,Following eye,Medical data">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "interpolation_fuer_echtzeit_di.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <h1 class="p_Heading1"><span class="f_Heading1">Interpolation for Real-Time Assessment</span></h1>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="methoden_zur_motilitaetsdiagno.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="cover_test.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<p class="p_Normal" style="text-align: justify;">The interpolation for real-time assessment can be accessed via the <a href="allgemeinefunktionen.htm" class="topiclink">&quot;General Functions&quot; toolbar</a>. After clicking on the appropriate button, a dialog is opened, which displays the current calculation progress. With a click on &quot;Cancel&quot; you can stop the calculation at any time. In that case the interpolation for real-time assessment is not activated.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;"><img width="201" height="143" style="margin:0;width:201px;height:143px;border:none" src="interpolation_progress.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p class="p_Normal" style="text-align: justify;">Normally SEE++ only calculates the position of the following eye, if the option <a href="allgemeinefunktionen.htm#folgendesauge" class="topiclink">&quot;Following Eye&quot;</a> is activated. When changing the position of the fixing eye, the position of the following eye is not updated until the mouse button is released (when changing the fixation position in the <a href="_3d_ansicht.htm" class="topiclink">3D-view</a> or in one of the <a href="diagramme.htm" class="topiclink">diagrams</a>), even if this option is activated. Therefore, an interactive motility diagnosis is hard to achieve. If the interpolation for real-time assessment is activated, the eye positions, based on a completely calculated Hess-diagram for the right eye fixing and the left eye fixing within the area determined through the fixation positions, are interpolated. This allows an immediate viewing of the position of the following eye as the movement of the following eye can be monitored in real-time when interactively changing the fixation position in the 3D-view or in a diagram. This behaviour is conform to the procedure used in clinics for the motility diagnosis, where the clinician let the patient fixate a specific gaze position with one eye and watches the behaviour of the other (following) eye.</p>
+<p class="p_Normal" style="text-align: justify;">As long as the interpolation is activated, only positions within the area determined through the points of the particular gaze pattern can be fixed. If you want to fixate points outside this area, you have to enlarge the appropriate <a href="blickschema.htm" class="topiclink">gaze pattern</a> (you have to switch off the interpolation for real-time assessment before you can edit the gaze pattern!). In order to activate the interpolation, at least 3 fixable gaze positions in both fixations must exist. The more points the gaze pattern of the particular fixation contains, the better and more precise is the interpolation.</p>
+<p class="p_Normal" style="text-align: justify;">Due to the fact, that for the interpolation a completely calculated Hess-diagram is required, you cannot make changes in SEE++, which would lead to a recalculation of the simulation results as long as the interpolation for real-time assessment is activated (e.g. a change of the <a href="medizinischestammdaten.htm" class="topiclink">medical data</a> or the loading of another <a href="szenarien.htm" class="topiclink">scenario</a>).</p>
+
+</DIV>
+
+
+</body>
+</html>

@@ -1,0 +1,152 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+   <title>Create Movie</title>
+   <meta name="generator" content="Help & Manual">
+   <meta name="keywords" content="Create movie,AVI,Left eye fixing,Right eye fixing,Diagram-window,Patient-&gt;3D-Modell-&gt;Create Movie,Fixation&nbsp;points&nbsp;of&nbsp;the&nbsp;gaze&nbsp;pattern,Animation path,Fixation position,Arrow,Animation path file,Gaze pattern,Listing's rotation axis,Movie speed,Resolution,Aspect ratio,Current size,3D-view,Compression,Codec,XviD,Movie file,Fixation points,Fixing eye,Following eye">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+<style type="text/css"> 
+<!-- 
+       DIV#justify {text-align: justify} 
+--> 
+</style>
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+   <link type="text/css" href="default.css" rel="stylesheet" />
+   <script type="text/javascript" src="jquery.js"></script>
+   <script type="text/javascript" src="helpman_settings.js"></script>
+   <script type="text/javascript" src="helpman_topicinit.js"></script>
+
+   <script type="text/javascript">
+     HMSyncTOC("index.html", "avi_filmerstellen.htm");
+   </script>
+   <script type="text/javascript" src="highlight.js"></script>
+   <script type="text/javascript">
+     $(document).ready(function(){highlight();});
+   </script>
+</head>
+
+
+  <!-- Redirect browser to index page if page is not in the content frame.
+       This script is only valid for regular HTML export -->
+
+
+<body bgcolor="#FFFFFF">
+
+
+<table width="100%" border="0" cellspacing="0" cellpadding="2" bgcolor="#C0C0C0">
+  <tr>
+    <td align="left">
+      <p><span style="font-size: 14pt; font-weight: bold;">Create Movie</span></p>
+
+    </td>
+    <td align="right">
+     <font face="Arial" size="2">
+     <a href="titel.htm"><img src="button_main.gif" border=0 alt="Top"></a>&nbsp;
+     <a href="blickschema_als_bild_speichern.htm"><img src="button_prev.gif" border=0 alt="Zur&uuml;ck"></a>&nbsp;
+     <a href="film_fuer_kopfneigetest.htm"><img src="button_next.gif" border=0 alt="Weiter"></a>
+     </font>
+    </td>
+  </tr>
+</table>
+<br>
+
+<DIV ID="justify">
+<p style="text-align: justify;">Another option to export data from SEE++ is the function to save the current simulation results as an AVI movie for better illustration. Thereby the &quot;virtual patient&quot; (in the <a href="_3d_ansicht.htm" class="topiclink">3D-view</a>) sequentially looks at different gaze positions. These movies can be played in numerous players (Windows® Mediaplayer, etc.) and in presentations (e.g.: PowerPoint®).</p>
+<p style="text-align: justify;"><span style="font-size: 10pt; font-family: Arial,Helvetica,sans-serif; color: #000000;">&nbsp;</span></p>
+<p style="text-align: justify;">In order to create a movie it is necessary that at least one simulation result (right eye fixing and/or left eye fixing) is displayed in one of the diagram-windows of SEE++. Otherwise the function in the <a href="ueberblick.htm" class="topiclink">main menu</a> under &quot;Patient-&gt;3D-Modell-&gt;Create Movie&quot; is deactivated. That is because the <a href="blickschema.htm" class="topiclink">fixation points of the gaze pattern</a> for right eye fixing or left eye fixing are used as a template for the creation of the movie. If both fixations are displayed in the diagram-windows of SEE++ before the dialog is opened, you can choose between right eye fixing and left eye fixing via the &quot;Used Hess-Diagram&quot; box.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;"><img width="786" height="568" style="margin:0;width:786px;height:568px;border:none" src="movie_export_dialog.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">Before you can create a movie, you first have to define which fixation positions in which sequence the &quot;virtual patient&quot; should look at (&quot;animation path&quot;). For this purpose select any fixation position of the used Hess-diagram (blue point) by left-clicking on the appropriate point. Then move the mouse while keeping the left mouse button pressed over any other fixation position and release the mouse button as soon as the target point is colored light blue. Now an arrow with the number &quot;1&quot; is drawn in between the two fixation positions. You can now always draw a new arrow from the last selected point to another fixation position over and over again. The arrows are thereby numbered ascending and the drawn in connections are additionally displayed in the list on the right hand side of the dialog. If you left-click on one of the connections in the list, the appropriate arrow is marked red. The arrows define the sequence and the selection of the fixation positions, which the &quot;virtual patient&quot; looks at in chronological order for the creation of a movie. Thereby for each fixation position the position of the following eye is calculated. That way the characteristics of a possible pathological situation can be dynamically illustrated in a clear way.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">To make it easier to create an animation path, the following functions are provided:</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_delete_point_button.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">With a click on this button the last drawn in arrow (the arrow with the highest number) is deleted. This button has no functionality, if no arrows exist.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_delete_all_button.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">This button deletes all existing arrows.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_load_button.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">With this function you can load an animation path from a file. When loading an animation path file, the current animation path is replaced by the one from the file.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;"><img width="561" height="417" style="margin:0;width:561px;height:417px;border:none" src="movie_export_open_path.jpg"/></p>
+<p style="text-align: justify;">After clicking on the button for the loading of an animation path, the dialog for the selection of an animation path file is opened. These files have the extension &quot;.sap&quot;. Navigate to the particular directory and click on the .sap file you want to load. Afterwards click on &quot;Open&quot; or &quot;Öffnen&quot; to load the file. If you push the &quot;Cancel&quot; or &quot;Abbrechen&quot; button, no file is loaded and the current animation path is retained unchanged.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:35px; padding:0; border:none"><p style="text-align: justify;"><img width="30" height="33" style="margin:0;width:30px;height:33px;border:none" src="gaze_pattern_save_button.jpg"/></p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">If you have drawn in an animation path, you can use this function to save it to a file. Files that save animation paths have the extension &quot;.sap&quot; and can be loaded again anytime via the open function (see above).</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+</td>
+</tr>
+</table>
+</div>
+<p style="text-align: justify;"><img width="561" height="417" style="margin:0;width:561px;height:417px;border:none" src="movie_export_save_path.jpg"/></p>
+<p style="text-align: justify;">After clicking on the button for the saving of an animation path, the dialog for the selection of the target directory and the filename is opened. Proceed like opening an animation path file by navigating to the particular directory and clicking the &quot;Save&quot; or &quot;Speichern&quot; button after naming the file.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:59px; padding:0; border:none"><p style="text-align: justify;"><img width="45" height="45" style="margin:0;width:45px;height:45px;border:none" src="tipp_icon.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">A saved animation path is independent from the selected gaze pattern (right eye fixing and left eye fixing).</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">In the &quot;Used Hess-Diagram&quot; box you can also choose, if <a href="geometrischemodelle.htm#listingschesgesetz" class="topiclink">Listing's rotation axis</a> should be displayed for the fixing and/or the following eye in the movie. Additionally, you can choose a movie speed (slow, medium, fast), which specifies how fast the eye movement is done in the movie. The resolution determines the size of the movie and therefore the quality of the single frames of the movie (high resolution = better quality, but larger file). The list of the available resolutions contains the &quot;name&quot; of the resolution (e.g. &quot;VGA&quot;), the horizontal and vertical size of the resolution in pixel (e.g. 640x480) as well as the aspect ratio (width-to-height ratio, e.g. 4:3). Via the &quot;Current Size&quot; resolution you can achieve that the current size of the <a href="_3d_ansicht.htm" class="topiclink">3D-view</a> is used for the resolution of the movie.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">Furthermore, you can configure the compression of the movie (via the button &quot;Choose...&quot; under &quot;Compression&quot;) by selecting a specific codec. The selection of a codec determines the format, in which the movie is encoded and/or compressed. This codec has to be installed on the computer where you want to play the movie. By default some codecs are installed in Windows® for the creation of movies, but they provide only limited quality. Therefore, the &quot;XviD&quot;-Codec <a href="http://www.xvid.org" target="_blank" class="weblink">(www.xvid.org)</a> is installed together with SEE++. This codec is free for use and provides a good movie quality with high compression. Furthermore, due to the automatic installation of the codec together with SEE++, it is guaranteed that the movies created with SEE++ can be played on any computer where SEE++ is installed (unless a different codec was manually selected for the creation of a movie).</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:59px; padding:0; border:none"><p style="text-align: justify;"><img width="45" height="45" style="margin:0;width:45px;height:45px;border:none" src="tipp_icon.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">Only change the default codec (XviD), if you are absolutely sure. Your movies could have bad quality or possibly cannot be played on a different computer.</p>
+</td>
+</tr>
+</table>
+</div>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">You have to specify a file name and a directory before you can create the movie. Via the &quot;Browse...&quot; button the default dialog for saving AVI files is opened. Navigate to the directory where you want to save the movie file and name the movie file appropriately. The file extension of a movie is always &quot;.avi&quot;. The selected directory as well as the chosen name are displayed in the field below &quot;Filename&quot; after the default dialog for saving AVI files has been closed with a click on &quot;OK&quot;.</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">If you have finished all your settings, confirm the dialog with &quot;OK&quot; and the movie will be created. With a click on &quot;Cancel&quot; the dialog is closed and no movie is created. The current animation path remains set until SEE++ is quit, independently of the button you used to close the dialog (&quot;OK&quot; or &quot;Cancel&quot;).</p>
+<p class="p_Normal" style="text-align: justify;">&nbsp;</p>
+<div style="text-align: justify; text-indent: 0; padding: 0 0 0 0; margin: 0 0 0 0;"><table style="border:none; border-spacing:0;">
+<tr>
+<td style="vertical-align:top; width:60px; padding:0; border:none"><p style="text-align: justify;"><img width="45" height="45" style="margin:0;width:45px;height:45px;border:none" src="tipp_icon.jpg"/></p>
+</td>
+<td style="vertical-align:top; padding:0; border:none"><p style="text-align: justify;">If you want to influence the creation of a movie regarding the available fixation points, you have to change the <a href="blickschema.htm" class="topiclink">gaze pattern</a> of the corresponding fixation. If you want to cancel the creation of a movie, push the &quot;ESC&quot; key during the creation process. The canceling can take several seconds! After canceling the creation, those parts of the movie, which were already created until the process was canceled, are stored in the AVI file.</p>
+</td>
+</tr>
+</table>
+</div>
+
+</DIV>
+
+
+</body>
+</html>
