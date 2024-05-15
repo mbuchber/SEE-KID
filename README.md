@@ -22,3 +22,7 @@ The SEE-KID project and the application of the software system SEE++ were suppor
 You can browse the user manual for the SEE++ software here in this repository under:
 * [SEE++ User Manual (English version)](https://strabismus.at/user-manual-html/eng/index.html)
 * [SEE++ User Manual (German version)](https://strabismus.at/user-manual-html/ger/index.html)
+
+or as PDF versions:
+* [SEE++ User Manual PDF (English version)](https://strabismus.at/user-manual-pdf/SEEPP_Manual_ENG.pdf)
+* [SEE++ User Manual PDF (German version)](https://strabismus.at/user-manual-pdf/SEEPP_Manual_DEU.pdf)
