@@ -1,4 +1,7 @@
 # SEE-KID (Software-Engineering Environment for Knowledge-based Eye-Motility Diagnostics)
+<p align="center">
+  <img src="https://strabismus.at/user-manual-html/eng/splash_white.jpg" />
+</p>
 
 The research project SEE-KID was carried out over almost 21 years within different organizations.
 * University of Applied Sciences, Department of Software-Engineering for Medicine, Hagenberg Upper Austria (1998 - 2002)
