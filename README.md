@@ -1,4 +1,7 @@
 # SEE-KID (Software-Engineering Environment for Knowledge-based Eye-Motility Diagnostics)
+<p align="center">
+  <img src="https://strabismus.at/user-manual-html/eng/splash_white.jpg" />
+</p>
 
 The research project SEE-KID was carried out over almost 21 years within different organizations.
 * University of Applied Sciences, Department of Software-Engineering for Medicine, Hagenberg Upper Austria (1998 - 2002)
@@ -14,3 +17,8 @@ Additionally, the system is used for education and training purposes, because by
 The software project SEE++ is the realization of a biomechanical model of the human eye and is partly based on ideas and concepts originally invented and implemented in the software system Orbit™ 1.8 by Joel Miller (Eidactics). This mainly mathematical description of the oculomotor system forms the basis for the proper predictions on simulation and treatment of pathological cases.
 
 The SEE-KID project and the application of the software system SEE++ were supported by grants of the Upper Austrian Local Government, the Hospital of the Barmherzigen Brüder Linz and the Hospital AKH Linz.
+
+## User Manual
+You can browse the user manual for the SEE++ software here in this repository under:
+* [SEE++ User Manual (English version)](https://strabismus.at/user-manual-html/eng/index.html)
+* [SEE++ User Manual (German version)](https://strabismus.at/user-manual-html/ger/index.html)
