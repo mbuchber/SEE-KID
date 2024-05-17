@@ -37,3 +37,11 @@ You can browse the user manual for the SEE++ software here in this repository un
 or as PDF versions:
 * [SEE++ User Manual PDF (English version)](https://strabismus.at/user-manual-pdf/SEEPP_Manual_ENG.pdf)
 * [SEE++ User Manual PDF (German version)](https://strabismus.at/user-manual-pdf/SEEPP_Manual_DEU.pdf)
+
+## Contact
+
+Please leave a message in our discussion board in the GitHub repository (https://github.com/mbuchber/SEE-KID/discussions).
+
+You can contact us via eMail:
+* Michael.Buchberger@gmx.at
+* s.priglinger@outlook.com
