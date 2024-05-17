@@ -40,10 +40,8 @@ or as PDF versions:
 
 ## Contact
 
-Please leave a message in our discussion board in the GitHub repository (https://github.com/mbuchber/SEE-KID/discussions).
+Please leave a message in our discussion board in the GitHub repository [https://github.com/mbuchber/SEE-KID/discussions](https://github.com/mbuchber/SEE-KID/discussions).
 
 You can contact us via eMail:
-* Michael.Buchberger@gmx.at
-* s.priglinger@outlook.com
-
-[![Linkedin](https://i.sstatic.net/gVE0j.png) Michael Buchberger](https://www.linkedin.com/in/michael-buchberger/)
+* [Michael.Buchberger@gmx.at](mailto:Michael.Buchberger@gmx.at)
+* [s.priglinger@outlook.com](mailto:s.priglinger@outlook.com)
