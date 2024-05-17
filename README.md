@@ -1,4 +1,4 @@
-# Software-Engineering Environment for Knowledge-based Eye-Motility Diagnostics
+# Software-Engineering Environment for Knowledge-based Interactive Eye-Motility Diagnostics
 <p align="center">
   <img src="https://strabismus.at/user-manual-html/eng/splash_white.jpg" />
 </p>
