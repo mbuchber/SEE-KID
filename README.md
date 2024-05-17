@@ -45,3 +45,5 @@ Please leave a message in our discussion board in the GitHub repository (https:/
 You can contact us via eMail:
 * Michael.Buchberger@gmx.at
 * s.priglinger@outlook.com
+
+[![Linkedin](https://i.sstatic.net/gVE0j.png) Michael Buchberger](https://www.linkedin.com/in/michael-buchberger/)
