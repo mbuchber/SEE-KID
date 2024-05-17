@@ -23,7 +23,7 @@ Additionally, the system is used for education and training purposes, because by
 * [Augenmotilitätsstörungen: Computerunterstütze Diagnose und Therapie (in German)](https://www.amazon.de/dp/B00TZZIDQY)
 
 <ins>The example patient-files from the English book "Computer Assisted Eye Motility Diagnostics" are available separately as downloadable .ZIP-File:</ins>
-* [Example files for Book Computer Assisted Eye Motility Diagnostics](https://www.strabismus.at/book/Example%20files%20Computer-assisted%20Eye%20Motility%20Diagnostics.zip)
+* [Example files for Book "Computer Assisted Eye Motility Diagnostics"](https://www.strabismus.at/book/Example%20files%20Computer-assisted%20Eye%20Motility%20Diagnostics.zip)
 
 The software project SEE++ is the realization of a biomechanical model of the human eye and is partly based on ideas and concepts originally invented and implemented in the software system Orbit™ 1.8 by Joel Miller (Eidactics). This mainly mathematical description of the oculomotor system forms the basis for the proper predictions on simulation and treatment of pathological cases.
 
