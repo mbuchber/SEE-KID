@@ -11,7 +11,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v3  
+    - uses: actions/checkout@v3
+    - name: Delete current release assets
+      uses: andreaswilli/delete-release-assets-action@<version>
+      with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
     - name: Upload SEEPP_Setup_Win32.exe
       uses: svenstaro/upload-release-action@v2
       with:
