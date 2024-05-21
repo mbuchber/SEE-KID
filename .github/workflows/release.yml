@@ -12,12 +12,12 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - name: Delete current release assets
-      uses: andreaswilli/delete-release-assets-action@v4.0.0
+    - name: Delete old release assets
+      uses: mknejp/delete-release-assets@v1
       with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          tagPrefix: v
-          tag: 11.0
+          token: ${{ github.token }}
+          tag: v11.0
+          assets: '*.zip'
     - name: Upload SEEPP_Setup_Win32.exe
       uses: svenstaro/upload-release-action@v2
       with:
