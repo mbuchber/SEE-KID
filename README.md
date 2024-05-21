@@ -13,6 +13,7 @@ SEE-KID provides a software system SEE++ which implements a biomechanical, inter
 **The SEE++ software is now freely available for download!**
 
 <ins>Download setup binaries from here for Windows x64 or x32:</ins>
+[![Github All Releases](https://img.shields.io/github/downloads/mbuchber/SEE-KID/total.svg)]()
 * [See++ Setup Windows x32 download](https://www.strabismus.at/release/SEEPP_Setup_Win32.exe)
 * [See++ Setup Windows x64 download](https://www.strabismus.at/release/SEEPP_Setup_x64.exe)
 
