@@ -12,11 +12,19 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3  
-    - name: Upload binaries to release
+    - name: Upload SEEPP_Setup_Win32.exe
       uses: svenstaro/upload-release-action@v2
       with:
-        repo_token: ${{ secrets.GITHUB_TOKEN }}
-        file: /home/runner/work/SEE-KID/SEE-KID/release/*      
-        tag: ${{ github.ref }}
-        overwrite: true
-        body: "This is my release text"
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ./release/SEEPP_Setup_Win32.exe
+          asset_name: SEEPP_Setup_Win32.exe
+          tag: ${{ github.ref }}
+          overwrite: true
+    - name: Upload SEEPP_Setup_x64.exe
+      uses: svenstaro/upload-release-action@v2
+      with:
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          file: ./release/SEEPP_Setup_x64.exe
+          asset_name: SEEPP_Setup_x64.exe
+          tag: ${{ github.ref }}
+          overwrite: true
