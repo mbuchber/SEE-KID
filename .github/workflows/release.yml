@@ -16,6 +16,8 @@ jobs:
       uses: andreaswilli/delete-release-assets-action@v4.0.0
       with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          tagPrefix: v
+          tag: 11.0
     - name: Upload SEEPP_Setup_Win32.exe
       uses: svenstaro/upload-release-action@v2
       with:
