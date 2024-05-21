@@ -17,7 +17,9 @@ jobs:
       with:
           token: ${{ github.token }}
           tag: v11.0
-          assets: '*.zip'
+          assets: |
+            changelog.txt
+            *.zip
     - name: Upload SEEPP_Setup_Win32.exe
       uses: svenstaro/upload-release-action@v2
       with:
