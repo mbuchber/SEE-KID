@@ -25,7 +25,7 @@ SEE-KID provides a software system SEE++ which implements a biomechanical, inter
 Additionally, the system is used for education and training purposes, because by means of extensive possibilities for parameterization of the human eye model, common pathological cases of human eye motility (e.g. strabismus) can be modeled – and subsequently treated.
 
 <ins>We can recommend our books on computer-assisted eye motility diagnoistics using the SEE++ software:</ins>
-* [Computer Assisted Eye Motility Diagnostics (in English, currently work in progress)](https://www.amazon.de/dp/3211330836)
+* [Computer Assisted Eye Motility Diagnostics (in English, to be released Dec. 2024)](https://www.amazon.de/dp/303165563X)
 * [Augenmotilitätsstörungen: Computerunterstütze Diagnose und Therapie (in German)](https://www.amazon.de/dp/B00TZZIDQY)
 
 <ins>The example patient-files from the English book "Computer Assisted Eye Motility Diagnostics" are available separately as downloadable .ZIP-File:</ins>
